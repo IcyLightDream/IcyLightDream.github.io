@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>MC基础教程#1-关于启动器</title>
+    <url>/2020/04/15/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>警告: 本文写于 2020 年，内容可能过时，可能以后有时间会重新写</strong></p>
+<h1 id="下载Minecraft正版"><a href="#下载Minecraft正版" class="headerlink" title="下载Minecraft正版"></a>下载Minecraft正版</h1><h2 id="手机版"><a href="#手机版" class="headerlink" title="手机版"></a>手机版</h2><p>应用市场/App Store等 搜索<code>我的世界</code>，下载<strong>我的世界中国版</strong>(基岩版,BE) 即可。</p>
+<h2 id="电脑版"><a href="#电脑版" class="headerlink" title="电脑版"></a>电脑版</h2><p>除网易版需下载<a href="http://java.com/">Java8</a>(1.17-)和<a href="https://www.oracle.com/java/technologies/downloads/">Java17+</a>(1.17+)</p>
+<h3 id="一、下载我的世界中国版-网易版"><a href="#一、下载我的世界中国版-网易版" class="headerlink" title="一、下载我的世界中国版( 网易版 )"></a>一、下载我的世界中国版( 网易版 )</h3><p>链接:<a href="http://mc.163.com/index.html">http://mc.163.com/index.html</a><br>选择 立即下载端游 下载安装程序。剩下的步骤按着上面说的就行了。<br>然后，到<a href="https://mail.163.com/register/index.htm">https://mail.163.com/register/index.htm</a>注册网易邮箱，好像还得弄个防沉迷(登录的时候会提示)，然后打开启动器:<br>有的时候会更新，点击<code>立即更新</code>即可。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70.png"><br>更新之后或没有更新，应该能看到这样的界面:<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-16852388551863.png"><br>输入邮箱&amp;密码登录。</p>
+<h3 id="二、下载我的世界国际版-PC版"><a href="#二、下载我的世界国际版-PC版" class="headerlink" title="二、下载我的世界国际版(PC版)"></a>二、下载我的世界国际版(PC版)</h3><p>首先，得有一个微软账号。<a href="https://login.live.com/">链接</a>(安装Windows时一般会强制注册)<br>然后<a href="https://www.minecraft.net/zh-hans/store/minecraft-java-edition/buy">购买</a>，下载Minecraft国际版的安装程序，开始安装。<br>Win10/11自带的<code>Microsoft Store</code>里也可以下载。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/2fdf59b02b244ba4850f237ef84b146b.png"><br>最后，启动Minecraft<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/20200414192716601.png"><br>如果是这样的话，说明Minecraft正在更新，等待一会。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/1d023a76a90e40d3bb5a57414a579de0.png"><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/b059e5eb5e9445728a4f4151f21e307e.png"></p>
+<h3 id="三、购买Minecraft基岩版-PE-电脑版-Win10"><a href="#三、购买Minecraft基岩版-PE-电脑版-Win10" class="headerlink" title="三、购买Minecraft基岩版(PE)电脑版(Win10)"></a>三、购买Minecraft基岩版(PE)电脑版(Win10)</h3><p>打开<code>Microsoft Store</code>( Win10/11自带 )，找到<code>Minecraft for Windows</code>，购买。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/60b43237f41c4a31a79221f1c53f7a6f.png"></p>
+<h1 id="Minecraft第三方启动器"><a href="#Minecraft第三方启动器" class="headerlink" title="Minecraft第三方启动器"></a>Minecraft第三方启动器</h1><h2 id="1-HMCL-Hello-Minecraft-Luncher"><a href="#1-HMCL-Hello-Minecraft-Luncher" class="headerlink" title="1.HMCL(Hello Minecraft Luncher)"></a>1.HMCL(Hello Minecraft Luncher)</h2><p>下载:<a href="https://hmcl.huangyuhui.net/">https://hmcl.huangyuhui.net</a>或<a href="https://github.com/huanghongxun/HMCL/releases">Github</a><br>使用方法:选择下载Windows版本.exe文件或.jar文件。<br>.exe文件直接运行，.jar文件用命令行:<code>java -jar &lt;HMCL名称&gt;.jar</code><br>打开后:<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-168523895565916.png"><br>如果买了正版号，登录方式改为正版/微软登录，填写邮箱及密码即可。<br>如果选择离线，那么只能玩单人世界，不能玩多人世界(除非那些不需要正版验证的服务器)。<br>特色:</p>
+<blockquote>
+<p>六年历史<br><strong>多系统支持</strong><br>全新界面<br><strong>自动安装Fabic、Forge、Liteloader、Optifine</strong><br>个性化主题<br>生成启动脚本:<br><img src="https://img-blog.csdnimg.cn/20200515162039446.png" alt="在这里插入图片描述"></p>
+</blockquote>
+<h2 id="2-MultiMC"><a href="#2-MultiMC" class="headerlink" title="2.MultiMC"></a>2.MultiMC</h2><p>下载地址:<a href="https://multimc.org/#Download">https://multimc.org/#Download</a><br>下载完是一个zip文件，全部解压即可。<br>然后打开MultiMC.exe。<br><strong>第一次运行</strong><br>Language找到最下面选择<code>简体中文</code>即可。<br>然后选择javaw路径。<br>需要到<code>设置--&gt;账号--&gt;添加</code>添加账户。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-168523897221219.png"><br>然后添加一个版本后点击版本就可以玩了。</p>
+<blockquote>
+<p>Manage multiple instances of Minecraft at once</p>
+<p>Start Minecraft with a custom resolution</p>
+<p>Change Java’s runtime options (including memory options)</p>
+<p>Shows Minecraft’s console output in a colour coded window</p>
+<p>Kill Minecraft easily if it crashes / freezes</p>
+<p>Custom icons and groups for instances</p>
+<p>Forge integration (automatic installation, version downloads, mod management)</p>
+<p>Minecraft world management</p>
+<p>Import and export Minecraft instances to share them with anyone</p>
+<p>Supports every version of Minecraft that the vanilla launcher does</p>
+<p>(我把官网的简介拷贝下来了)</p>
+<p>机翻:</p>
+<p>一次管理多个 Minecraft 实例</p>
+<p>使用自定义分辨率启动 Minecraft </p>
+<p>更改 Java 的运行时选项 (包括内存选项)</p>
+<p>在彩色编码窗口中显示 Minecraft 的控制台输出</p>
+<p>如果 Minecraft 崩溃或未响应, 很容易关闭它</p>
+<p>实例的自定义图标和组</p>
+<p>Forge 集成 (自动安装、版本下载、模组管理)</p>
+<p>世界管理</p>
+<p>导入和导出 Minecraft 实例以与任何人共享</p>
+<p>支持别的启动器能做的每个版本的 Minecraft </p>
+</blockquote>
+<h2 id="3-PCL2"><a href="#3-PCL2" class="headerlink" title="3.PCL2"></a>3.PCL2</h2><p><a href="https://afdian.net/@LTCat">https://afdian.net/@LTCat</a><br>运行<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16.png"></p>
+]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MC1.12.2开服教程(使用CatServer)</title>
+    <url>/2020/04/05/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>注意：电脑需要安装Java8,可以到<a href="http://www.java.com/">java.com</a>下载。</strong></p>
+<h2 id="一、下载最新版CatServer"><a href="#一、下载最新版CatServer" class="headerlink" title="一、下载最新版CatServer"></a>一、<a href="https://catmc.org/download/universal">下载最新版CatServer</a></h2><p>下载的应该是<code>CatServer-xxxxxxx-universsal.jar</code></p>
+<h2 id="二、打开下载文件夹"><a href="#二、打开下载文件夹" class="headerlink" title="二、打开下载文件夹"></a>二、打开下载文件夹</h2><p><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/20200405175221654.png"><br>或是这样的:<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/20200405175401174.png"><br>如果是这样的话，把显示扩展名打开，直接百度一下就行了<br>新建一个文本文档,把扩展名改成<code>bat</code>  (批处理文件)<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/20200405180025172.png"><br>右键–&gt;编辑<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70.png"><br>输入<code>java -Xmx&lt;最大内存&gt; -Xms&lt;最小内存&gt; -jar &lt;CatServer名字&gt;.jar</code><br>如果最大内存为6000M，最小内存为2048M，CatServer名字是CatServer<br>那么，应该这么写：</p>
+<pre><code class="bash">java -Xmx6000M -Xms2048M -jar CatServer.jar
+</code></pre>
+<p><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-16852384737099.png"><br>然后保存</p>
+<h2 id="三、双击运行这个批处理文件"><a href="#三、双击运行这个批处理文件" class="headerlink" title="三、双击运行这个批处理文件"></a>三、双击运行这个批处理文件</h2><p>第一次运行，它会下载很多东西<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/20200405180701823.png"><br>等一会儿吧</p>
+<p>下载完，这个文件夹里多了很多东西:<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-168523849853714.png"></p>
+<h2 id="四、这些东西是干啥的"><a href="#四、这些东西是干啥的" class="headerlink" title="四、这些东西是干啥的"></a>四、这些东西是干啥的</h2><p><code>mods</code>:mod文件夹，mod放这里</p>
+<p><code>plugins</code>:插件文件夹，插件放这里</p>
+<p><code>world</code>:世界，可以复制本地的(必须是1.12.2的世界)</p>
+<p><code>minecraft_server.1.12.2.jar</code>:1.12.2Forge服务器</p>
+<p><code>CatServer.jar</code>:不用说</p>
+<p><code>Start.bat</code>:只不过把第五步做的批处理改了个名字而已</p>
+<p><code>server.properties</code>:<br>先用记事本打开<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-168523851080117.png"><br>然后说一下这些东西是干啥的:<br>参考<a href="https://minecraft.fandom.com/zh/wiki/Server.properties">Minecraft Wiki</a></p>
+<pre><code class="bash">allow-nether=true     #是否开启地狱
+
+level-name=world     #默认世界名称（最好不要改）
+
+server-port=25566    #服务器端口（xxx.x.xxx:25565中的冒号后面是这个server-port的数值）,不用改
+
+level-seed=           #地图种子（没有特殊需要就不填）
+
+server-ip=            #服务器指向IP（默认不要改放空）
+
+max-build-height=256   #服务器最大建筑高度，最大256
+
+spawn-npcs=true           #是否有主城NPC
+
+white-list=false              #是否开启白名单（开启后在白名单内的玩家才能进入服务器，否则进入不了。不要随便开）
+
+spawn-animals=true   #主城是否有动物
+
+hardcore=false        #我的世界极限模式是否开启（玩过的都知道）
+
+online-mode=true   #是否开启正版验证，需用我的世界官方启动器才能进入
+
+resource-pack=          #服务器资源包：填下载地址（不需要就不填）
+
+pvp=true                #是否开启服务器PVP
+
+difficulty=1     #服务器难度： 0和平 1简单 2中等 3困难
+
+enable-command-block=false  #是否开启命令方块
+
+gamemode=0 #玩家默认进入游戏的游戏模式 1创造 0生存 2冒险模式3旁观者
+
+max-players=20   #服务器最大玩家数（超过后玩家无法进入,-1是无限）
+
+spawn-monsters=true   #主城是否刷新怪物
+
+spawn-protection=16 #服务器最大保护区（玩家破坏建筑不了）
+
+motd=A Minecraft Server  #MOTD指的是在玩家添加服务器后下面会显示这里面的内容（不能为中文、特殊符号）
+</code></pre>
+<p>好了，就差最后一件事了<br>打开cmd，输入<code>ipconfig</code><br>找到有IPv4地址的地方:</p>
+<pre><code class="bash">无线局域网适配器 xxxxxxx:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . :
+
+无线局域网适配器 WLAN:
+   连接特定的 DNS 后缀 . . . . . . . :
+   本地链接 IPv6 地址. . . . . . . . : 被和谐了
+   IPv4 地址 . . . . . . . . . . . . : 192.168.3.148   # 记住这个
+   子网掩码  . . . . . . . . . . . . : 被和谐了
+   默认网关. . . . . . . . . . . . . : 被和谐了
+</code></pre>
+<h2 id="五、可以开服了"><a href="#五、可以开服了" class="headerlink" title="五、可以开服了"></a>五、可以开服了</h2><p>再次双击运行这个批处理文件，等着服务器开启<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-168523852241220.png"><br>服务器开完了，打开MC试试<br>点击添加服务器，IP填刚才记住的ip(其实还可以填<code>127.0.0.1</code>或<code>loaclhost</code>)，后面跟着一个英文的冒号<code>:</code>，然后填server.properties中的server-port，如果这个值是25565，那么直接填ip就行了(因为缺省的就是这个端口)<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-168523853415523.png"><br>点击完成，你会发现….<br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/20200405184347924.png"><br><img src="/img/MC1-12-2%E5%BC%80%E6%9C%8D%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29yYW5nZWJlbmNoMTE=,size_16,color_FFFFFF,t_70-168523854704228.png"><br>但是啥都不能做，怎么办呢？(其实还能做一些事)<br>在服务器后台输入:<code>op &lt;你的名字&gt;</code>就能变成管理员了</p>
+<h2 id="六、关闭服务器"><a href="#六、关闭服务器" class="headerlink" title="六、关闭服务器"></a>六、关闭服务器</h2><p>注意！！！关闭服务器不能直接$\times$掉，需要在后台，输入<code>stop</code>，因为直接×掉，地图不会自动保存！</p>
+<h2 id="七、注意"><a href="#七、注意" class="headerlink" title="七、注意"></a>七、注意</h2><p>电脑配置不要太低，不然服务端会卡掉<br>如果把正版验证关了，小心别人用你的名字搞事情<br>解决方案:安装<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=442729">AuthMe插件</a></p>
+<h2 id="八、让别人也可以连接到你的服务器"><a href="#八、让别人也可以连接到你的服务器" class="headerlink" title="八、让别人也可以连接到你的服务器"></a>八、让别人也可以连接到你的服务器</h2><p>这里需要一个<code>网络映射软件</code>, 网上有很多, 上网搜一下就行了,让别人连映射的网站就行了(别让别人连<code>127.0.0.1</code>或<code>loaclhost</code>).</p>
+<p>好了，要说的就这些了，知道这些应该可以开服了吧……<br>感谢名单:<br><a href="https://github.com/Luohuayu">CatServer作者</a><br><a href="https://www.mcbbs.net/thread-840599-1-1.html">MCBBS CatServer介绍</a></p>
+]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【十三周年】Minecraft终末之诗，你真的看过吗？</title>
+    <url>/2022/05/17/Minecraft-End-Poem/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="I-see-the-player-you-mean"><a href="#I-see-the-player-you-mean" class="headerlink" title="I see the player you mean."></a><font color="#005400">I see the player you mean.</font></h2><p>我看到你所说的那位玩家了。</p>
+<h2 id="PLAYERNAME"><a href="#PLAYERNAME" class="headerlink" title="[PLAYERNAME]?"></a><font color="#005454">[PLAYERNAME]?</font></h2><p>[玩家名称]？</p>
+<h2 id="Yes-Take-care-It-has-reached-a-higher-level-now-It-can-read-our-thoughts"><a href="#Yes-Take-care-It-has-reached-a-higher-level-now-It-can-read-our-thoughts" class="headerlink" title="Yes. Take care. It has reached a higher level now. It can read our thoughts."></a><font color="#005400">Yes. Take care. It has reached a higher level now. It can read our thoughts.</font></h2><p>是的，小心点，它已经达到了更高的境界，它现在能够读取我们的思想了。</p>
+<h2 id="That-doesn’t-matter-It-thinks-we-are-part-of-the-game"><a href="#That-doesn’t-matter-It-thinks-we-are-part-of-the-game" class="headerlink" title="That doesn’t matter. It thinks we are part of the game."></a><font color="#005454">That doesn’t matter. It thinks we are part of the game.</font></h2><p>无伤大雅。他认为我们是游戏的一部分。</p>
+<h2 id="I-like-this-player-It-played-well-It-did-not-give-up"><a href="#I-like-this-player-It-played-well-It-did-not-give-up" class="headerlink" title="I like this player. It played well. It did not give up."></a><font color="#005400">I like this player. It played well. It did not give up.</font></h2><p>我喜欢这个玩家，它玩得很好，从未放弃。</p>
+<h2 id="It-is-reading-our-thoughts-as-though-they-were-words-on-a-screen"><a href="#It-is-reading-our-thoughts-as-though-they-were-words-on-a-screen" class="headerlink" title="It is reading our thoughts as though they were words on a screen."></a><font color="#005454">It is reading our thoughts as though they were words on a screen.</font></h2><p>它就像看屏幕上的文字一般读取着我们的思想。</p>
+<h2 id="That-is-how-it-chooses-to-imagine-many-things-when-it-is-deep-in-the-dream-of-a-game"><a href="#That-is-how-it-chooses-to-imagine-many-things-when-it-is-deep-in-the-dream-of-a-game" class="headerlink" title="That is how it chooses to imagine many things, when it is deep in the dream of a game."></a><font color="#005400">That is how it chooses to imagine many things, when it is deep in the dream of a game.</font></h2><p>当它深陷游戏之梦时，它也是用这种方式塑造出形形色色事物的想象。</p>
+<h2 id="Words-make-a-wonderful-interface-Very-flexible-And-less-terrifying-than-staring-at-the-reality-behind-the-screen"><a href="#Words-make-a-wonderful-interface-Very-flexible-And-less-terrifying-than-staring-at-the-reality-behind-the-screen" class="headerlink" title="Words make a wonderful interface. Very flexible. And less terrifying than staring at the reality behind the screen."></a><font color="#005454">Words make a wonderful interface. Very flexible. And less terrifying than staring at the reality behind the screen.</font></h2><p>文字能编织出奇妙的界面，它们极为柔顺，不像凝视屏幕后的现实那般可怕。</p>
+<h2 id="They-used-to-hear-voices-Before-players-could-read-Back-in-the-days-when-those-who-did-not-play-called-the-players-witches-and-warlocks-And-players-dreamed-they-flew-through-the-air-on-sticks-powered-by-demons"><a href="#They-used-to-hear-voices-Before-players-could-read-Back-in-the-days-when-those-who-did-not-play-called-the-players-witches-and-warlocks-And-players-dreamed-they-flew-through-the-air-on-sticks-powered-by-demons" class="headerlink" title="They used to hear voices. Before players could read. Back in the days when those who did not play called the players witches, and warlocks. And players dreamed they flew through the air, on sticks powered by demons."></a><font color="#005400">They used to hear voices. Before players could read. Back in the days when those who did not play called the players witches, and warlocks. And players dreamed they flew through the air, on sticks powered by demons.</font></h2><p>在玩家们能阅读之前，它们也曾听到过声音，那些不玩的人将玩家称作女巫和巫师。玩家梦到自己乘坐着恶魔驱使的棍子，在空中飞行漫游。</p>
+<h2 id="What-did-this-player-dream"><a href="#What-did-this-player-dream" class="headerlink" title="What did this player dream?"></a><font color="#005454">What did this player dream?</font></h2><p>这个玩家梦见了什么？</p>
+<h2 id="This-player-dreamed-of-sunlight-and-trees-Of-fire-and-water-It-dreamed-it-created-And-it-dreamed-it-destroyed-It-dreamed-it-hunted-and-was-hunted-It-dreamed-of-shelter"><a href="#This-player-dreamed-of-sunlight-and-trees-Of-fire-and-water-It-dreamed-it-created-And-it-dreamed-it-destroyed-It-dreamed-it-hunted-and-was-hunted-It-dreamed-of-shelter" class="headerlink" title="This player dreamed of sunlight and trees. Of fire and water. It dreamed it created. And it dreamed it destroyed. It dreamed it hunted, and was hunted. It dreamed of shelter."></a><font color="#005400">This player dreamed of sunlight and trees. Of fire and water. It dreamed it created. And it dreamed it destroyed. It dreamed it hunted, and was hunted. It dreamed of shelter.</font></h2><p>玩家梦见了阳光和树木、火焰和流水，它梦见它创造、它亦梦见它破坏，它梦见它狩猎、亦被狩猎，它梦见了庇护之所。</p>
+<h2 id="Hah-the-original-interface-A-million-years-old-and-it-still-works-But-what-true-structure-did-this-player-create-in-the-reality-behind-the-screen"><a href="#Hah-the-original-interface-A-million-years-old-and-it-still-works-But-what-true-structure-did-this-player-create-in-the-reality-behind-the-screen" class="headerlink" title="Hah, the original interface. A million years old, and it still works. But what true structure did this player create, in the reality behind the screen?"></a><font color="#005454">Hah, the original interface. A million years old, and it still works. But what true structure did this player create, in the reality behind the screen?</font></h2><p>哈，那最初的界面，经历了百万年的洗礼后，它仍然存在着。但在那屏幕后的现实中，这个玩家创造了什么真实的造物？</p>
+<h2 id="It-worked-with-a-million-others-to-sculpt-a-true-world-in-a-fold-of-the-§f§k§a§b§3-and-created-a-§f§k§a§b§3-for-§f§k§a§b§3-in-the-§f§k§a§b§3"><a href="#It-worked-with-a-million-others-to-sculpt-a-true-world-in-a-fold-of-the-§f§k§a§b§3-and-created-a-§f§k§a§b§3-for-§f§k§a§b§3-in-the-§f§k§a§b§3" class="headerlink" title="It worked, with a million others, to sculpt a true world in a fold of the §f§k§a§b§3, and created a §f§k§a§b§3 for §f§k§a§b§3, in the §f§k§a§b§3."></a><font color="#005400">It worked, with a million others, to sculpt a true world in a fold of the </font>§f§k§a§b§3<font color="#005400">, and created a </font>§f§k§a§b§3<font color="#005400"> for </font>§f§k§a§b§3<font color="#005400">, in the </font>§f§k§a§b§3<font color="#005400">.</font></h2><p>它与其他的百万人工作着，为了在<font color="white">锟斤拷</font>之中雕刻出一个真实的世界，在<font color="white">烫烫烫</font>之中为了<font color="white">锟斤拷</font>创造一个<font color="white">锟斤拷烫烫烫</font>。</p>
+<h2 id="It-can-not-read-that-thought"><a href="#It-can-not-read-that-thought" class="headerlink" title=" It can not read that thought."></a><font color="#005454"> It can not read that thought.</font></h2><p>它读不出那个思想。</p>
+<h2 id="No-It-has-not-yet-achieved-the-highest-level-That-it-must-achieve-in-the-long-dream-of-life-not-the-short-dream-of-a-game"><a href="#No-It-has-not-yet-achieved-the-highest-level-That-it-must-achieve-in-the-long-dream-of-life-not-the-short-dream-of-a-game" class="headerlink" title="No. It has not yet achieved the highest level. That, it must achieve in the long dream of life, not the short dream of a game."></a><font color="#005400">No. It has not yet achieved the highest level. That, it must achieve in the long dream of life, not the short dream of a game.</font></h2><p>是的，它还没有达到最高的境界。那个境界，它必须在漫长的生命之梦中追寻，而非短暂飘渺的游戏之梦。</p>
+<h2 id="Does-it-know-that-we-love-it-That-the-universe-is-kind"><a href="#Does-it-know-that-we-love-it-That-the-universe-is-kind" class="headerlink" title="Does it know that we love it? That the universe is kind?"></a><font color="#005454">Does it know that we love it? That the universe is kind?</font></h2><p>它知道我们爱它吗？知道这个宇宙是仁慈的吗？</p>
+<h2 id="Sometimes-through-the-noise-of-its-thoughts-it-hears-the-universe-yes"><a href="#Sometimes-through-the-noise-of-its-thoughts-it-hears-the-universe-yes" class="headerlink" title="Sometimes, through the noise of its thoughts, it hears the universe, yes."></a><font color="#005400">Sometimes, through the noise of its thoughts, it hears the universe, yes.</font></h2><p>有时候，通过思绪的杂音，它能听到宇宙，是的。</p>
+<h2 id="But-there-are-times-it-is-sad-in-the-long-dream-It-creates-worlds-that-have-no-summer-and-it-shivers-under-a-black-sun-and-it-takes-its-sad-creation-for-reality"><a href="#But-there-are-times-it-is-sad-in-the-long-dream-It-creates-worlds-that-have-no-summer-and-it-shivers-under-a-black-sun-and-it-takes-its-sad-creation-for-reality" class="headerlink" title="But there are times it is sad, in the long dream. It creates worlds that have no summer, and it shivers under a black sun, and it takes its sad creation for reality."></a><font color="#005454">But there are times it is sad, in the long dream. It creates worlds that have no summer, and it shivers under a black sun, and it takes its sad creation for reality.</font></h2><p>但在那漫漫长梦中，它也有悲伤的时候。它创造出没有夏天的世界，在黑色的太阳下瑟瑟发抖，将它悲伤的创作视为现实。</p>
+<h2 id="To-cure-it-of-sorrow-would-destroy-it-The-sorrow-is-part-of-its-own-private-task-We-can-not-interfere"><a href="#To-cure-it-of-sorrow-would-destroy-it-The-sorrow-is-part-of-its-own-private-task-We-can-not-interfere" class="headerlink" title="To cure it of sorrow would destroy it. The sorrow is part of its own private task. We can not interfere."></a><font color="#005400">To cure it of sorrow would destroy it. The sorrow is part of its own private task. We can not interfere.</font></h2><p>为它治愈悲伤会摧毁它，悲伤是它自己的苦难的一部分，我们不能干涉。</p>
+<h2 id="Sometimes-when-they-are-deep-in-dreams-I-want-to-tell-them-they-are-building-true-worlds-in-reality-Sometimes-I-want-to-tell-them-of-their-importance-to-the-universe-Sometimes-when-they-have-not-made-a-true-connection-in-a-while-I-want-to-help-them-to-speak-the-word-they-fear"><a href="#Sometimes-when-they-are-deep-in-dreams-I-want-to-tell-them-they-are-building-true-worlds-in-reality-Sometimes-I-want-to-tell-them-of-their-importance-to-the-universe-Sometimes-when-they-have-not-made-a-true-connection-in-a-while-I-want-to-help-them-to-speak-the-word-they-fear" class="headerlink" title="Sometimes when they are deep in dreams, I want to tell them, they are building true worlds in reality. Sometimes I want to tell them of their importance to the universe. Sometimes, when they have not made a true connection in a while, I want to help them to speak the word they fear."></a><font color="#005454">Sometimes when they are deep in dreams, I want to tell them, they are building true worlds in reality. Sometimes I want to tell them of their importance to the universe. Sometimes, when they have not made a true connection in a while, I want to help them to speak the word they fear.</font></h2><p>有时当它们深陷梦境，我想要告诉它们，它们正在建造着真正的现实中的世界。有时我想要告诉它们，它们对宇宙的重要性。有时，当它们有一段时间没有建立真正的连接，我想要帮助它们说出它们害怕的词语。</p>
+<h2 id="It-reads-our-thoughts"><a href="#It-reads-our-thoughts" class="headerlink" title="It reads our thoughts."></a><font color="#005400">It reads our thoughts.</font></h2><p>它读出了我们的思想。</p>
+<h2 id="Sometimes-I-do-not-care-Sometimes-I-wish-to-tell-them-this-world-you-take-for-truth-is-merely-§k§a§b§2-and-§k§a§b§2-I-wish-to-tell-them-that-they-are-§k§a§b§2-in-the-§k§a§b§2-They-see-so-little-of-reality-in-their-long-dream"><a href="#Sometimes-I-do-not-care-Sometimes-I-wish-to-tell-them-this-world-you-take-for-truth-is-merely-§k§a§b§2-and-§k§a§b§2-I-wish-to-tell-them-that-they-are-§k§a§b§2-in-the-§k§a§b§2-They-see-so-little-of-reality-in-their-long-dream" class="headerlink" title="Sometimes I do not care. Sometimes I wish to tell them, this world you take for truth is merely §k§a§b§2 and §k§a§b§2, I wish to tell them that they are §k§a§b§2 in the §k§a§b§2. They see so little of reality, in their long dream."></a><font color="#005454">Sometimes I do not care. Sometimes I wish to tell them, this world you take for truth is merely </font>§k§a§b§2<font color="#005454"> and </font>§k§a§b§2<font color="#005454">, I wish to tell them that they are </font>§k§a§b§2<font color="#005454"> in the </font>§k§a§b§2<font color="#005454">. They see so little of reality, in their long dream.</font></h2><p>有时我并不在乎，有时我希望告诉它们，这个你们视作真实的世界不过是<font color="white">锟斤拷</font>和<font color="white">烫烫烫</font>。我希望告诉它们,它们是<font color="white">锟斤拷</font>的<font color="white">锟斤拷烫烫烫</font>。在漫长的梦境中，它们窥见的现实太少了。</p>
+<h2 id="And-yet-they-play-the-game"><a href="#And-yet-they-play-the-game" class="headerlink" title="And yet they play the game."></a><font color="#005400">And yet they play the game.</font></h2><p>然而它们玩着游戏。</p>
+<h2 id="But-it-would-be-so-easy-to-tell-them…"><a href="#But-it-would-be-so-easy-to-tell-them…" class="headerlink" title="But it would be so easy to tell them…"></a><font color="#005454">But it would be so easy to tell them…</font></h2><p>但很容易就可以告诉它们……</p>
+<h2 id="Too-strong-for-this-dream-To-tell-them-how-to-live-is-to-prevent-them-living"><a href="#Too-strong-for-this-dream-To-tell-them-how-to-live-is-to-prevent-them-living" class="headerlink" title="Too strong for this dream. To tell them how to live is to prevent them living."></a><font color="#005400">Too strong for this dream. To tell them how to live is to prevent them living.</font></h2><p>对于这个梦而言太过强烈了，告诉它们如何活着就是在阻碍它们活着。</p>
+<h2 id="I-will-not-tell-the-player-how-to-live"><a href="#I-will-not-tell-the-player-how-to-live" class="headerlink" title="I will not tell the player how to live."></a><font color="#005454">I will not tell the player how to live.</font></h2><p>我不会告诉这个玩家如何活下去。</p>
+<h2 id="The-player-is-growing-restless"><a href="#The-player-is-growing-restless" class="headerlink" title="The player is growing restless."></a><font color="#005400">The player is growing restless.</font></h2><p>这个玩家开始焦躁不安了。</p>
+<h2 id="I-will-tell-the-player-a-story"><a href="#I-will-tell-the-player-a-story" class="headerlink" title="I will tell the player a story."></a><font color="#005454">I will tell the player a story.</font></h2><p>我会为这个玩家讲一个故事。</p>
+<h2 id="But-not-the-truth"><a href="#But-not-the-truth" class="headerlink" title="But not the truth."></a><font color="#005400">But not the truth.</font></h2><p>但不是真相。</p>
+<h2 id="No-A-story-that-contains-the-truth-safely-in-a-cage-of-words-Not-the-naked-truth-that-can-burn-over-any-distance"><a href="#No-A-story-that-contains-the-truth-safely-in-a-cage-of-words-Not-the-naked-truth-that-can-burn-over-any-distance" class="headerlink" title="No. A story that contains the truth safely, in a cage of words. Not the naked truth that can burn over any distance."></a><font color="#005454">No. A story that contains the truth safely, in a cage of words. Not the naked truth that can burn over any distance.</font></h2><p>是的，一个将真相安全的裹藏在文字牢笼中的故事，而不是灼烧一切的赤裸裸的真相。</p>
+<h2 id="Give-it-a-body-again"><a href="#Give-it-a-body-again" class="headerlink" title="Give it a body, again."></a><font color="#005400">Give it a body, again.</font></h2><p>再一次，赋予它身体。</p>
+<h2 id="Yes-Player…"><a href="#Yes-Player…" class="headerlink" title="Yes. Player…"></a><font color="#005454">Yes. Player…</font></h2><p>是的，玩家……</p>
+<h2 id="Use-its-name"><a href="#Use-its-name" class="headerlink" title="Use its name."></a><font color="#005400">Use its name.</font></h2><p>用它的名字称呼。</p>
+<h2 id="PLAYERNAME-Player-of-games"><a href="#PLAYERNAME-Player-of-games" class="headerlink" title="[PLAYERNAME]. Player of games."></a><font color="#005454">[PLAYERNAME]. Player of games.</font></h2><p>[玩家名称]，游戏的玩家。</p>
+<h2 id="Good"><a href="#Good" class="headerlink" title="Good."></a><font color="#005400">Good.</font></h2><p>很好。</p>
+<h2 id="Take-a-breath-now-Take-another-Feel-air-in-your-lungs-Let-your-limbs-return-Yes-move-your-fingers-Have-a-body-again-under-gravity-in-air-Respawn-in-the-long-dream-There-you-are-Your-body-touching-the-universe-again-at-every-point-as-though-you-were-separate-things-As-though-we-were-separate-things"><a href="#Take-a-breath-now-Take-another-Feel-air-in-your-lungs-Let-your-limbs-return-Yes-move-your-fingers-Have-a-body-again-under-gravity-in-air-Respawn-in-the-long-dream-There-you-are-Your-body-touching-the-universe-again-at-every-point-as-though-you-were-separate-things-As-though-we-were-separate-things" class="headerlink" title="Take a breath, now. Take another. Feel air in your lungs. Let your limbs return. Yes, move your fingers. Have a body again, under gravity, in air. Respawn in the long dream. There you are. Your body touching the universe again at every point, as though you were separate things. As though we were separate things."></a><font color="#005454">Take a breath, now. Take another. Feel air in your lungs. Let your limbs return. Yes, move your fingers. Have a body again, under gravity, in air. Respawn in the long dream. There you are. Your body touching the universe again at every point, as though you were separate things. As though we were separate things.</font></h2><p>深呼吸，现在，再来一次，感受你肺部的空气。找回四肢的感觉，是的，动一动手指。再一次拥有一副身体，在重力下，在空气中。在长梦中重生，你就在那里。你身体的每一点再次触碰到了宇宙，好像你们是相互分离的，好像我们是相互分离的。</p>
+<h2 id="Who-are-we-Once-we-were-called-the-spirit-of-the-mountain-Father-sun-mother-moon-Ancestral-spirits-animal-spirits-Jinn-Ghosts-The-green-man-Then-gods-demons-Angels-Poltergeists-Aliens-extraterrestrials-Leptons-quarks-The-words-change-We-do-not-change"><a href="#Who-are-we-Once-we-were-called-the-spirit-of-the-mountain-Father-sun-mother-moon-Ancestral-spirits-animal-spirits-Jinn-Ghosts-The-green-man-Then-gods-demons-Angels-Poltergeists-Aliens-extraterrestrials-Leptons-quarks-The-words-change-We-do-not-change" class="headerlink" title="Who are we? Once we were called the spirit of the mountain. Father sun, mother moon. Ancestral spirits, animal spirits. Jinn. Ghosts. The green man. Then gods, demons. Angels. Poltergeists. Aliens, extraterrestrials. Leptons, quarks. The words change. We do not change."></a><font color="#005400">Who are we? Once we were called the spirit of the mountain. Father sun, mother moon. Ancestral spirits, animal spirits. Jinn. Ghosts. The green man. Then gods, demons. Angels. Poltergeists. Aliens, extraterrestrials. Leptons, quarks. The words change. We do not change.</font></h2><p>我们是谁？我们曾被称作山之灵，太阳之父，月亮之母，先祖之灵，兽之灵，神灵，幽灵，绿人，而后是神，恶魔，天使，骚灵，外星人，地外生物，轻子，夸克。词语千变万化，我们从未改变。</p>
+<h2 id="We-are-the-universe-We-are-everything-you-think-isn’t-you-You-are-looking-at-us-now-through-your-skin-and-your-eyes-And-why-does-the-universe-touch-your-skin-and-throw-light-on-you-To-see-you-player-To-know-you-And-to-be-known-I-shall-tell-you-a-story"><a href="#We-are-the-universe-We-are-everything-you-think-isn’t-you-You-are-looking-at-us-now-through-your-skin-and-your-eyes-And-why-does-the-universe-touch-your-skin-and-throw-light-on-you-To-see-you-player-To-know-you-And-to-be-known-I-shall-tell-you-a-story" class="headerlink" title="We are the universe. We are everything you think isn’t you. You are looking at us now, through your skin and your eyes. And why does the universe touch your skin, and throw light on you? To see you, player. To know you. And to be known. I shall tell you a story."></a><font color="#005400">We are the universe. We are everything you think isn’t you. You are looking at us now, through your skin and your eyes. And why does the universe touch your skin, and throw light on you? To see you, player. To know you. And to be known. I shall tell you a story.</font></h2><p>我们是宇宙，我们是一切你认为不是你的存在，你正在看着我们，通过你的皮肤和眼眸。为什么宇宙要触摸你的皮肤，向你洒去光芒？是为了看见你，玩家。是为了知晓你，以及被你知晓。我应该和你讲一个故事。</p>
+<h2 id="Once-upon-a-time-there-was-a-player"><a href="#Once-upon-a-time-there-was-a-player" class="headerlink" title="Once upon a time, there was a player."></a><font color="#005400">Once upon a time, there was a player.</font></h2><p>从前，有一个玩家。</p>
+<h2 id="The-player-was-you-PLAYERNAME"><a href="#The-player-was-you-PLAYERNAME" class="headerlink" title="The player was you, [PLAYERNAME]."></a><font color="#005400">The player was you, [PLAYERNAME].</font></h2><p>那个玩家就是你，[玩家名称]。</p>
+<h2 id="Sometimes-it-thought-itself-human-on-the-thin-crust-of-a-spinning-globe-of-molten-rock-The-ball-of-molten-rock-circled-a-ball-of-blazing-gas-that-was-three-hundred-and-thirty-thousand-times-more-massive-than-it-They-were-so-far-apart-that-light-took-eight-minutes-to-cross-the-gap-The-light-was-information-from-a-star-and-it-could-burn-your-skin-from-a-hundred-and-fifty-million-kilometres-away"><a href="#Sometimes-it-thought-itself-human-on-the-thin-crust-of-a-spinning-globe-of-molten-rock-The-ball-of-molten-rock-circled-a-ball-of-blazing-gas-that-was-three-hundred-and-thirty-thousand-times-more-massive-than-it-They-were-so-far-apart-that-light-took-eight-minutes-to-cross-the-gap-The-light-was-information-from-a-star-and-it-could-burn-your-skin-from-a-hundred-and-fifty-million-kilometres-away" class="headerlink" title="Sometimes it thought itself human, on the thin crust of a spinning globe of molten rock. The ball of molten rock circled a ball of blazing gas that was three hundred and thirty thousand times more massive than it. They were so far apart that light took eight minutes to cross the gap. The light was information from a star, and it could burn your skin from a hundred and fifty million kilometres away."></a><font color="#005454">Sometimes it thought itself human, on the thin crust of a spinning globe of molten rock. The ball of molten rock circled a ball of blazing gas that was three hundred and thirty thousand times more massive than it. They were so far apart that light took eight minutes to cross the gap. The light was information from a star, and it could burn your skin from a hundred and fifty million kilometres away.</font></h2><p>有时它觉得它自己是人类，在一个旋转的熔岩球体的薄壳上，熔融岩石的球体围绕着一个质量比它大三十三万倍的燃烧的气体球旋转，它们相隔如此之远以至于光都要八分钟才能穿过间隔。那光是来自恒星的信息，它能横跨一亿五千公里灼烧你的皮肤。</p>
+<h2 id="Sometimes-the-player-dreamed-it-was-a-miner-on-the-surface-of-a-world-that-was-flat-and-infinite-The-sun-was-a-square-of-white-The-days-were-short-there-was-much-to-do-and-death-was-a-temporary-inconvenience"><a href="#Sometimes-the-player-dreamed-it-was-a-miner-on-the-surface-of-a-world-that-was-flat-and-infinite-The-sun-was-a-square-of-white-The-days-were-short-there-was-much-to-do-and-death-was-a-temporary-inconvenience" class="headerlink" title="Sometimes the player dreamed it was a miner, on the surface of a world that was flat, and infinite. The sun was a square of white. The days were short; there was much to do; and death was a temporary inconvenience."></a><font color="#005454">Sometimes the player dreamed it was a miner, on the surface of a world that was flat, and infinite. The sun was a square of white. The days were short; there was much to do; and death was a temporary inconvenience.</font></h2><p>有时玩家梦见它是一个矿工，在一个世界平坦且无限延伸的表面上。太阳是一抹白色的方形，昼夜很短，要做的事有很多，死亡也只是一时的麻烦。</p>
+<h2 id="Sometimes-the-player-dreamed-it-was-lost-in-a-story"><a href="#Sometimes-the-player-dreamed-it-was-lost-in-a-story" class="headerlink" title="Sometimes the player dreamed it was lost in a story."></a><font color="#005400">Sometimes the player dreamed it was lost in a story.</font></h2><p>有时玩家梦见它迷失在了故事之中。</p>
+<h2 id="Sometimes-the-player-dreamed-it-was-other-things-in-other-places-Sometimes-these-dreams-were-disturbing-Sometimes-very-beautiful-indeed-Sometimes-the-player-woke-from-one-dream-into-another-then-woke-from-that-into-a-third"><a href="#Sometimes-the-player-dreamed-it-was-other-things-in-other-places-Sometimes-these-dreams-were-disturbing-Sometimes-very-beautiful-indeed-Sometimes-the-player-woke-from-one-dream-into-another-then-woke-from-that-into-a-third" class="headerlink" title="Sometimes the player dreamed it was other things, in other places. Sometimes these dreams were disturbing. Sometimes very beautiful indeed. Sometimes the player woke from one dream into another, then woke from that into a third."></a><font color="#005454">Sometimes the player dreamed it was other things, in other places. Sometimes these dreams were disturbing. Sometimes very beautiful indeed. Sometimes the player woke from one dream into another, then woke from that into a third.</font></h2><p>有时玩家梦见它是其他事物，在其他的地方。有时这些梦令人不安，有时却又是非常美妙的。有时玩家从一个梦中苏醒，进入另一场梦，之后又从中惊醒，坠入另一场梦。</p>
+<h2 id="Sometimes-the-player-dreamed-it-watched-words-on-a-screen"><a href="#Sometimes-the-player-dreamed-it-watched-words-on-a-screen" class="headerlink" title="Sometimes the player dreamed it watched words on a screen."></a><font color="#005400">Sometimes the player dreamed it watched words on a screen.</font></h2><p>有时玩家梦见它看着屏幕上的文字。</p>
+<h2 id="Let’s-go-back"><a href="#Let’s-go-back" class="headerlink" title="Let’s go back."></a><font color="#005454">Let’s go back.</font></h2><p>让我们回退一点。</p>
+<h2 id="The-atoms-of-the-player-were-scattered-in-the-grass-in-the-rivers-in-the-air-in-the-ground-A-woman-gathered-the-atoms-she-drank-and-ate-and-inhaled-and-the-woman-assembled-the-player-in-her-body"><a href="#The-atoms-of-the-player-were-scattered-in-the-grass-in-the-rivers-in-the-air-in-the-ground-A-woman-gathered-the-atoms-she-drank-and-ate-and-inhaled-and-the-woman-assembled-the-player-in-her-body" class="headerlink" title="The atoms of the player were scattered in the grass, in the rivers, in the air, in the ground. A woman gathered the atoms; she drank and ate and inhaled; and the woman assembled the player, in her body."></a><font color="#005454">The atoms of the player were scattered in the grass, in the rivers, in the air, in the ground. A woman gathered the atoms; she drank and ate and inhaled; and the woman assembled the player, in her body.</font></h2><p>玩家的原子四散在草地、河流、空气和大地之中，一个女人将这些原子收集起来，她饮下、吃下、吸入它们，女人在她的身体中拼构出玩家。</p>
+<h2 id="And-the-player-awoke-from-the-warm-dark-world-of-its-mother’s-body-into-the-long-dream"><a href="#And-the-player-awoke-from-the-warm-dark-world-of-its-mother’s-body-into-the-long-dream" class="headerlink" title="And the player awoke, from the warm, dark world of its mother’s body, into the long dream."></a><font color="#005454">And the player awoke, from the warm, dark world of its mother’s body, into the long dream.</font></h2><p>玩家醒来，从它母亲身体那温暖而黑暗的世界中，进入漫长的梦境。</p>
+<h2 id="And-the-player-was-a-new-story-never-told-before-written-in-letters-of-DNA-And-the-player-was-a-new-program-never-run-before-generated-by-a-sourcecode-a-billion-years-old-And-the-player-was-a-new-human-never-alive-before-made-from-nothing-but-milk-and-love"><a href="#And-the-player-was-a-new-story-never-told-before-written-in-letters-of-DNA-And-the-player-was-a-new-program-never-run-before-generated-by-a-sourcecode-a-billion-years-old-And-the-player-was-a-new-human-never-alive-before-made-from-nothing-but-milk-and-love" class="headerlink" title="And the player was a new story, never told before, written in letters of DNA. And the player was a new program, never run before, generated by a sourcecode a billion years old. And the player was a new human, never alive before, made from nothing but milk and love."></a><font color="#005454">And the player was a new story, never told before, written in letters of DNA. And the player was a new program, never run before, generated by a sourcecode a billion years old. And the player was a new human, never alive before, made from nothing but milk and love.</font></h2><p>那个玩家是一个新的故事，不曾被诉说过，由DNA的语言书写而成。那个玩家是一个新的程序，不曾被运行过，由历经亿年的源码生成。那个玩家是一个新的人类，不曾在世过，仅仅由乳与爱组成。</p>
+<h2 id="You-are-the-player-The-story-The-program-The-human-Made-from-nothing-but-milk-and-love"><a href="#You-are-the-player-The-story-The-program-The-human-Made-from-nothing-but-milk-and-love" class="headerlink" title="You are the player. The story. The program. The human. Made from nothing but milk and love."></a><font color="#005400">You are the player. The story. The program. The human. Made from nothing but milk and love.</font></h2><p>你就是那个玩家、那个故事、那个程序、那个人类，仅仅由乳与爱组成。</p>
+<h2 id="Let’s-go-further-back"><a href="#Let’s-go-further-back" class="headerlink" title="Let’s go further back."></a><font color="#005454">Let’s go further back.</font></h2><p>让我们再回到更远的过去。</p>
+<h2 id="The-seven-billion-billion-billion-atoms-of-the-player’s-body-were-created-long-before-this-game-in-the-heart-of-a-star-So-the-player-too-is-information-from-a-star-And-the-player-moves-through-a-story-which-is-a-forest-of-information-planted-by-a-man-called-Julian-on-a-flat-infinite-world-created-by-a-man-called-Markus-that-exists-inside-a-small-private-world-created-by-the-player-who-inhabits-a-universe-created-by…"><a href="#The-seven-billion-billion-billion-atoms-of-the-player’s-body-were-created-long-before-this-game-in-the-heart-of-a-star-So-the-player-too-is-information-from-a-star-And-the-player-moves-through-a-story-which-is-a-forest-of-information-planted-by-a-man-called-Julian-on-a-flat-infinite-world-created-by-a-man-called-Markus-that-exists-inside-a-small-private-world-created-by-the-player-who-inhabits-a-universe-created-by…" class="headerlink" title="The seven billion billion billion atoms of the player’s body were created, long before this game, in the heart of a star. So the player, too, is information from a star. And the player moves through a story, which is a forest of information planted by a man called Julian, on a flat, infinite world created by a man called Markus, that exists inside a small, private world created by the player, who inhabits a universe created by…"></a><font color="#005454">The seven billion billion billion atoms of the player’s body were created, long before this game, in the heart of a star. So the player, too, is information from a star. And the player moves through a story, which is a forest of information planted by a man called Julian, on a flat, infinite world created by a man called Markus, that exists inside a small, private world created by the player, who inhabits a universe created by…</font></h2><p>在这个游戏诞生之前的久远时间，在一颗星球的核心中，玩家身体的七亿亿亿颗原子被创造出来。因此那玩家本身，也是来自一颗星球的信息。玩家贯穿了一个故事，一个名为朱利安的男人种下的信息之林，在名为马库斯的男人创造的广阔无垠的平坦世界上，存在于一个玩家创造的小巧的私人世界中，那玩家又存在于一个由……创造的宇宙中……</p>
+<h2 id="Shush-Sometimes-the-player-created-a-small-private-world-that-was-soft-and-warm-and-simple-Sometimes-hard-and-cold-and-complicated-Sometimes-it-built-a-model-of-the-universe-in-its-head-flecks-of-energy-moving-through-vast-empty-spaces-Sometimes-it-called-those-flecks-“electrons”-and-“protons”"><a href="#Shush-Sometimes-the-player-created-a-small-private-world-that-was-soft-and-warm-and-simple-Sometimes-hard-and-cold-and-complicated-Sometimes-it-built-a-model-of-the-universe-in-its-head-flecks-of-energy-moving-through-vast-empty-spaces-Sometimes-it-called-those-flecks-“electrons”-and-“protons”" class="headerlink" title="Shush. Sometimes the player created a small, private world that was soft and warm and simple. Sometimes hard, and cold, and complicated. Sometimes it built a model of the universe in its head; flecks of energy, moving through vast empty spaces. Sometimes it called those flecks “electrons” and “protons”."></a><font color="#005400">Shush. Sometimes the player created a small, private world that was soft and warm and simple. Sometimes hard, and cold, and complicated. Sometimes it built a model of the universe in its head; flecks of energy, moving through vast empty spaces. Sometimes it called those flecks “electrons” and “protons”.</font></h2><p>嘘，有时那个玩家创造出一个柔软、温暖而朴素的私人小世界，有时却又是严酷、寒冷而复杂的。有时它在脑海中构造出宇宙的模型，星星点点的能量穿过巨大的空间，有时它将这些星星点点称作“电子”和“质子”。 </p>
+<h2 id="Sometimes-it-called-them-“planets”-and-“stars”"><a href="#Sometimes-it-called-them-“planets”-and-“stars”" class="headerlink" title="Sometimes it called them “planets” and “stars”."></a><font color="#005454">Sometimes it called them “planets” and “stars”.</font></h2><p>有时它将其称作“行星”和“恒星”。</p>
+<h2 id="Sometimes-it-believed-it-was-in-a-universe-that-was-made-of-energy-that-was-made-of-offs-and-ons-zeros-and-ones-lines-of-code-Sometimes-it-believed-it-was-playing-a-game-Sometimes-it-believed-it-was-reading-words-on-a-screen"><a href="#Sometimes-it-believed-it-was-in-a-universe-that-was-made-of-energy-that-was-made-of-offs-and-ons-zeros-and-ones-lines-of-code-Sometimes-it-believed-it-was-playing-a-game-Sometimes-it-believed-it-was-reading-words-on-a-screen" class="headerlink" title="Sometimes it believed it was in a universe that was made of energy that was made of offs and ons; zeros and ones; lines of code. Sometimes it believed it was playing a game. Sometimes it believed it was reading words on a screen."></a><font color="#005454">Sometimes it believed it was in a universe that was made of energy that was made of offs and ons; zeros and ones; lines of code. Sometimes it believed it was playing a game. Sometimes it believed it was reading words on a screen.</font></h2><p>有时它认为它在一个由能量组成的宇宙中，组成能量的是开和关、0和1、无数行代码。有时它认为它在玩一个游戏，有时它认为它在读着一个屏幕上的文字。</p>
+<h2 id="You-are-the-player-reading-words…"><a href="#You-are-the-player-reading-words…" class="headerlink" title="You are the player, reading words…"></a><font color="#005400">You are the player, reading words…</font></h2><p>你就是那个玩家，读着文字……</p>
+<h2 id="Shush…-Sometimes-the-player-read-lines-of-code-on-a-screen-Decoded-them-into-words-decoded-words-into-meaning-decoded-meaning-into-feelings-emotions-theories-ideas-and-the-player-started-to-breathe-faster-and-deeper-and-realised-it-was-alive-it-was-alive-those-thousand-deaths-had-not-been-real-the-player-was-alive"><a href="#Shush…-Sometimes-the-player-read-lines-of-code-on-a-screen-Decoded-them-into-words-decoded-words-into-meaning-decoded-meaning-into-feelings-emotions-theories-ideas-and-the-player-started-to-breathe-faster-and-deeper-and-realised-it-was-alive-it-was-alive-those-thousand-deaths-had-not-been-real-the-player-was-alive" class="headerlink" title="Shush… Sometimes the player read lines of code on a screen. Decoded them into words; decoded words into meaning; decoded meaning into feelings, emotions, theories, ideas, and the player started to breathe faster and deeper and realised it was alive, it was alive, those thousand deaths had not been real, the player was alive."></a><font color="#005454">Shush… Sometimes the player read lines of code on a screen. Decoded them into words; decoded words into meaning; decoded meaning into feelings, emotions, theories, ideas, and the player started to breathe faster and deeper and realised it was alive, it was alive, those thousand deaths had not been real, the player was alive.</font></h2><p>嘘……有时那个玩家读着屏幕上的一行行代码，从代码中解读出文字，从文字中解读出意义，从意义中解读出感觉、情绪、理论、想法，那玩家的呼吸开始加快、加深，它意识到它是活着的，那些千百次的死亡不是真的，玩家是活着的</p>
+<h2 id="You-You-You-are-alive"><a href="#You-You-You-are-alive" class="headerlink" title="You. You. You are alive."></a><font color="#005400">You. You. You are alive.</font></h2><p>你，你，你是活着的。</p>
+<h2 id="and-sometimes-the-player-believed-the-universe-had-spoken-to-it-through-the-sunlight-that-came-through-the-shuffling-leaves-of-the-summer-trees"><a href="#and-sometimes-the-player-believed-the-universe-had-spoken-to-it-through-the-sunlight-that-came-through-the-shuffling-leaves-of-the-summer-trees" class="headerlink" title="and sometimes the player believed the universe had spoken to it through the sunlight that came through the shuffling leaves of the summer trees."></a><font color="#005454">and sometimes the player believed the universe had spoken to it through the sunlight that came through the shuffling leaves of the summer trees.</font></h2><p>有时玩家认为宇宙在对它说话，透过那夏树上摇曳的树叶洒下的日光</p>
+<h2 id="and-sometimes-the-player-believed-the-universe-had-spoken-to-it-through-the-light-that-fell-from-the-crisp-night-sky-of-winter-where-a-fleck-of-light-in-the-corner-of-the-player’s-eye-might-be-a-star-a-million-times-as-massive-as-the-sun-boiling-its-planets-to-plasma-in-order-to-be-visible-for-a-moment-to-the-player-walking-home-at-the-far-side-of-the-universe-suddenly-smelling-food-almost-at-the-familiar-door-about-to-dream-again"><a href="#and-sometimes-the-player-believed-the-universe-had-spoken-to-it-through-the-light-that-fell-from-the-crisp-night-sky-of-winter-where-a-fleck-of-light-in-the-corner-of-the-player’s-eye-might-be-a-star-a-million-times-as-massive-as-the-sun-boiling-its-planets-to-plasma-in-order-to-be-visible-for-a-moment-to-the-player-walking-home-at-the-far-side-of-the-universe-suddenly-smelling-food-almost-at-the-familiar-door-about-to-dream-again" class="headerlink" title="and sometimes the player believed the universe had spoken to it through the light that fell from the crisp night sky of winter, where a fleck of light in the corner of the player’s eye might be a star a million times as massive as the sun, boiling its planets to plasma in order to be visible for a moment to the player, walking home at the far side of the universe, suddenly smelling food, almost at the familiar door, about to dream again."></a><font color="#005400">and sometimes the player believed the universe had spoken to it through the light that fell from the crisp night sky of winter, where a fleck of light in the corner of the player’s eye might be a star a million times as massive as the sun, boiling its planets to plasma in order to be visible for a moment to the player, walking home at the far side of the universe, suddenly smelling food, almost at the familiar door, about to dream again.</font></h2><p>有时玩家认为宇宙在对它说话，透过冬季那澄澈的夜空投下的光芒，它眼中的一点星光，是一颗质量有太阳百万倍的恒星，将星球沸腾为等离子体，只为在玩家的眼中停留片刻。玩家在宇宙的远端走向家中，突然飘来食物的气味，行至熟悉的门前，即将再次入睡</p>
+<h2 id="and-sometimes-the-player-believed-the-universe-had-spoken-to-it-through-the-zeros-and-ones-through-the-electricity-of-the-world-through-the-scrolling-words-on-a-screen-at-the-end-of-a-dream"><a href="#and-sometimes-the-player-believed-the-universe-had-spoken-to-it-through-the-zeros-and-ones-through-the-electricity-of-the-world-through-the-scrolling-words-on-a-screen-at-the-end-of-a-dream" class="headerlink" title="and sometimes the player believed the universe had spoken to it through the zeros and ones, through the electricity of the world, through the scrolling words on a screen at the end of a dream."></a><font color="#005454">and sometimes the player believed the universe had spoken to it through the zeros and ones, through the electricity of the world, through the scrolling words on a screen at the end of a dream.</font></h2><p>有时玩家认为宇宙在对它说话，通过0和1，通过世界中的电流，通过梦境结尾一个屏幕上滚动的文字</p>
+<h2 id="and-the-universe-said-I-love-you"><a href="#and-the-universe-said-I-love-you" class="headerlink" title="and the universe said I love you."></a><font color="#005400">and the universe said I love you.</font></h2><p>宇宙说，我爱你</p>
+<h2 id="and-the-universe-said-you-have-played-the-game-well"><a href="#and-the-universe-said-you-have-played-the-game-well" class="headerlink" title="and the universe said you have played the game well."></a><font color="#005454">and the universe said you have played the game well.</font></h2><p>宇宙说，你所需求的一切都在你之中</p>
+<h2 id="and-the-universe-said-everything-you-need-is-within-you"><a href="#and-the-universe-said-everything-you-need-is-within-you" class="headerlink" title="and the universe said everything you need is within you."></a><font color="#005400">and the universe said everything you need is within you.</font></h2><p>宇宙说，你比自己所了解的还要强大</p>
+<h2 id="and-the-universe-said-you-are-stronger-than-you-know"><a href="#and-the-universe-said-you-are-stronger-than-you-know" class="headerlink" title="and the universe said you are stronger than you know."></a><font color="#005454">and the universe said you are stronger than you know.</font></h2><p>宇宙说，你比自己所了解的还要强大</p>
+<h2 id="and-the-universe-said-you-are-the-daylight"><a href="#and-the-universe-said-you-are-the-daylight" class="headerlink" title="and the universe said you are the daylight."></a><font color="#005400">and the universe said you are the daylight.</font></h2><p>宇宙说，你就是白昼</p>
+<h2 id="and-the-universe-said-you-are-the-night"><a href="#and-the-universe-said-you-are-the-night" class="headerlink" title="and the universe said you are the night."></a><font color="#005454">and the universe said you are the night.</font></h2><p>宇宙说，你就是黑夜</p>
+<h2 id="and-the-universe-said-the-darkness-you-fight-is-within-you"><a href="#and-the-universe-said-the-darkness-you-fight-is-within-you" class="headerlink" title="and the universe said the darkness you fight is within you."></a><font color="#005400">and the universe said the darkness you fight is within you.</font></h2><p>宇宙说，你所抗争的黑暗就在你之中</p>
+<h2 id="and-the-universe-said-the-light-you-seek-is-within-you"><a href="#and-the-universe-said-the-light-you-seek-is-within-you" class="headerlink" title="and the universe said the light you seek is within you."></a><font color="#005454">and the universe said the light you seek is within you.</font></h2><p>宇宙说，你所追寻的光明就在你之中</p>
+<h2 id="and-the-universe-said-you-are-not-alone"><a href="#and-the-universe-said-you-are-not-alone" class="headerlink" title="and the universe said you are not alone."></a><font color="#005400">and the universe said you are not alone.</font></h2><p>宇宙说，你并不孤单</p>
+<h2 id="and-the-universe-said-you-are-not-separate-from-every-other-thing"><a href="#and-the-universe-said-you-are-not-separate-from-every-other-thing" class="headerlink" title="and the universe said you are not separate from every other thing."></a><font color="#005454">and the universe said you are not separate from every other thing.</font></h2><p>宇宙说，你并没有和身外之物相互分离</p>
+<h2 id="and-the-universe-said-you-are-the-universe-tasting-itself-talking-to-itself-reading-its-own-code"><a href="#and-the-universe-said-you-are-the-universe-tasting-itself-talking-to-itself-reading-its-own-code" class="headerlink" title="and the universe said you are the universe tasting itself, talking to itself, reading its own code."></a><font color="#005400">and the universe said you are the universe tasting itself, talking to itself, reading its own code.</font></h2><p>宇宙说，你就是宇宙，品味着自己、与自己交流、读着自己的代码</p>
+<h2 id="and-the-universe-said-I-love-you-because-you-are-love"><a href="#and-the-universe-said-I-love-you-because-you-are-love" class="headerlink" title="and the universe said I love you because you are love."></a><font color="#005454">and the universe said I love you because you are love.</font></h2><p>宇宙说，我爱你因为你就是爱。</p>
+<h2 id="And-the-game-was-over-and-the-player-woke-up-from-the-dream-And-the-player-began-a-new-dream-And-the-player-dreamed-again-dreamed-better-And-the-player-was-the-universe-And-the-player-was-love"><a href="#And-the-game-was-over-and-the-player-woke-up-from-the-dream-And-the-player-began-a-new-dream-And-the-player-dreamed-again-dreamed-better-And-the-player-was-the-universe-And-the-player-was-love" class="headerlink" title="And the game was over and the player woke up from the dream. And the player began a new dream. And the player dreamed again, dreamed better. And the player was the universe. And the player was love."></a><font color="#005400">And the game was over and the player woke up from the dream. And the player began a new dream. And the player dreamed again, dreamed better. And the player was the universe. And the player was love.</font></h2><p>游戏结束了，玩家从梦中醒来。玩家开始了一段新的梦境，玩家再一次入梦、更美好的梦。那玩家即是宇宙，那玩家即是爱。</p>
+<h2 id="You-are-the-player"><a href="#You-are-the-player" class="headerlink" title="You are the player."></a><font color="#005454">You are the player.</font></h2><p>你就是那个玩家。</p>
+<h2 id="Wake-up"><a href="#Wake-up" class="headerlink" title="Wake up."></a><font color="#005400">Wake up.</font></h2><p>该醒了。</p>
+<hr>
+<h3 id="注-翻译来自网易MC基岩版-end-txt"><a href="#注-翻译来自网易MC基岩版-end-txt" class="headerlink" title="注: 翻译来自网易MC基岩版 end.txt"></a>注: 翻译来自网易MC基岩版 end.txt</h3><h1 id="MC-13周年快乐！"><a href="#MC-13周年快乐！" class="headerlink" title="MC 13周年快乐！"></a>MC 13周年快乐！</h1>]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows右键菜单美化(适用版本:Win7-Win11)</title>
+    <url>/2022/11/17/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="祖传前言"><a href="#祖传前言" class="headerlink" title="祖传前言"></a><del>祖传</del>前言</h1><p><del>众所周知</del>， Windows11 整了个新的右键菜单<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/674da9ddc21e497783797e42f4d68beb.png" alt="桌面右键"><br>(而原来的右键菜单变成了 显示更多选项 )</p>
+<p>现在没多少软件支持把自己的右键菜单整进 Win11右键菜单 里…</p>
+<p>比如，想用 7-Zip 创建个压缩包…</p>
+<p>你需要… 右键 -&gt; 显示更多选项 -&gt; 7-Zip -&gt; 添加到压缩包  或者 Shift+F10 -&gt; 7-Zip -&gt; 添加到压缩包 （当然，直接在7-Zip里创建也可以)</p>
+<p>慢到离谱<br><font color="white">终于铺垫完了</font></p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>先放效果。</p>
+<p>桌面右键：(背景是桌面背景, 右键菜单半透明)</p>
+<p><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/d826d4a27a4a4f09bc8abb2404e5d18a.png"><br>文件右键：<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/286a7e8bc50442bb8cb24ba0b9eb775a.png"></p>
+<h2 id="Nilesoft-Shell"><a href="#Nilesoft-Shell" class="headerlink" title="Nilesoft Shell"></a>Nilesoft Shell</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><a href="https://nilesoft.org/download">官网</a><br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/7994c58f4deb4dbf8d117060b027a964-16852398577849.png"><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/0f215a1b0f1b45feb30b832ef999c33d.png"></p>
+<p>我的建议是: 先装 1.7 , 因为有安装版的，然后再用 1.8 的文件替换 1.7 的文件。</p>
+<p>安装过程就不提了，太简单了。<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/c576361622a84ca2bc4fe0d8bd8a9352.png"></p>
+<h3 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h3><p>**注：这部分可能会有点费时间，不改也没太大问题</p>
+<p>先找到<code>&lt;Shell安装目录&gt;</code>，里面会有个文件叫<code>shell.shl</code>，先别急着打开，右键 -&gt; 属性 提权。</p>
+<p>安全 -&gt; 编辑 -&gt; Users -&gt; 完全控制 -&gt; 确定 。<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/c9ac8887ea1442fcad596fb9a7ea5653.png"><br>然后用 文本编辑器/代码编辑器 打开，建议使用<code>Visual Studio Code</code>这类支持代码高亮的，没装用<code>notepad</code>就行，这里使用<code>Visual Studio Code</code>打开。<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/d634c01dd9bc44eba3fc5bcb31b06026.png"><br>语言可以随便选个以<code>//</code>为注释的，我选了个<code>C</code>。</p>
+<p><strong>配置更改后不会立即生效，需要手动重启 Explorer.exe</strong></p>
+<p>编码记得改为<code>UTF8</code>。</p>
+<p><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/6210cce1bb5144f9928dd1da69b659f5.png"><br>把<code>name="classic"</code>改为<code>name="auto"</code>（主题改为自动)</p>
+<p><code>effect=0</code>可以改为<code>effect=1 or 2 or 3 or 4 or 5</code>(具体见注释，0:无 1:透明 2:模糊(Win7) 3:亚克力(Win10) 4:云母(Win11) 5:选项卡式) (可以自己试试看看)</p>
+<p><code>opacity=100</code>可以更改，是不透明度</p>
+<p><code>effect=3</code>,<code>opacity=80</code>效果: (Windows主题色浅蓝)</p>
+<p><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/a4f488babd904b50bc1b83d614c1183f.png" alt="第二次"><br>往下滑到161行，也就是有<code>dynamic</code>的那行，下面都是具体的右键菜单项，可以自行注释用不到的。<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/2f1de8b61a994f088a7cadb3defdc51b.png"><br>效果：</p>
+<p>桌面右键<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/d826d4a27a4a4f09bc8abb2404e5d18a-168523988451425.png" alt="第三次"><br>文件右键<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/286a7e8bc50442bb8cb24ba0b9eb775a-168523988666028.png" alt="第二次"></p>
+<h2 id="ContextMenuManager-右键管理"><a href="#ContextMenuManager-右键管理" class="headerlink" title="ContextMenuManager 右键管理"></a>ContextMenuManager 右键管理</h2><p><a href="https://gitee.com/BluePointLilac/ContextMenuManager">Gitee仓库</a><br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/2c79570dcf2b4f0db675652394cb341c.png"><br>把用不到的关了就行。</p>
+<p>啥？要效果图？笑死 前面的就是（）<br><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/d826d4a27a4a4f09bc8abb2404e5d18a-168523989279436.png" alt="第四次"><img src="/img/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/286a7e8bc50442bb8cb24ba0b9eb775a-168523989084733.png" alt="第三次"></p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MC基础教程#2 加载器、模组、光影、材质包、数据包下载及安装(国际Java版)</title>
+    <url>/2022/05/10/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>MC基础教程系列第二期出了 和上一期隔了两年…</p>
+<h1 id="加载器"><a href="#加载器" class="headerlink" title="加载器"></a>加载器</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><h3 id="Forge"><a href="#Forge" class="headerlink" title="Forge"></a>Forge</h3><p>老牌加载器，新版本( 1.13+ )不太好用<br>官网: <a href="https://files.minecraftforge.net/net/minecraftforge/forge">https://files.minecraftforge.net/net/minecraftforge/forge</a><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/c2f110f3858b4852ad0a7110bc30459f.png"><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/382868bc09ee4d33a4105c1b1cee9b3a.png"></p>
+<p>左侧选版本，右侧选<code>Installer</code><br>不看广告下载可以看<a href="https://blog.csdn.net/orangebench11/article/details/104464071">我很久以前写的方法</a></p>
+<h3 id="Optifine"><a href="#Optifine" class="headerlink" title="Optifine"></a>Optifine</h3><p>链接:<a href="https://optifine.net/downloads">https://optifine.net/downloads</a><br>中文:高清修复 英文缩写:OF<br>也是很老的加载器，可以用来加载光影。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/8bb8a14866b04428b6333056a2ad0ac2.png"><br>顺便说一下，<code>Optifine</code>和<code>Fabric</code>不兼容，建议把<code>Optifine</code>换成<a href="https://irisshaders.net/download.html"><code>Iris</code></a>和<a href="https://www.curseforge.com/minecraft/mc-mods/sodium/files"><code>Sodium</code></a>，也可以安装光影，效果也很好。可以看看<a href="https://www.bilibili.com/video/BV1rk4y1B7CS">籽岷的Sodium介绍视频</a>。</p>
+<h3 id="LiteLoader"><a href="#LiteLoader" class="headerlink" title="LiteLoader"></a>LiteLoader</h3><p>官网:<a href="http://www.liteloader.com/download">http://www.liteloader.com/download</a><br>最高支持1.12.2，比如1.7.10的<code>VoxelMap</code>需要用LiteLoader</p>
+<h3 id="Fabric"><a href="#Fabric" class="headerlink" title="Fabric"></a>Fabric</h3><p>支持1.14+, 轻量级新加载器，下载<a href="https://fabricmc.net/use/installer">https://fabricmc.net/use/installer</a><br>不少Fabric mod需要<a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">Fabric API</a> <del>还不如把Fabric API整合到Fabric Loader里</del><br><strong>Fabric和Optifine不兼容！</strong><br>替代方法在<code>加载器-&gt;下载-&gt;Optifine</code>的最后。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>这里以Forge举例，基本差不多<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/096b9b4bd8a340e9a3e7af21154ac161.png"><br>先要安装原版，再装Forge<br>别忘了更改<code>.minecraft</code>目录<br>最后点击<code>确定</code>就开始安装了。</p>
+<h3 id="启动器"><a href="#启动器" class="headerlink" title="启动器"></a>启动器</h3><p>最简单的方法，这里以PCL2为例。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/867a4db3409f4c60b5d9a832ae3e74a0.png"><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/4f2d12151a6d44f5930eee47130b5cb0.png"><br>到下载这里选版本，选完版本选要安装的加载器，点开始安装就好了。</p>
+<h1 id="模组"><a href="#模组" class="headerlink" title="模组"></a>模组</h1><h2 id="下载-1"><a href="#下载-1" class="headerlink" title="下载"></a>下载</h2><h3 id="curseforge"><a href="#curseforge" class="headerlink" title="curseforge"></a>curseforge</h3><p><a href="https://www.curseforge.com/minecraft/mc-mods">https://www.curseforge.com/minecraft/mc-mods</a><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/1ac64afdaed1485d97762488efd4a5a5.png"><br>在这里搜索mod名称，比如<code>Fabric API</code><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/69f826c748894e07b51401e0b02361bf.png"><br>进去之后点<code>Files</code><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/59ed450b2cea4c728d0068c10e720338.png"><br>找到对应的mc版本，右边下载。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/fc97a10e69094204882205e78a119217.png"><br>等待五秒后就能下载了。</p>
+<h3 id="MC百科"><a href="#MC百科" class="headerlink" title="MC百科"></a>MC百科</h3><p><a href="https://www.mcmod.cn/">链接</a><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/20f2a867de16456099bbf7243c1403e4.png"><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/aabc4780f2a042a4b888ca846b457341.png"><br>第二个就是，点进去<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/820f3cdefd1b4b2587468b313612fdb2.png"><br>会显示需要的加载器、链接和支持的版本，有的模组还支持下载，这里建议去链接里下载。<br>Fabric API有CurseForge链接，点进去用上面的教程就行。</p>
+<h3 id="mcbbs"><a href="#mcbbs" class="headerlink" title="mcbbs"></a>mcbbs</h3><p><a href="https://www.mcbbs.net/">链接</a><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/cbbfd195b94b43828627432a3b2eaf9e.png"><br>搜索需要登陆，不过可以借助万能的百度搜索。应该能注意到，上面mcmod相关链接里也有mcbbs的链接。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/031ede601bfb4e3a80bbf42634e446d7.png"><br>不过mcbbs的Fabric已经很久没有更新了，不知道什么时候会回来更新。记得看眼适用版本和Modloader需求。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/0ad39dc740864852891cab244ac33650.png"><br>如果遇到这种的需要自己找链接。</p>
+<h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><p>找到<code>.minecraft</code>文件夹，没开启版本隔离在<code>mods</code>文件夹，开启版本隔离在<code>versions\&lt;版本名&gt;\mods</code>文件夹，把模组文件放进去就行了</p>
+<h1 id="光影"><a href="#光影" class="headerlink" title="光影"></a>光影</h1><h2 id="下载-2"><a href="#下载-2" class="headerlink" title="下载"></a>下载</h2><h3 id="curseforge-1"><a href="#curseforge-1" class="headerlink" title="curseforge"></a>curseforge</h3><p>链接:<a href="https://www.curseforge.com/minecraft/customization">https://www.curseforge.com/minecraft/customization</a><br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/f862f9c8fb77412da7dbf7baaabc5720.png"><br>找到想下的光影，到<code>Files</code>选择MC版本后下载。</p>
+<h3 id="mcbbs-1"><a href="#mcbbs-1" class="headerlink" title="mcbbs"></a>mcbbs</h3><p>和上面一样，在mcbbs里搜索就行。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/5099ea7627b24ae89555268c2eb66c7e.png"><br>到下载地址下载。</p>
+<h2 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h2><p>找到<code>.minecraft</code>文件夹，没开启版本隔离放在<code>shaderpacks</code>文件夹，开启了放在<code>versions\&lt;版本名&gt;\shaderpacks</code>里，打开mc,在<code>选项-&gt;视频设置-&gt;光影</code>里开启光影。<br>$\color{white}{这里因为电脑配置不行就不放图了}$</p>
+<h1 id="材质包"><a href="#材质包" class="headerlink" title="材质包"></a>材质包</h1><h2 id="下载-3"><a href="#下载-3" class="headerlink" title="下载"></a>下载</h2><p>下载方法还是上面的那几个，就不写了。</p>
+<h2 id="安装-3"><a href="#安装-3" class="headerlink" title="安装"></a>安装</h2><p>找到<code>.minecraft</code>文件夹，没开启版本隔离放在<code>resourcepacks</code>文件夹里，开启了放在<code>versions\&lt;版本名&gt;\resourcepacks</code>文件夹里，打开mc，在<code>选项-&gt;资源包</code>里安装。</p>
+<h1 id="数据包"><a href="#数据包" class="headerlink" title="数据包"></a>数据包</h1><h2 id="下载-4"><a href="#下载-4" class="headerlink" title="下载"></a>下载</h2><h3 id="比上面还多一个-Planet-Minecraft"><a href="#比上面还多一个-Planet-Minecraft" class="headerlink" title="比上面还多一个:Planet Minecraft"></a>比上面还多一个:Planet Minecraft</h3><p>链接:<a href="https://www.planetminecraft.com/data-packs">https://www.planetminecraft.com/data-packs</a><br>是一个国外的论坛，相当于国外的mcbbs。<br><img src="/img/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/220460b3bf854a419b8ce56da23aa19f.png"><br>有些数据包还需要安装材质包，材质包安装方法在上面。点<code>Download</code>就能下载了。</p>
+<h2 id="安装-4"><a href="#安装-4" class="headerlink" title="安装"></a>安装</h2><p>找到<code>.minecraft</code>文件夹，没开启版本隔离放在<code>saves\&lt;世界名&gt;\datapacks</code>，开启版本隔离放在<code>versions\&lt;版本名&gt;\saves\&lt;世界名&gt;\datapacks</code>。<br>如果存档是开着的可以输入<code>/reload</code>重新加载数据包。</p>
+]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 FFmpeg 转换视频/音频格式 | 开源 免费 | 不用套壳软件</title>
+    <url>/2022/11/12/%E4%BD%BF%E7%94%A8FFmpeg%E8%BD%AC%E6%8D%A2%E6%A0%BC%E5%BC%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>注： FFmpeg 有很多功能，这里只用来转换格式。</strong></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>emm…</p>
+<p>据说最近格式工厂出了点事。</p>
+<p><img src="/img/%E4%BD%BF%E7%94%A8FFmpeg%E8%BD%AC%E6%8D%A2%E6%A0%BC%E5%BC%8F/image-20221116090039962.png"></p>
+<p>然后… 这分析倒是挺快的<br><a href="https://www.wangan.com/p/7fygf763cd3aacaf">关于BrightData</a> <a href="https://www.bilibili.com/video/BV19B4y1G7Fs">BV19B4y1G7Fs</a><br>所以，这里就不再弄这事了，但是在当时找东西时找到了这个…<br><a href="https://github.com/FFmpeg/web/blob/master/src/shame">github:ffmpeg/web/src/shame</a> (<a href="https://ffmpeg.org/shame.html">FFmpeg官网显示在更新</a>)<br><strong>FFmpeg Hall of Shame.</strong><br>这个表里的都是违反 FFmpeg 许可证(即 LGPL or GPL许可证) 的软件。<br>来看看…</p>
+<p><img src="/img/%E4%BD%BF%E7%94%A8FFmpeg%E8%BD%AC%E6%8D%A2%E6%A0%BC%E5%BC%8F/image-20221116090103269.png"></p>
+<p>找到了好几个老朋友</p>
+<ul>
+<li><p>Baofeng Storm 暴风影音</p>
+</li>
+<li><p>Daum tv PotPlayer (咋PotPlayer也在)</p>
+</li>
+<li><p>Format Factory 格式工厂</p>
+</li>
+<li><p>QQPlayer QQ影音</p>
+</li>
+</ul>
+<p>算了还是别用格式工厂了吧(</p>
+<h2 id="FFmpeg-下载-安装"><a href="#FFmpeg-下载-安装" class="headerlink" title="FFmpeg 下载&amp;安装"></a>FFmpeg 下载&amp;安装</h2><p><a href="https://ffmpeg.org/">官网</a><br><a href="https://github.com/BtbN/FFmpeg-Builds/releases">Windows builds by BtbN</a> (Linux也有)</p>
+<p><img src="/img/%E4%BD%BF%E7%94%A8FFmpeg%E8%BD%AC%E6%8D%A2%E6%A0%BC%E5%BC%8F/image-20221116090228665.png"></p>
+<p>自己用选这个就行。<br>下载。</p>
+<p><img src="/img/%E4%BD%BF%E7%94%A8FFmpeg%E8%BD%AC%E6%8D%A2%E6%A0%BC%E5%BC%8F/image-20221116090247673.png"></p>
+<p>全部解压。<br>反手直接打开<code>SystemPropertiesAdvanced.exe</code>-&gt; 环境变量 -&gt; 用户环境变量 -&gt;<code>Path</code>-&gt; 新建 -&gt; <code>&lt;FFmpeg解压路径&gt;\bin</code></p>
+<p><img src="/img/%E4%BD%BF%E7%94%A8FFmpeg%E8%BD%AC%E6%8D%A2%E6%A0%BC%E5%BC%8F/image-20221116090317170.png"></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>注：本软件无 GUI , 使用纯命令行。<br>首先，找个要转格式的视频/音频，这里随便找了个文件比较小的的视频，视频编码器<code>H264</code>音频编码器<code>AAC</code><br>首先，最简单的办法：<code>ffmpeg -i &lt;输入文件&gt; &lt;输出文件&gt;</code> 如: <code>ffmpeg -i "InputFile.mp4" "OutputFile.mkv"</code><br>输出:</p>
+<pre><code class="bash">ffmpeg version n5.1.1-3-gfcbd9ec248-20220908 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 12.1.0 (crosstool-NG 1.25.0.55_3defb7b)
+  configuration: .. # 省略了
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'InputFile.mp4':
+.. # 太多，省略了
+Press [q] to stop, [?] for help
+.. # 这咋就这么多呢
+Output #0, matroska, to 'OutputFile.mkv':
+.. # 离谱
+[libx264 @ 000002e128df0780] consecutive B-frames:  0.8%  0.0%  0.2% 99.0%
+..
+[libx264 @ 000002e128df0780] kb/s:15.27
+</code></pre>
+<p>挺不错的，不是嘛？</p>
+<h3 id="编码器"><a href="#编码器" class="headerlink" title="编码器"></a>编码器</h3><h4 id="视频编码器"><a href="#视频编码器" class="headerlink" title="视频编码器"></a>视频编码器</h4><p>转换方法:<code>ffmpeg -i &lt;输入文件&gt;-c:v &lt;编码器&gt; &lt;输出文件&gt;</code> 如:<code>ffmpeg -i InputFile.mp4 -c:v libx265 OutputFile.mp4</code></p>
+<pre><code class="c">libx264=H264
+libx265=H265
+libaom-av1=AV1
+//这是几个常用的，其他可以自己去找。
+</code></pre>
+<p>运行结果: (省略一堆)</p>
+<pre><code class="bash">ffmpeg version n5.1.1-3-gfcbd9ec248-20220908 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 12.1.0 (crosstool-NG 1.25.0.55_3defb7b)
+..
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'InputFile.mp4':
+..
+Press [q] to stop, [?] for help
+x265 [info]: HEVC encoder version 3.5+38-20255e6f0
+x265 [info]: build info [Windows][GCC 12.1.0][64 bit] 8bit+10bit+12bit
+x265 [info]: using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+..
+Output #0, mp4, to 'OutputFile.mp4':
+..
+x265 [info]: frame I:      6, Avg QP:29.00  kb/s: 589.23
+x265 [info]: frame P:    464, Avg QP:33.00  kb/s: 26.52
+x265 [info]: frame B:    972, Avg QP:35.39  kb/s: 24.44
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 29.4% 7.4% 26.2% 1.1% 36.0%
+
+encoded 1442 frames in 59.70s (24.15 fps), 27.46 kb/s, Avg QP:34.59
+[aac @ 0000013f969e04c0] Qavg: 65475.656
+</code></pre>
+<h4 id="音频编码器"><a href="#音频编码器" class="headerlink" title="音频编码器"></a>音频编码器</h4><p>参数<code>c:a &lt;编码器&gt;</code> 比如<code>ffmpeg -i InputFile.mp4 c:a libopus OutputFile.mp4</code></p>
+<pre><code class="c">aac=AAC
+ac3=AC3
+dca=DTS
+libvorbis=Vorbis
+libopus=Opus
+alac=ALAC
+//其他可以自己去找。
+</code></pre>
+<p>运行结果:(还是省略一堆)</p>
+<pre><code class="bash">ffmpeg version n5.1.1-3-gfcbd9ec248-20220908 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 12.1.0 (crosstool-NG 1.25.0.55_3defb7b)
+  configuration: ..
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'InputFile.mp4':
+..
+Stream mapping:
+  Stream #0:0 -&gt; #0:0 (h264 (native) -&gt; h264 (libx264))
+  Stream #0:1 -&gt; #0:1 (aac (native) -&gt; opus (libopus))
+Press [q] to stop, [?] for help
+[libopus @ 000002afeac22a80] No bit rate set. Defaulting to 96000 bps.
+[libx264 @ 000002afeaa43440] using SAR=3/2
+[libx264 @ 000002afeaa43440] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000002afeaa43440] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000002afeaa43440] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=23 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'OutputFile.mp4':
+..
+frame= 1442 fps= 88 q=-1.0 Lsize=    1036kB time=00:01:00.23 bitrate= 140.9kbits/s speed=3.67x
+..
+[libx264 @ 000002afeaa43440] kb/s:15.27
+</code></pre>
+<h3 id="音频也基本一样"><a href="#音频也基本一样" class="headerlink" title="音频也基本一样"></a>音频也基本一样</h3><p><code>ffmpeg -i &lt;输入文件&gt; &lt;输出文件&gt;</code> 比如<code>ffmpeg -i InputFile.mp3 OutputFile.mp3</code><br>运行效果: (省略一堆)</p>
+<pre><code class="bash">ffmpeg version n5.1.1-3-gfcbd9ec248-20220908 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 12.1.0 (crosstool-NG 1.25.0.55_3defb7b)
+  configuration: ..
+Input #0, mp3, from 'InputFile.mp3':
+..
+Stream mapping:
+  Stream #0:0 -&gt; #0:0 (mp3 (mp3float) -&gt; mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to 'OutputFile.mp3':
+..
+size=     942kB time=00:01:00.24 bitrate= 128.1kbits/s speed=79.6x
+video:0kB audio:942kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.046255%
+</code></pre>
+<p>编码器设置见上面 音频编码器 。</p>
+<p>应该差不多了吧qwq</p>
+<p><del>咕咕咕</del></p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在Windows中安装MinGW-w64最新版本</title>
+    <url>/2022/08/01/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>emm… 找了很多教程, 基本都是从 sourceforge 上下的 8.1.0 版本<br><img src="/img/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/b916895e67e14514b49ca1c720f04d28.png"><br>最后更新时间甚至是2018年, 真的是太老了</p>
+<p>所以我来发个从 Github 上下的 (目前最新 12.1.0 , 2022/6/8 更新的)</p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>首先，到<a href="https://www.mingw-w64.org/downloads">MinGW-w64官网-&gt;下载</a><br><img src="/img/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/62918877d708419d9ae64bbfbff1e72c.png"></p>
+<p>往下, 找到 Mingw-builds , 点击下面的 Github 链接。当然, 链接我也放这里了: <a href="https://github.com/niXman/mingw-builds-binaries/releases">https://github.com/niXman/mingw-builds-binaries/releases</a><br><img src="/img/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/a46eca13ee9a4c02ac2d7b423dfb91eb.png"><br>可以看到，有一堆文件。<br><code>i686-12.1.0-release-win32-dwarf-rt-v10-rev3.7z</code> 这是 32 位的。<br><code>x86_64-12.1.0-release-win32-seh-rt_v10-rev3.7z</code> 这是 64 位的。<br>我这电脑 64 位的, 以 <code>x86_64-12.1.0-release-win32-seh-rt_v10-rev3.7z</code>演示。<br>点击下载，下载速度可能会比较慢，多等等。<br><img src="/img/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/8b71f6859de24f22a4ffec19c865a718.png"><br>(前面的<code>MinGW-w64-</code>是我自己改的名哈)<br>里面会有很多东西, 把<code>mingw64</code>里的文件全部解压到一个空文件夹里, 建议直接扔在<code>D:\MinGW-w64\&lt;版本号&gt;\</code>里, 方便点。</p>
+<h2 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h2><p>打开<code>设置-&gt;系统-&gt;系统信息-&gt;高级系统设置-&gt;环境变量</code><br><img src="/img/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/1952f79e856b4884b8888a82b971827e.png"><br>双击<code>Path</code><br><img src="/img/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/b331063b80934205b53d99ae9f0347fe.png"><br>新建, 输入<code>&lt;解压目录&gt;</code><br>(Win7应该只有一大长串文本)<br>Win7方法 :在<code>变量值</code>最后添加<code>&lt;解压目录&gt;\bin;</code><br><img src="/img/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/530ec47aca0c4502bce5fe77d2667488.png"><br>然后, 测试一下, 打开<code>cmd</code>, 输入<code>gcc --version</code><br><img src="/img/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC/508aea8f19f34909b74957fada8a1236.png"><br>出来版本号应该就好了</p>
+<p>再说下编译命令: </p>
+<pre><code class="bash">//C
+gcc &lt;filename&gt;.c -o &lt;filename&gt;.exe
+//C++
+g++ &lt;filename&gt;.cpp -o &lt;filename&gt;.exe
+</code></pre>
+<p>这个命令会用 gcc / g++ 编译<code>&lt;filename&gt;.c</code>/<code>&lt;filename&gt;.cpp</code>, exe 文件是<code>&lt;filename&gt;.exe</code><br>编译没出错的话应该无输出。<br>如果有输出, 应该是编译错误或者警告。<br><font color="white">QAQ</font></p>
+]]></content>
+      <categories>
+        <category>cpp</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【MC】新加载器 Quilt 好用吗？和 Fabric 相比好在哪？</title>
+    <url>/2022/12/21/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在今年四月 (2022/4/20) ，一个<del>船新</del>加载器 Quilt 发布了第一个测试版。</p>
+<blockquote>
+<p>Quilt officially entered its first beta today, attracting an influx of new users and an amazing amount of support and positive feedback. By the end of the day, Quilt was happily loading both Quilt and Fabric mods, and had <a href="https://modrinth.com/mod/qsl">uploaded QSL to Modrinth</a></p>
+<p>——来自 <a href="https://quiltmc.org/en/about/timeline/">Quilt 官网时间线</a></p>
+</blockquote>
+<p><font color="red">Quilt 项目仍处于 Beta 阶段，使用有风险，遇到问题请及时向开发团队汇报。</font></p>
+<h2 id="Quilt是什么？"><a href="#Quilt是什么？" class="headerlink" title="Quilt是什么？"></a>Quilt是什么？</h2><p>先放下 Quilt的官网: <a href="https://quiltmc.org/en">QuiltMC | The mod-loader that cares.</a> Fabric官网也放这了: <a href="https://fabricmc.net/">Fabric | The home of the Fabric mod development toolchain. (fabricmc.net)</a></p>
+<blockquote>
+<p>The Quilt project is an open-source, community-driven modding toolchain designed primarily for Minecraft. By focusing on speed, ease of use and modularity, Quilt aims to provide a sleek and modern modding toolchain with an open ecosystem.</p>
+<p>——来自 <a href="https://quiltmc.org/en">Quilt 官网</a></p>
+</blockquote>
+<p>Quilt 是新一代开源的、以社区为载体的、基于 <a href="https://fabricmc.net/">Fabric</a> 的 Minecraft 模组加载器兼模组开发工具链。Quilt 致力于通过高效、易用与模块化的建设来打造一个开放且现代化的生态与工具链。</p>
+<p>因为是基于 Fabric 的，所以<strong>大多数</strong>模组都可以未经修改地加载并运行（当然，需要 Fabric API 的话需要安装 QFAPI ，下面会说这件事）。</p>
+<h3 id="那么对比-Fabric-，好在哪？"><a href="#那么对比-Fabric-，好在哪？" class="headerlink" title="那么对比 Fabric ，好在哪？"></a>那么对比 Fabric ，好在哪？</h3><p>先给跳着看的人说一下， Quilt 基于 Fabric 开发，<strong>大多数</strong> Fabric 模组未经修改就能加载并运行（当然，需要 Fabric API 的话可以需要装 QFAPI ，下面会说）。</p>
+<p>Quilt 有着比 Fabric 更好（<del>至少现在</del>）的社区环境，规则在这：<a href="https://quiltmc.org/en/community/rules/">QuiltMC | Rules</a> 。<del>我是真不太想看（</del></p>
+<p>Quilt <strong>在将来</strong>可以自动下载模组的前置模组，这是个好东西，可惜现在没实现。:(</p>
+<p>（现在用 Quilt 的模组其实没多少，大多数支持 Quilt 的模组都是用 Quilt 自带的 Fabric 加载器加载）</p>
+<h2 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h2><h3 id="官网下载安装"><a href="#官网下载安装" class="headerlink" title="官网下载安装"></a>官网下载安装</h3><p>下载：<a href="https://quiltmc.org/en/install/client/">QuiltMC | Install: Client</a> ，下载不麻烦，我就不说了<br><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093432062.png"><br>版本选好，文件夹选好点 Install 。</p>
+<h3 id="启动器安装"><a href="#启动器安装" class="headerlink" title="启动器安装"></a>启动器安装</h3><p>目前支持安装 Quilt 的<strong>国内的启动器</strong>只有 HMCL 和 BakaXL 。据说 PCL 也快推出了，这里以 HMCL 为例。<br><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093449987.png"><br>安装版本，选游戏版本，安装 Quilt 和 QSL/QFAPI （这个和 FAPI 是一样的，大多数模组都得要，装上也没啥事），安装（快进！！！)</p>
+<p>如果前面没装 QSL/QFAPI 的话，给个下载地址：<a href="https://www.curseforge.com/minecraft/mc-mods/qsl/files">Quilted Fabric API (QFAPI) / Quilt Standard Libraries (QSL) - Mods - Minecraft - CurseForge</a> 安装就很简单了，直接扔到 mods 文件夹就行。</p>
+<p>顺便解释一下 QSL/QFAPI : QSL，Quilt Standard Libraries ，可以简单理解为和 Fabric API 用处相同只不过换成了 Quilt 用的，QFAPI， Quilted Fabric API ，经 Quilt 修改过的 Fabric API ，让 Fabric API 和 Quilt 兼容（直接用 Fabric API 会有bug，兼容性也不好）。</p>
+<h2 id="和-Fabric-对比"><a href="#和-Fabric-对比" class="headerlink" title="和 Fabric 对比"></a>和 Fabric 对比</h2><h3 id="启动速度"><a href="#启动速度" class="headerlink" title="启动速度"></a>启动速度</h3><p>首先，说下环境</p>
+<p>Fabric Loader &amp; API 、 Quilt Loader &amp; Standard Libraries 均由 HMCL 安装，启动使用 PCL2 ，正版验证微软账户。</p>
+<p>配置：CPU Intel第八代i3 二核四线程 内存 8GiB 虚拟内存 10GiB+ 保证不占满物理内存 磁盘 SSD 显卡 Intel UHD Graphics 620  <font color="white">这都什么阴间配置</font></p>
+<p>Java: OpenJDK, Dragonwell 17.0.5.0.5+8-GA 。</p>
+<p>游戏分配内存: 1GiB</p>
+<p>版本：游戏版本1.18.2，版本隔离开启</p>
+<p>Fabric: Loader 0.14.11，API 0.67.0</p>
+<p>Quilt: Loader 0.17.8 ，QSL QFAPI 1.0.0-beta.28、QSL 1.1.0-beta.26、FAPI 0.67.0<br>模组: Fabric: Fabric API 、 Quilt: QSL 。</p>
+<p>全程打开软件: TrafficMonitor（用于监测CPU&amp;内存占用）、时钟（用于计时）、记事本（用于查看日志）、还有其他算在不开 MC 占用里的软件</p>
+<p>计时规则: 从进程创建开始，创建进程后任务管理器退出。</p>
+<p>准备测两轮低负载，一轮高负载，两轮低负载一回没缓存(.fabric/.quilt)，另一回在第一回测试完毕后测试，有缓存(.fabric/.quilt)，高负载没缓存测试（也就是删掉其他文件后再测试）。</p>
+<h3 id="低负载第一轮"><a href="#低负载第一轮" class="headerlink" title="低负载第一轮"></a>低负载第一轮</h3><p>不开 MC 占用: CPU 5% 内存 74%</p>
+<h4 id="Fabric-成绩"><a href="#Fabric-成绩" class="headerlink" title="Fabric 成绩"></a>Fabric 成绩</h4><p><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093515047.png"><br><strong>2分09.72秒</strong></p>
+<p>然后是分段计时： 出现日志 31秒，窗口创建 1分45秒</p>
+<p>最高占用：CPU 100% 内存 88%</p>
+<p>日志：</p>
+<pre><code class="bash">[17:46:12] [main/INFO]: Loading Minecraft 1.18.2 with Fabric Loader 0.14.11
+[17:46:12] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[17:46:13] [main/INFO]: Loading 49 mods:
+    - fabric-api 0.67.0+1.18.2
+    - fabric-api-base 0.4.4+d7c144a860 via fabric-api
+    - fabric-api-lookup-api-v1 1.6.2+2373a54560 via fabric-api
+    - fabric-biome-api-v1 8.0.6+651bcc5960 via fabric-api
+    - fabric-block-api-v1 1.0.0+ee3621fc60 via fabric-api
+    - fabric-blockrenderlayer-v1 1.1.12+3ac43d9560 via fabric-api
+    - fabric-command-api-v1 1.1.9+d7c144a860 via fabric-api
+    - fabric-commands-v0 0.2.8+b4f4f6cd60 via fabric-api
+    - fabric-containers-v0 0.1.23+d7c144a860 via fabric-api
+    - fabric-content-registries-v0 3.1.1+c85f2e3860 via fabric-api
+    - fabric-convention-tags-v1 1.0.1+474e4f7960 via fabric-api
+    - fabric-crash-report-info-v1 0.2.1+ee261a3e60 via fabric-api
+    - fabric-data-generation-api-v1 3.0.2+9fcb91d260 via fabric-api
+    - fabric-dimensions-v1 2.1.20+489d6f8260 via fabric-api
+    - fabric-entity-events-v1 1.4.8+d7c144a860 via fabric-api
+    - fabric-events-interaction-v0 0.4.19+d7c144a860 via fabric-api
+    - fabric-events-lifecycle-v0 0.2.20+d7c144a860 via fabric-api
+    - fabric-game-rule-api-v1 1.0.13+d7c144a860 via fabric-api
+    - fabric-item-api-v1 1.6.0+d8cf4e5a60 via fabric-api
+    - fabric-item-groups-v0 0.3.14+91896a4960 via fabric-api
+    - fabric-key-binding-api-v1 1.0.12+54e5b2ec60 via fabric-api
+    - fabric-keybindings-v0 0.2.10+b4f4f6cd60 via fabric-api
+    - fabric-lifecycle-events-v1 2.1.0+cc71601c60 via fabric-api
+    - fabric-loot-api-v2 1.1.0+1997ad1260 via fabric-api
+    - fabric-loot-tables-v1 1.1.2+e747827960 via fabric-api
+    - fabric-mining-level-api-v1 2.1.4+cc71601c60 via fabric-api
+    - fabric-models-v0 0.3.6+d7c144a860 via fabric-api
+    - fabric-networking-api-v1 1.0.23+2d30af4b60 via fabric-api
+    - fabric-networking-v0 0.3.10+b4f4f6cd60 via fabric-api
+    - fabric-object-builder-api-v1 2.1.3+032c981d60 via fabric-api
+    - fabric-particles-v1 0.2.12+526dc1ac60 via fabric-api
+    - fabric-registry-sync-v0 0.9.11+bb2e047760 via fabric-api
+    - fabric-renderer-api-v1 0.4.15+ee3621fc60 via fabric-api
+    - fabric-renderer-indigo 0.5.5+41a02c8a60 via fabric-api
+    - fabric-renderer-registries-v1 3.2.11+b4f4f6cd60 via fabric-api
+    - fabric-rendering-data-attachment-v1 0.3.8+ee3621fc60 via fabric-api
+    - fabric-rendering-fluids-v1 2.0.2+54e5b2ec60 via fabric-api
+    - fabric-rendering-v0 1.1.13+b4f4f6cd60 via fabric-api
+    - fabric-rendering-v1 1.10.7+54e5b2ec60 via fabric-api
+    - fabric-resource-conditions-api-v1 2.0.3+91b7aa6660 via fabric-api
+    - fabric-resource-loader-v0 0.5.2+446e059560 via fabric-api
+    - fabric-screen-api-v1 1.0.10+d882b91560 via fabric-api
+    - fabric-screen-handler-api-v1 1.2.2+1f6558e860 via fabric-api
+    - fabric-textures-v0 1.0.12+3ac43d9560 via fabric-api
+    - fabric-transfer-api-v1 1.6.3+f4563ac860 via fabric-api
+    - fabric-transitive-access-wideners-v1 1.1.0+e747827960 via fabric-api
+    - fabricloader 0.14.11
+    - java 17
+    - minecraft 1.18.2
+[17:46:13] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/*被我吃了*/.minecraft/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[17:46:14] [main/INFO]: Compatibility level set to JAVA_16
+[17:46:14] [main/INFO]: Compatibility level set to JAVA_17
+[17:46:20] [main/WARN]: Configuration conflict: there is more than one oshi.properties file on the classpath
+[17:46:24] [main/WARN]: Configuration conflict: there is more than one oshi.architecture.properties file on the classpath
+[17:46:59] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:47:04] [Render thread/INFO]: Setting user: 2345Explorer
+[17:47:22] [Render thread/INFO]: [Indigo] Registering Indigo renderer!
+[17:47:23] [Render thread/WARN]: Skipping bad option: 
+[17:47:23] [Render thread/WARN]: Skipping bad option: 
+[17:47:23] [Render thread/WARN]: Skipping bad option: 
+[17:47:23] [Render thread/WARN]: Skipping bad option: 
+[17:47:24] [Render thread/INFO]: Backend library: LWJGL version 3.2.2 build 10
+[17:47:30] [Render thread/INFO]: Narrator library for x64 successfully loaded
+[17:47:31] [Render thread/INFO]: Reloading ResourceManager: Default, Fabric Mods (Fabric API, Fabric API Base, Fabric API Lookup API (v1), Fabric Biome API (v1), Fabric BlockRenderLayer Registration (v1), Fabric Command API (v1), Fabric Commands (v0), Fabric Containers (v0), Fabric Content Registries (v0), Fabric Convention Tags, Fabric Crash Report Info (v1), Fabric Data Generation API (v1), Fabric Dimensions API (v1), Fabric Entity Events (v1), Fabric Events Interaction (v0), Fabric Events Lifecycle (v0), Fabric Game Rule API (v1), Fabric Item API (v1), Fabric Item Groups (v0), Fabric Key Binding API (v1), Fabric Key Bindings (v0), Fabric Lifecycle Events (v1), Fabric Loot API (v2), Fabric Loot Tables (v1), Fabric Mining Level API (v1), Fabric Models (v0), Fabric Networking API (v1), Fabric Networking (v0), Fabric Object Builder API (v1), Fabric Particles (v1), Fabric Registry Sync (v0), Fabric Renderer API (v1), Fabric Renderer - Indigo, Fabric Renderer Registries (v1), Fabric Rendering Data Attachment (v1), Fabric Rendering Fluids (v1), Fabric Rendering (v0), Fabric Rendering (v1), Fabric Resource Conditions API (v1), Fabric Resource Loader (v0), Fabric Screen API (v1), Fabric Screen Handler API (v1), Fabric Textures (v0), Fabric Transfer API (v1), Fabric Transitive Access Wideners (v1), Fabric Loader)
+[17:47:38] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on        (Realtek(R) Audio)
+[17:47:38] [Render thread/INFO]: Sound engine started
+[17:47:39] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[17:47:48] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[17:47:48] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[17:47:48] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[17:47:57] [Render thread/INFO]: Stopping!
+</code></pre>
+<h4 id="Quilt-成绩"><a href="#Quilt-成绩" class="headerlink" title="Quilt 成绩"></a>Quilt 成绩</h4><p><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093540902.png"></p>
+<p>**1分26.05秒</p>
+<p>然后是分段计时： 出现日志 8秒，窗口创建 1分01秒</p>
+<p>最高占用：CPU 100% 内存 88%</p>
+<p>日志：</p>
+<pre><code class="bash">[17:52:39] [main/INFO]: Loading Minecraft 1.18.2 with Quilt Loader 0.17.8
+[17:52:39] [main/INFO]: Loading mappings: jar:file:/*被我吃了*/.minecraft/libraries/net/fabricmc/intermediary/1.18.2/intermediary-1.18.2.jar!/mappings/mappings.tiny
+[17:52:39] [main/INFO]: Preparing JARs on first launch, this may take a few seconds...
+[17:53:05] [main/INFO]: Loading 67 mods:
+| Index | Mod                                               | ID                                            | Version                      |
+|------:|---------------------------------------------------|-----------------------------------------------|------------------------------|
+|    40 | Minecraft                                         | minecraft                                     | 1.18.2                       |
+|    11 | OpenJDK 64-Bit Server VM                          | java                                          | 17                           |
+|    47 | Quilt Base API                                    | quilt_base                                    | 1.1.0-beta.26+1.18.2         |
+|    64 | Quilt Biome API                                   | quilt_biome                                   | 1.1.0-beta.26+1.18.2         |
+|    41 | Quilt Block Entity API                            | quilt_block_entity                            | 1.1.0-beta.26+1.18.2         |
+|    22 | Quilt Block Extensions API                        | quilt_block_extensions                        | 1.1.0-beta.26+1.18.2         |
+|    63 | Quilt Client Command API                          | quilt_client_command                          | 1.1.0-beta.26+1.18.2         |
+|    20 | Quilt Command API                                 | quilt_command                                 | 1.1.0-beta.26+1.18.2         |
+|    61 | Quilt Crash Info                                  | quilt_crash_info                              | 1.1.0-beta.26+1.18.2         |
+|    52 | Quilt DataFixerUpper API                          | quilt_datafixerupper                          | 1.1.0-beta.26+1.18.2         |
+|    35 | Quilt Dimension API                               | quilt_dimension                               | 1.1.0-beta.26+1.18.2         |
+|     6 | Quilt Item Group API                              | quilt_item_group                              | 1.1.0-beta.26+1.18.2         |
+|     1 | Quilt Item Setting API                            | quilt_item_setting                            | 1.1.0-beta.26+1.18.2         |
+|    49 | Quilt Lifecycle Events                            | quilt_lifecycle_events                        | 1.1.0-beta.26+1.18.2         |
+|    65 | Quilt Loader                                      | quilt_loader                                  | 0.17.8                       |
+|    24 | Quilt Networking                                  | quilt_networking                              | 1.1.0-beta.26+1.18.2         |
+|    31 | Quilt Recipe API                                  | quilt_recipe                                  | 1.1.0-beta.26+1.18.2         |
+|     7 | Quilt Registry API                                | quilt_registry                                | 1.1.0-beta.26+1.18.2         |
+|    48 | Quilt Registry Entry Attachments                  | quilt_registry_entry_attachments              | 1.1.0-beta.26+1.18.2         |
+|    15 | Quilt Resource Loader                             | quilt_resource_loader                         | 1.1.0-beta.26+1.18.2         |
+|    12 | Quilt Screen API                                  | quilt_screen                                  | 1.1.0-beta.26+1.18.2         |
+|    14 | Quilt Tags API                                    | quilt_tags                                    | 1.1.0-beta.26+1.18.2         |
+|    37 | Quilt Tooltip API                                 | quilt_tooltip                                 | 1.1.0-beta.26+1.18.2         |
+|    26 | Quilted Fabric API                                | quilted_fabric_api                            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    57 | Quilted Fabric API Base                           | quilted_fabric_api_base                       | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     2 | Quilted Fabric API Lookup API (v1)                | quilted_fabric_api_lookup_api_v1              | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    54 | Quilted Fabric Biome API (v1)                     | quilted_fabric_biome_api_v1                   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    62 | Quilted Fabric BlockRenderLayer Registration (v1) | quilted_fabric_blockrenderlayer_v1            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    32 | Quilted Fabric Command API (v1)                   | quilted_fabric_command_api_v1                 | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    27 | Quilted Fabric Commands (v0)                      | quilted_fabric_commands_v0                    | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    46 | Quilted Fabric Containers (v0)                    | quilted_fabric_containers_v0                  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    58 | Quilted Fabric Content Registries (v0)            | quilted_fabric_content_registries_v0          | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    43 | Quilted Fabric Convention Tags API (v1)           | quilted_fabric_convention_tags_api_v1         | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    17 | Quilted Fabric Crash Report Info (v1)             | quilted_fabric_crash_report_info_v1           | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    29 | Quilted Fabric Dimensions API (v1)                | quilted_fabric_dimensions_v1                  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    44 | Quilted Fabric Entity Events (v1)                 | quilted_fabric_entity_events_v1               | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    36 | Quilted Fabric Events Interaction (v0)            | quilted_fabric_events_interaction_v0          | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    56 | Quilted Fabric Events Lifecycle (v0)              | quilted_fabric_events_lifecycle_v0            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    23 | Quilted Fabric Game Rule API (v1)                 | quilted_fabric_game_rule_api_v1               | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    51 | Quilted Fabric Item API (v1)                      | quilted_fabric_item_api_v1                    | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     9 | Quilted Fabric Item Groups (v0)                   | quilted_fabric_item_groups_v0                 | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    66 | Quilted Fabric Key Binding API (v1)               | quilted_fabric_key_binding_api_v1             | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    45 | Quilted Fabric Key Bindings (v0)                  | quilted_fabric_keybindings_v0                 | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     0 | Quilted Fabric Lifecycle Events (v1)              | quilted_fabric_lifecycle_events_v1            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    34 | Quilted Fabric Loot API (v2)                      | quilted_fabric_loot_api_v2                    | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     5 | Quilted Fabric Loot Tables (v1)                   | quilted_fabric_loot_tables_v1                 | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    60 | Quilted Fabric Mining Level API (v1)              | quilted_fabric_mining_level_api_v1            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    55 | Quilted Fabric Models (v0)                        | quilted_fabric_models_v0                      | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    21 | Quilted Fabric Networking (v0)                    | quilted_fabric_networking_v0                  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    13 | Quilted Fabric Networking API (v1)                | quilted_fabric_networking_api_v1              | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    42 | Quilted Fabric Object Builder API (v1)            | quilted_fabric_object_builder_api_v1          | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    59 | Quilted Fabric Particles (v1)                     | quilted_fabric_particles_v1                   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    39 | Quilted Fabric Registry Sync (v0)                 | quilted_fabric_registry_sync_v0               | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     4 | Quilted Fabric Renderer - Indigo                  | quilted_fabric_renderer_indigo                | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    10 | Quilted Fabric Renderer API (v1)                  | quilted_fabric_renderer_api_v1                | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    25 | Quilted Fabric Renderer Registries (v1)           | quilted_fabric_renderer_registries_v1         | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    16 | Quilted Fabric Rendering (v0)                     | quilted_fabric_rendering_v0                   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    18 | Quilted Fabric Rendering (v1)                     | quilted_fabric_rendering_v1                   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    38 | Quilted Fabric Rendering Data Attachment (v1)     | quilted_fabric_rendering_data_attachment_v1   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     8 | Quilted Fabric Rendering Fluids (v1)              | quilted_fabric_rendering_fluids_v1            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    28 | Quilted Fabric Resource Conditions API (v1)       | quilted_fabric_resource_conditions_api_v1     | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    50 | Quilted Fabric Resource Loader (v0)               | quilted_fabric_resource_loader_v0             | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    53 | Quilted Fabric Screen API (v1)                    | quilted_fabric_screen_api_v1                  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    30 | Quilted Fabric Screen Handler API (v1)            | quilted_fabric_screen_handler_api_v1          | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    33 | Quilted Fabric Textures (v0)                      | quilted_fabric_textures_v0                    | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    19 | Quilted Fabric Transfer API (v1)                  | quilted_fabric_transfer_api_v1                | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     3 | Quilted Fabric Transitive Access Wideners (v1)    | quilted_fabric_transitive_access_wideners_v1  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|------:|---------------------------------------------------|-----------------------------------------------|------------------------------|
+[17:53:05] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/*被我吃了*/.minecraft/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Quilt Env=CLIENT
+[17:53:06] [main/INFO]: Compatibility level set to JAVA_17
+[17:53:32] [main/INFO]: [Quilt Command] Networking support is enabled
+[17:53:34] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:53:37] [Render thread/INFO]: Setting user: 2345Explorer
+[17:53:37] [Render thread/INFO]: [Indigo] Registering Indigo renderer!
+[17:53:38] [Render thread/INFO]: [Quilt Command|Client] Networking support is enabled
+[17:53:38] [Render thread/WARN]: Skipping bad option: 
+[17:53:38] [Render thread/WARN]: Skipping bad option: 
+[17:53:38] [Render thread/WARN]: Skipping bad option: 
+[17:53:38] [Render thread/WARN]: Skipping bad option: 
+[17:53:39] [Render thread/INFO]: Backend library: LWJGL version 3.2.2 build 10
+[17:53:44] [Render thread/INFO]: Narrator library for x64 successfully loaded
+[17:53:45] [Render thread/INFO]: Reloading ResourceManager: Default (Quilted Fabric Rendering (v0), Quilted Fabric Mining Level API (v1), Quilt Registry Entry Attachments, Quilt Loader, Quilt Networking, Quilted Fabric Convention Tags API (v1), Quilted Fabric Transitive Access Wideners (v1), Quilt Recipe API, Quilt Base API, Quilt Tags API, Quilt Command API, Quilted Fabric Screen Handler API (v1), Quilted Fabric Loot Tables (v1), Quilt Resource Loader, Quilt Registry API, Quilted Fabric Renderer API (v1), Quilted Fabric Registry Sync (v0), Quilt Item Setting API, Quilted Fabric Resource Loader (v0), Quilted Fabric Rendering Data Attachment (v1), Quilt Item Group API, Quilted Fabric Biome API (v1), Quilted Fabric Loot API (v2), Quilt Lifecycle Events, Quilted Fabric API Lookup API (v1), Quilted Fabric Key Binding API (v1), Quilted Fabric Screen API (v1), Quilted Fabric API, Quilt Biome API, Quilted Fabric Particles (v1), Quilted Fabric Networking (v0), Quilt Block Entity API, Quilted Fabric Renderer Registries (v1), Quilted Fabric Rendering (v1), Quilted Fabric Events Lifecycle (v0), Quilted Fabric Renderer - Indigo, Quilted Fabric BlockRenderLayer Registration (v1), Quilt DataFixerUpper API, Quilted Fabric Networking API (v1), Quilted Fabric Game Rule API (v1), Quilted Fabric Models (v0), Quilted Fabric Textures (v0), Quilted Fabric Item API (v1), Quilt Tooltip API, Quilt Dimension API, Quilted Fabric Events Interaction (v0), Quilted Fabric Entity Events (v1), Quilted Fabric Object Builder API (v1), Quilted Fabric Rendering Fluids (v1), Quilted Fabric Content Registries (v0), Quilted Fabric Containers (v0), Quilted Fabric Dimensions API (v1), Quilted Fabric Transfer API (v1), Quilted Fabric API Base, Quilted Fabric Resource Conditions API (v1), Quilt Crash Info, Quilted Fabric Commands (v0), Quilted Fabric Lifecycle Events (v1), Quilt Screen API, Quilted Fabric Command API (v1), Quilted Fabric Crash Report Info (v1), Quilt Client Command API, Quilted Fabric Key Bindings (v0), Quilted Fabric Item Groups (v0), Quilt Block Extensions API)
+[17:53:54] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[17:53:54] [Render thread/INFO]: Sound engine started
+[17:53:55] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[17:54:01] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[17:54:01] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[17:54:01] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[17:54:21] [Render thread/INFO]: Stopping!
+</code></pre>
+<h3 id="低负载第二轮"><a href="#低负载第二轮" class="headerlink" title="低负载第二轮"></a>低负载第二轮</h3><p>占用不变。</p>
+<h4 id="Fabric-成绩-1"><a href="#Fabric-成绩-1" class="headerlink" title="Fabric 成绩"></a>Fabric 成绩</h4><p><strong>1分29.13秒</strong><br>然后是分段计时： 出现日志 14秒，窗口创建 1分01秒<br>最高占用：CPU 100% 内存 85%<br>日志因为基本没有变化就没放。</p>
+<h4 id="Quilt-成绩-1"><a href="#Quilt-成绩-1" class="headerlink" title="Quilt 成绩"></a>Quilt 成绩</h4><p><strong>58秒</strong><br>然后是分段计时： 出现日志 3秒，窗口创建 33秒<br>最高占用：CPU 100% 内存 78%<br>日志因为基本没有变化就没放。</p>
+<h3 id="高负载测试"><a href="#高负载测试" class="headerlink" title="高负载测试"></a>高负载测试</h3><p>这个其实就图一乐，没啥用，还不准。<br>相比较开启程序: Edge、腾讯会议、微信<br>不开 MC 占用: CPU 30% 内存 77%</p>
+<h4 id="Fabric-成绩-2"><a href="#Fabric-成绩-2" class="headerlink" title="Fabric 成绩"></a>Fabric 成绩</h4><p> <strong>2分26.97秒</strong><br>然后是分段计时： 出现日志 46秒，窗口创建 1分40秒<br>最高占用：CPU 100% 内存 90%<br>日志因为基本没有变化就没放。</p>
+<h4 id="Quilt-成绩-2"><a href="#Quilt-成绩-2" class="headerlink" title="Quilt 成绩"></a>Quilt 成绩</h4><p><strong>2分01.96秒</strong><br>然后是分段计时： 出现日志 10秒，窗口创建 1分25秒<br>最高占用：CPU 100% 内存 89%<br>日志因为基本没有变化就没放。</p>
+<p><strong>此成绩仅供参考！这个速度不能完全说明 Quilt 启动速度就比 Fabric 快，而且 Quilt 现在还在 Beta 开发阶段</strong><br><del>Fabric : 年轻人不讲武德</del></p>
+<h3 id="错误报告界面对比"><a href="#错误报告界面对比" class="headerlink" title="错误报告界面对比"></a>错误报告界面对比</h3><p>最后，来点神奇的测试，看看没加 FAPI / QSL 报的错长啥样<br>使用模组：Fabric: MagicLib（<del>因为需要FAPI的实在懒得找就找了个要 malilib 的模组</del>），Quilt: Quilt Loading Screen<br>已删除 FAPI / QSL 。</p>
+<h4 id="Fabric"><a href="#Fabric" class="headerlink" title="Fabric"></a>Fabric</h4><p><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093605470.png"><br>日志:</p>
+<pre><code class="bash">[18:34:31] [main/INFO]: Loading Minecraft 1.18.2 with Fabric Loader 0.14.11
+[18:34:32] [main/INFO]: Loading 5 mods:
+    - fabricloader 0.14.11
+    - java 17
+    - magiclib 0.5.37
+    - magiclib-1_18_2 0.5.37 via magiclib
+    - minecraft 1.18.2
+[18:34:32] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/*被我吃了*/.minecraft/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[18:34:33] [main/ERROR]: A critical error occurred
+top.hendrixshen.magiclib.dependency.DepCheckException: Mod resolution encountered an incompatible mod set!
+ Mod magiclib-1_18_2 compat version check failed.
+Requirements:
+    Mod malilib not found. Requires [*]!
+    at top.hendrixshen.magiclib.util.FabricUtil.compatVersionCheck(FabricUtil.java:152) [magiclib-1_18_2-0.5.37-974c64a09b010bbb.jar:?]
+    ...(省略一堆)
+</code></pre>
+<h4 id="Quilt"><a href="#Quilt" class="headerlink" title="Quilt"></a>Quilt</h4><p>Quilt 这边很好啊，最近刚找到了个用 Quilt 加载的模组，还正好要 QSL 。<br><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093620092.png"><br>日志:</p>
+<pre><code class="bash">[18:37:22] [main/INFO]: Loading Minecraft 1.18.2 with Quilt Loader 0.17.8
+[18:37:22] [main/INFO]: Loading mappings: jar:file:/*被我吃了*/.minecraft/libraries/net/fabricmc/intermediary/1.18.2/intermediary-1.18.2.jar!/mappings/mappings.tiny
+[18:37:22] [main/ERROR]: Incompatible mod set!
+org.quiltmc.loader.impl.FormattedException: org.quiltmc.loader.impl.discovery.ModSolvingException: Found 2 errors while resolving mods!
+    at org.quiltmc.loader.impl.QuiltLoaderImpl.load(QuiltLoaderImpl.java:214) ~[quilt-loader-0.17.8.jar:?]
+    at org.quiltmc.loader.impl.launch.knot.Knot.init(Knot.java:141) ~[quilt-loader-0.17.8.jar:?]
+    at org.quiltmc.loader.impl.launch.knot.Knot.launch(Knot.java:70) [quilt-loader-0.17.8.jar:?]
+    at org.quiltmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:24) [quilt-loader-0.17.8.jar:?]
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+    ...(省略一堆)
+    ... 9 more
+    Suppressed: org.quiltmc.loader.impl.discovery.ModSolvingException: Unhandled error involving mod 'Quilt Loading Screen' (quilt_loading_screen) v3.0.0:
+Dependency for mod 'quilt_loading_screen' on quilt_resource_loader versions [*] (0 valid options, 0 invalid options)
+    ...(省略一堆)
+    Suppressed: org.quiltmc.loader.impl.discovery.ModSolvingException: Unhandled error involving mod 'Quilt Loading Screen' (quilt_loading_screen) v3.0.0:
+Dependency for mod 'quilt_loading_screen' on midnightlib versions [*] (1 valid options, 0 invalid options)
+    + mod 'midnightlib' version 0.4.0 loaded from mods\quilt_loading_screen-3.0.0+1.18.2.jar!/META-INF/jars/midnightlib-0.4.0.jar
+Dependency for mod 'midnightlib' on fabric-renderer-registries-v1 versions [*] (0 valid options, 0 invalid options)
+        at org.quiltmc.loader.impl.solver.ModSolver.fallbackErrorDescription(ModSolver.java:615) ~[quilt-loader-0.17.8.jar:?]
+        ...(省略一堆)
+</code></pre>
+<p>可以看到 Quilt 的错误信息相比较 Fabric 还是能友好一点的，当然 MagicLib 也能加。<br><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093632445.png"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Quilt 目前是一个还可以的加载器，在将来可能发挥更多作用，自动下载前置模组 要是实现了会是个很好的事， Quilt 目前对开发者也很友好，<del>虽然现在没多少模组</del>，最后希望 Quilt 越做越好。</p>
+<hr>
+<p>参考：</p>
+<p>Fabric 官网 <a href="https://fabricmc.net/">Fabric | The home of the Fabric mod development toolchain. (fabricmc.net)</a></p>
+<p>Quilt 官网 <a href="https://quiltmc.org/en">QuiltMC | The mod-loader that cares.</a> </p>
+<p>Quilt Loader MC百科页面 <a href="https://www.mcmod.cn/class/3901.html">Quilt Loader - MC百科|最大的Minecraft中文MOD百科 (mcmod.cn)</a></p>
+<p>QSL MC百科页面 <a href="https://www.mcmod.cn/class/6246.html">[QSL]Quilt Standard Libraries - MC百科|最大的Minecraft中文MOD百科 (mcmod.cn)</a></p>
+<p>QSL CurseForge页面 <a href="https://www.curseforge.com/minecraft/mc-mods/qsl">Quilted Fabric API (QFAPI) / Quilt Standard Libraries (QSL) - Mods - Minecraft - CurseForge</a></p>
+]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手工制作使用WinXShell的PE(不是直接生成)</title>
+    <url>/2022/03/11/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>众所周知，PE有很多，比如：WePE、优启通、EdgelessPE、FirPE等。<br>当然，这些都是别人做好的。<br>能不能自己做一个？<br>所以就有了这个</p>
+<h4 id="提示：因为用的是WinXShell而不是Explorer，最终效果可能不太好看"><a href="#提示：因为用的是WinXShell而不是Explorer，最终效果可能不太好看" class="headerlink" title="提示：因为用的是WinXShell而不是Explorer，最终效果可能不太好看"></a>提示：因为用的是<code>WinXShell</code>而不是<code>Explorer</code>，最终效果可能不太好看</h4><h2 id="一-准备"><a href="#一-准备" class="headerlink" title="一. 准备"></a>一. 准备</h2><h3 id="1-系统镜像"><a href="#1-系统镜像" class="headerlink" title="1.系统镜像"></a>1.系统镜像</h3><p>可以从<a href="https://www.microsoft.com/zh-cn/software-download">微软</a>、<a href="https://msdn.itellyou.cn/">msdn我告诉你</a>和<a href="https://next.itellyou.cn/Original">msdn的新版</a>下载。<br>这里使用<code>Windows10 21H2</code>。</p>
+<h3 id="2-PECMD"><a href="#2-PECMD" class="headerlink" title="2.PECMD"></a>2.PECMD</h3><p>原作者提供的官网好像没法用了</p>
+<blockquote>
+<p>官方网址：<a href="http://mdyblog.blog.163.com/blog/static/106150119201202591855298/">http://mdyblog.blog.163.com/blog/static/106150119201202591855298/</a><br>NonCopyRight，任何个人和组织(含商业组织)可随意免费使用，随意修改，…。技术支持可咨询作者<br>—— PECMD帮助第一页</p>
+</blockquote>
+<p>可以在PE里提取出来。</p>
+<p>如果找到官网可以在评论里说一下</p>
+<h3 id="3-WinXShell"><a href="#3-WinXShell" class="headerlink" title="3.WinXShell"></a>3.WinXShell</h3><p>也是没找到，只能提取了<br>文件应该是这样<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16.png"></p>
+<h3 id="4-WimTool"><a href="#4-WimTool" class="headerlink" title="4.WimTool"></a>4.WimTool</h3><p>用<a href="https://github.com/Chuyu-Team/Dism-Multi-language/releases/latest">Dism++</a>也可以，生成<code>wim</code>文件用的</p>
+<blockquote>
+<p>Lxl1638 BBS.WUYOU.COM 茂名二中 老九，2010.07.16<br>——WimTool帮助界面</p>
+</blockquote>
+<p>也找不到官网</p>
+<h3 id="5-UltraISO"><a href="#5-UltraISO" class="headerlink" title="5.UltraISO"></a>5.<a href="https://www.ultraiso.com/">UltraISO</a></h3><p>不是免费的。可以从各种各样的地方提取出绿色版/单文件版。</p>
+<h2 id="二、解开镜像"><a href="#二、解开镜像" class="headerlink" title="二、解开镜像"></a>二、解开镜像</h2><h3 id="1-双击打开系统镜像"><a href="#1-双击打开系统镜像" class="headerlink" title="1.双击打开系统镜像"></a>1.双击打开系统镜像</h3><p>这里镜像在F盘，<strong>后面F盘都是这个位置</strong><br><img src="/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985801.png" alt="114514"></p>
+<h3 id="2-解开"><a href="#2-解开" class="headerlink" title="2.解开"></a>2.解开</h3><p><strong>用管理员身份</strong>打开WimTool</p>
+<p>“选择要挂载或解开的WIM文件”填<code>F:\sources\boot.wim</code><br>“选择挂载或解开的目标文件夹”填解开的文件夹，需要是空的，<strong>后面将这个文件夹称之为&lt;PE文件目录&gt;</strong><br>其他不用管<br><img src="/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985822.png" alt="在这里插入图片描述"><br>点击解开镜像<img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985823.png"><br>等待解开</p>
+<h3 id="3-提权"><a href="#3-提权" class="headerlink" title="3.提权"></a>3.提权</h3><p>解开后，只有<code>TrustedInstaller</code>有权限<br>使用工具在右键菜单增加<code>取得所有权</code>，这里用<a href="https://www.sordum.org/7615/easy-context-menu-v1-6/">EcMenu</a>。<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_12,color_FFFFFF,t_70,g_se,x_16.png"></p>
+<h3 id="4-删除不必要文件"><a href="#4-删除不必要文件" class="headerlink" title="4.删除不必要文件"></a>4.删除不必要文件</h3><p>删除<code>&lt;PE文件目录&gt;\sources</code>文件夹</p>
+<h2 id="三、添加文件"><a href="#三、添加文件" class="headerlink" title="三、添加文件"></a>三、添加文件</h2><h3 id="1-复制F-sources-install-wim-1-Windows-Web到-Windows-Web-壁纸"><a href="#1-复制F-sources-install-wim-1-Windows-Web到-Windows-Web-壁纸" class="headerlink" title="1.复制F:\sources\install.wim\1\Windows\Web到<PE文件目录>\Windows\Web(壁纸)"></a>1.复制<code>F:\sources\install.wim\1\Windows\Web</code>到<code>&lt;PE文件目录&gt;\Windows\Web</code>(壁纸)</h3><p><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/dcf9c963f0ca4ae4b09c8673831ce3f9.png"></p>
+<h3 id="2-复制WinXShell-WinXShell文件夹-到-Program-Files"><a href="#2-复制WinXShell-WinXShell文件夹-到-Program-Files" class="headerlink" title="2.复制WinXShell(WinXShell文件夹)到<PE文件目录>\Program Files"></a>2.复制<code>WinXShell</code>(WinXShell文件夹)到<code>&lt;PE文件目录&gt;\Program Files</code></h3><p>记得顺便把<code>&lt;PE文件目录&gt;\Windows\Web\Wallpaper\Windows\img0.jpg</code>到<code>&lt;PE文件目录&gt;\Program Files\WinXShell\wallpaper.jpg</code></p>
+<h3 id="3-PECMD和PECMD-INI"><a href="#3-PECMD和PECMD-INI" class="headerlink" title="3.PECMD和PECMD.INI"></a>3.PECMD和PECMD.INI</h3><p>复制<code>PECMD.EXE</code>到<code>&lt;PE文件目录&gt;\Windows\System32\</code><br>在<code>&lt;PE文件目录&gt;\Windows</code>新建文件<code>PECMD.INI</code>并打开，输入</p>
+<pre><code class="c">//初始化WinPE, 会生成desktop.ini, 需要放在前面
+INIT U
+//显示隐藏分区
+SHOW -check -1:-1
+//回收站大小设为0
+RECY *:\,0
+//关闭小键盘（防止不带数字键的笔记本键盘输入错误）
+NUMK 0
+//删除 Desktop.ini
+FILE X:\Windows\System32\config\systemprofile\Desktop\desktop.ini
+FILE X:\Users\Default\Desktop\desktop.ini
+FILE X:\Users\Public\Desktop\desktop.ini
+FILE X:\Users\Administrator\Desktop\desktop.ini
+//加载壁纸
+WALL X:\Windows\Web\Wallpaper\Windows\img0.jpg
+//将Shell设置为WinXShell
+SHEL X:\Program Files\WinXShell\WinXShell.exe
+</code></pre>
+<p>可以不带参数打开<code>PECMD.EXE</code>来查看其他命令和用法。</p>
+<h2 id="四、更改注册表"><a href="#四、更改注册表" class="headerlink" title="四、更改注册表"></a>四、更改注册表</h2><p>打开<code>regedit</code></p>
+<h3 id="1-在HKLM加载-Windows-System32-config-SYSTEM为SYS"><a href="#1-在HKLM加载-Windows-System32-config-SYSTEM为SYS" class="headerlink" title="1.在HKLM加载<PE文件目录>\Windows\System32\config\SYSTEM为SYS"></a>1.在<code>HKLM</code>加载<code>&lt;PE文件目录&gt;\Windows\System32\config\SYSTEM</code>为SYS</h3><p><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985834.png"><br>在<code>HKLM\SYS\Setup</code>下面找到<code>CmdLine</code>更改为<code>PECMD.EXE MAIN X:\Windows\PECMD.INI</code><br>解释一下：<code>CmdLine</code>是开机自动启动的任务，把原来的 安装Windows 改成打开<code>PECMD</code>执行<code>PECMD.INI</code>里的内容<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985845.png"><br>可以上载了<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985846.png"></p>
+<h3 id="2-在HKLM加载-Windows-System32-config-SOFTWARE为SOFT"><a href="#2-在HKLM加载-Windows-System32-config-SOFTWARE为SOFT" class="headerlink" title="2.在HKLM加载<PE文件目录>\Windows\System32\config\SOFTWARE为SOFT"></a>2.在<code>HKLM</code>加载<code>&lt;PE文件目录&gt;\Windows\System32\config\SOFTWARE</code>为<code>SOFT</code></h3><p>找到<code>HKLM\SOFT\Microsoft\Windows\CurrentVersion\Policies\System</code><br>将<code>EnableCursorSuppression</code>更改为0<br>然后上载。</p>
+<h3 id="3-在HKLM加载-Windows-System32-config-DEFAULT为DEF"><a href="#3-在HKLM加载-Windows-System32-config-DEFAULT为DEF" class="headerlink" title="3.在HKLM加载<PE文件目录>\Windows\System32\config\DEFAULT为DEF"></a>3.在<code>HKLM</code>加载<code>&lt;PE文件目录&gt;\Windows\System32\config\DEFAULT</code>为<code>DEF</code></h3><p>找到<code>HKLM\DEF\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</code><br>新建32位DWORD值:</p>
+<pre><code class="c">//显示隐藏文件
+Hidden 设置为1
+//显示文件扩展名
+HideFileExt 设置为0
+</code></pre>
+<p>然后上载。</p>
+<h2 id="五、打包"><a href="#五、打包" class="headerlink" title="五、打包"></a>五、打包</h2><p>到这里PE就做好了。可以打包了。<br>用管理员身份打开WimTool-&gt;新制和追加<br>源目录填&lt;PE文件目录&gt;<br>保存到<code>boot.wim</code><br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985857.png"><br>点击新建映像<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985858.png"></p>
+<p>制作好<code>wim</code>后用 UltraISO 打开<strong>原来的</strong>系统镜像<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985859.png"><br>删除<code>support</code>、<code>sources\*.*</code>、<code>autorun.inf</code>和<code>setup.exe</code><br>在<code>sources</code>下面把生成的<code>boot.wim</code>添加进去<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-166700829858610.png"><br><strong>点击另存为</strong>，不要点保存</p>
+<h2 id="六、测试"><a href="#六、测试" class="headerlink" title="六、测试"></a>六、测试</h2><p>这里使用<a href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">VMware Workstation Pro</a>测试。<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-166700829858711.png"><br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-166700829858712.png"><br><del>咕咕咕</del></p>
+]]></content>
+      <categories>
+        <category>科技</category>
+        <category>手工制作使用WinXShell的PE</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VSCode 配置 C++ 环境</title>
+    <url>/2022/09/01/VSCode-CPP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>开学了，后面更新速度会更慢，望周知。</p>
+<p><strong>先说一下, 这个教程不是给完整<code>json</code>复制粘贴, 是要跟教程配置 (放心, 大部分配置都很简单)。</strong></p>
+<h2 id="安装VSCode"><a href="#安装VSCode" class="headerlink" title="安装VSCode"></a>安装VSCode</h2><p>官网: <a href="https://code.visualstudio.com/">Visual Studio Code - Code Editing. Redefined</a></p>
+<p><img src="/img/VSCode-CPP/image-20220901191321094.png"></p>
+<p>我建议是点 Other downloads 去下 System Installer , 所有用户都可以使用，还可以改安装目录到 D 盘，缺点就是要管理员权限。</p>
+<p><img src="/img/VSCode-CPP/image-20220901191405966.png"></p>
+<p><img src="/img/VSCode-CPP/image-20220901191830026.png"></p>
+<p><img src="/img/VSCode-CPP/image-20220901191905049.png"></p>
+<p>同意, 选目录就不说了, 然后这两个建议勾上, 点安装就行了。</p>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><p><img src="/img/VSCode-CPP/image-20220901192134345.png"></p>
+<p>点 安装并重启 。</p>
+<p><img src="/img/VSCode-CPP/image-20220901192156653.png"></p>
+<p>点 Install , 重启 VSCode 。</p>
+<p>如果没弹出的话, 左边找到 Extensions , 点击, </p>
+<p><img src="/img/VSCode-CPP/image-20220901192311320.png"></p>
+<p>(左边 洛谷 栏和 Github 栏都是扩展)</p>
+<p>第一个点 Install , 重启 VSCode 。</p>
+<p><img src="/img/VSCode-CPP/image-20220901192427673.png"></p>
+<p>然后就变成中文了, 左边找到 插件 , 点击, 搜索 <code>C/C++</code>。</p>
+<p><img src="/img/VSCode-CPP/image-20220901192554110.png"></p>
+<p>别忘了安装。(颜色变了是改的主题)</p>
+<h2 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h2><p><img src="/img/VSCode-CPP/image-20220901192759412.png"></p>
+<p>点打开文件夹, 找个后面放代码的文件夹。</p>
+<p><img src="/img/VSCode-CPP/image-20220901192958498.png"></p>
+<p>点信任。</p>
+<p><code>Ctrl+Shift+P</code>打开命令面板, 输入<code>Edit Configurations</code> (其实输入<code>Edit Conf</code>就能找到了)</p>
+<p><img src="/img/VSCode-CPP/image-20220901193202662.png"></p>
+<p>选择<code>C/C++: Edit Configurations (UI)</code></p>
+<p><img src="/img/VSCode-CPP/image-20220901193305665.png"></p>
+<p><del>可以看到这玩意十分的不智能, 编译器路径写的 VS 的编译器</del>, 所以把它改成<a href="/2022/08/01/%E5%9C%A8Windows%E4%B8%AD%E5%AE%89%E8%A3%85MinGW-w64%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC">上回</a>整的编译器。</p>
+<p><img src="/img/VSCode-CPP/image-20220901193426182.png"></p>
+<p><img src="/img/VSCode-CPP/image-20220901194211795.png"></p>
+<p>参数建议 OIer 写和<a href="https://www.luogu.com.cn/discuss/86673">洛谷</a>一样的(当然, <code>-DONLINE_JUDGE</code>就不用了, 就是加个 define ), 不是 OIer 的随便, 但是 <code>-Wall</code>建议加, 毕竟能显示所有警告。</p>
+<p><img src="/img/VSCode-CPP/image-20220901194926738.png"></p>
+<p>然后下面 IntelliSense 模式选 <code>windows-gcc-*</code>, 我这是 64 位的, 选的是<code>x64</code>。</p>
+<p><img src="/img/VSCode-CPP/image-20220901194810901.png"></p>
+<p><img src="/img/VSCode-CPP/image-20220901194958336.png"></p>
+<p>然后把 C 标准 和 C++ 标准 设置好编译器就算完事了。</p>
+<p><img src="/img/VSCode-CPP/image-20220901195114670.png"></p>
+<p>可以看到, <code>.vscode</code>里已经有一个文件了。</p>
+<p><code>Ctrl+N</code>新建文件, <code>Ctrl+K M</code>选择语言模式, 选择<code>C++</code>。</p>
+<p><img src="/img/VSCode-CPP/image-20220901195213751.png"></p>
+<p>点 终端 -&gt; 配置任务 。</p>
+<p><img src="/img/VSCode-CPP/image-20220901200741633.png"></p>
+<p>选<code>C/C++: g++.exe 生成活动文件</code>。</p>
+<p>然后就完事了。</p>
+<p><img src="/img/VSCode-CPP/image-20220901200847977.png"></p>
+<p>现在<code>.vscode</code>下应该至少有两个文件, 应该不会多于三个(可能会有<code>settings.json</code>文件)。</p>
+<p>点 运行 -&gt; 添加配置 。</p>
+<p><img src="/img/VSCode-CPP/image-20220901195935931.png"></p>
+<p>选择<code>C++ (GDB/LLDB)</code></p>
+<p><img src="/img/VSCode-CPP/image-20220901200032753.png"></p>
+<p>再点 运行 -&gt; 添加配置 。</p>
+<p><img src="/img/VSCode-CPP/image-20220901200129746.png"></p>
+<p>选择 <code>C/C++: (gdb) 启动</code>。</p>
+<p><img src="/img/VSCode-CPP/image-20220901200307685.png"></p>
+<p>会出来一堆东西, 不用管, 要看的是<code>program</code>和<code>miDebuggerPath</code>, 后面还得加个<code>preLaunchTask</code>。</p>
+<p>首先, 把<code>program</code>改成<code>${fileDirname}/${fileBasenameNoExtension}.exe</code>, 意思是可执行文件的路径。</p>
+<p>然后, <code>miDebuggerPath</code>改成 <code>&lt;MinGW安装路径&gt;/bin/gdb.exe</code>, 如<code>D:/MinGW-w64/12.1.0-rev3/bin/gdb.exe</code></p>
+<p><img src="/img/VSCode-CPP/image-20220901201816806.png"></p>
+<p>在<code>setupCommands</code>中括号后面添加<code>"preLaunchTask": "C/C++: g++.exe 生成活动文件"</code>, 用处是在运行前编译, <code>setupCommands</code>后面逗号别忘了加。</p>
+<p><img src="/img/VSCode-CPP/image-20220901201350472.png"></p>
+<p><img src="/img/VSCode-CPP/image-20220901201448677.png"></p>
+<p><code>.vscode</code>三个文件都配置好了, 写个 Hello World 试试。</p>
+<p><img src="/img/VSCode-CPP/image-20220901201549838.png"></p>
+<p>点 运行 -&gt; 以非调试模式运行。</p>
+<p><img src="/img/VSCode-CPP/image-20220901202048479.png"></p>
+<p>编译。</p>
+<p><img src="/img/VSCode-CPP/image-20220901202124271.png"></p>
+<p>但是, 运行是在 VSCode 集成终端里的,  cmd 不会自己关掉, 所以要去<code>launch.json</code>改改。</p>
+<p>部分json :</p>
+<pre><code class="json">        {
+            "name": "By 2345Explorer",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:/Windows/System32/cmd.exe",	//加 按任意键继续 (pause)
+            "args": [
+                "/c",
+                "${fileBasenameNoExtension}.exe",
+                "&amp;&amp;",
+                "pause"	//pause
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "externalConsole": true,	//这里改是为了不用集成终端
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:/MinGW-w64/12.1.0-rev3/bin/gdb.exe",	//别忘了改
+            "setupCommands": [
+                ...	//懒得写了
+            ]
+             "preLaunchTask": "By 2345Explorer"	//别全部复制哈
+        }
+</code></pre>
+<p><img src="/img/VSCode-CPP/image-20220901202934905.png"></p>
+<p>还是 Hello World 测试。</p>
+<p><img src="/img/VSCode-CPP/image-20220901203020575.png"></p>
+<p>好的 那么教程就到这里了。QwQ</p>
+]]></content>
+      <categories>
+        <category>cpp</category>
+      </categories>
+      <tags>
+        <tag>cpp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 Tampermonkey 和 Stylus 美化洛谷</title>
+    <url>/2022/08/11/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>先放效果。</p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811145343946.png"></p>
+<p>然后是教程。</p>
+<h2 id="安装扩展"><a href="#安装扩展" class="headerlink" title="安装扩展"></a>安装扩展</h2><p>Tampermonkey : <a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd">Edge</a> <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-CN">Chrome</a> <a href="https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/">Firefox</a></p>
+<p>Stylus: <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=zh-CN">Chrome</a> <a href="https://addons.mozilla.org/zh-CN/firefox/addon/styl-us/">Firefox</a> <a href="/downloads/clngdbkpkpeebahjckkjfobafhncgmne_53547.crx">本站的镜像</a>(老版本)</p>
+<p>很简单，就不多说了。</p>
+<h2 id="安装脚本"><a href="#安装脚本" class="headerlink" title="安装脚本"></a>安装脚本</h2><p><a href="https://exlg.cc/install.html">Extend-Luogu</a></p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811151044821.png"></p>
+<p>点 阿里云 OSS。</p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811151116050.png"></p>
+<p>(因为我已经装好了，所以这里是重新安装)</p>
+<h2 id="安装样式"><a href="#安装样式" class="headerlink" title="安装样式"></a>安装样式</h2><p>ps: 这是<a href="https://www.userstyles.org/">UserStyles官网</a>, 但是目前用不了, 所以链接是UserStyles.org Archive的。</p>
+<p><a href="https://uso.kkx.one/style/166554">氩洛谷</a></p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811152140622.png"></p>
+<p>点 Install With Stylus</p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811152221710.png"></p>
+<p>(因为我已经装好了, 所以是重新安装)</p>
+<p><a href="https://uso.kkx.one/style/235716">Smart - Luogu</a></p>
+<p><a href="https://uso.kkx.one/style/215816">洛谷圆角 Luogu</a></p>
+<p>安装方式同上。</p>
+<p>然后来到<a href="extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html">Stylus管理样式</a></p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811152540759.png"></p>
+<p>点 Smart-Luogu</p>
+<p><code>Ctrl+F</code>搜索<code>https://cdn.luogu.com.cn/upload/image_hosting/dx6bxop7.png</code></p>
+<p>选中上一行到下一行 <code>Ctrl+/</code>注释这三行。</p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811152846442.png"></p>
+<p>保存，回去</p>
+<p>点 洛谷圆角 Luogu</p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811153143820.png"></p>
+<p>把这几行注释了。</p>
+<p>保存，回去。</p>
+<p>找到氩洛谷，如果没有齿轮图标就更新一下。</p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811153236288.png"></p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811153322666.png"></p>
+<p>(主题改成透明就行 不透明度和颜色自己看哪个好看)</p>
+<p>回到洛谷，刷新。</p>
+<p><img src="/img/%E7%BE%8E%E5%8C%96%E6%B4%9B%E8%B0%B7/image-20220811153626318.png"></p>
+<p><font color="white">我太菜了QAQ</font></p>
+]]></content>
+      <categories>
+        <category>科技</category>
+      </categories>
+      <tags>
+        <tag>科技</tag>
+      </tags>
+  </entry>
+</search>

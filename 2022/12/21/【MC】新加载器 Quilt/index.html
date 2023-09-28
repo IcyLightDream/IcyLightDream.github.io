@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">【MC】新加载器 Quilt 好用吗？和 Fabric 相比好在哪？ | IcyLightDream&#39;s Blog</title>
+  
+    <link rel="shortcut icon" href="/img/custom/favicon.png">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "QwQIcyLightDream's Blog";
+  mashiro_option.author_name = "IcyLightDream's Blog";
+  mashiro_option.site_url = "https://IcyLightDream.github.io";
+  mashiro_option.v_appId = "";
+  mashiro_option.v_appKey = "";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://macesuted.moe/wp-json/sakura/v1/image/feature,https://p.qpic.cn/qq_expression/41384847/41384847_0_0_0_9710B2BF57B43E59DC64A5C64407F5B2_0_0/0,https://s1.ax1x.com/2018/03/09/9RBOTs.gif,https://i.loli.net/2019/08/20/tQoa6s9G5mDINLv.png".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/piao.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop ">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://IcyLightDream.github.io">
+          <img src="/img/custom/avatar.png">
+        </a>
+      </div>
+      <div class="header-info">
+        <!-- <p>Live your life with passion! With some drive!</p> -->
+        <p id="jinrishici-sentence">正在加载今日诗词....</p>
+        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="http://github.com/IcyLightDream" target="_blank" class="social-github" title="Github">
+                    <img src="/img/social/github.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://gitee.com/IcyLightDream" target="_blank" class="social-github" title="Gitee">
+                    <img src="/img/social/gitee.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://music.163.com/#/user/home?id=1944909911" target="_blank" class="social-github" title="网易云">
+                    <img src="/img/social/wangyiyun.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="mailto:3553719228@qq.com" target="_blank" class="social-github" title="Email">
+                    <img src="/img/social/email.svg">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://www.luogu.com.cn/user/243534" target="_blank" class="social-github" title="洛谷">
+                    <img src="https://cdn.luogu.com.cn/fe/logo-single.png?0a231b572e3eb12887faedad7d00e829">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">QwQ</span>
+            <span class="shironeko">IcyLightDream&#39;s Blog</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/categories">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-bookmark" aria-hidden="true"></i>
+                    分类
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/tags">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-tags" aria-hidden="true"></i>
+                    标签
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <img class="pattern-attachment-img lazyload" style="background-image: url(/img/【MC】新加载器 Quilt.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="/img/【MC】新加载器 Quilt.png">
+    </img>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      【MC】新加载器 Quilt 好用吗？和 Fabric 相比好在哪？</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="/img/custom/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href=""></a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2022-12-21
+        <!-- <span class="bull">·</span> -->
+        <!-- <span id="busuanzi_value_page_pv"></span>次阅读 -->
+      </p>
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>在今年四月 (2022/4/20) ，一个<del>船新</del>加载器 Quilt 发布了第一个测试版。</p>
+<blockquote>
+<p>Quilt officially entered its first beta today, attracting an influx of new users and an amazing amount of support and positive feedback. By the end of the day, Quilt was happily loading both Quilt and Fabric mods, and had <a target="_blank" rel="noopener" href="https://modrinth.com/mod/qsl">uploaded QSL to Modrinth</a></p>
+<p>——来自 <a target="_blank" rel="noopener" href="https://quiltmc.org/en/about/timeline/">Quilt 官网时间线</a></p>
+</blockquote>
+<p><font color="red">Quilt 项目仍处于 Beta 阶段，使用有风险，遇到问题请及时向开发团队汇报。</font></p>
+<h2 id="Quilt是什么？"><a href="#Quilt是什么？" class="headerlink" title="Quilt是什么？"></a>Quilt是什么？</h2><p>先放下 Quilt的官网: <a target="_blank" rel="noopener" href="https://quiltmc.org/en">QuiltMC | The mod-loader that cares.</a> Fabric官网也放这了: <a target="_blank" rel="noopener" href="https://fabricmc.net/">Fabric | The home of the Fabric mod development toolchain. (fabricmc.net)</a></p>
+<blockquote>
+<p>The Quilt project is an open-source, community-driven modding toolchain designed primarily for Minecraft. By focusing on speed, ease of use and modularity, Quilt aims to provide a sleek and modern modding toolchain with an open ecosystem.</p>
+<p>——来自 <a target="_blank" rel="noopener" href="https://quiltmc.org/en">Quilt 官网</a></p>
+</blockquote>
+<p>Quilt 是新一代开源的、以社区为载体的、基于 <a target="_blank" rel="noopener" href="https://fabricmc.net/">Fabric</a> 的 Minecraft 模组加载器兼模组开发工具链。Quilt 致力于通过高效、易用与模块化的建设来打造一个开放且现代化的生态与工具链。</p>
+<p>因为是基于 Fabric 的，所以<strong>大多数</strong>模组都可以未经修改地加载并运行（当然，需要 Fabric API 的话需要安装 QFAPI ，下面会说这件事）。</p>
+<h3 id="那么对比-Fabric-，好在哪？"><a href="#那么对比-Fabric-，好在哪？" class="headerlink" title="那么对比 Fabric ，好在哪？"></a>那么对比 Fabric ，好在哪？</h3><p>先给跳着看的人说一下， Quilt 基于 Fabric 开发，<strong>大多数</strong> Fabric 模组未经修改就能加载并运行（当然，需要 Fabric API 的话可以需要装 QFAPI ，下面会说）。</p>
+<p>Quilt 有着比 Fabric 更好（<del>至少现在</del>）的社区环境，规则在这：<a target="_blank" rel="noopener" href="https://quiltmc.org/en/community/rules/">QuiltMC | Rules</a> 。<del>我是真不太想看（</del></p>
+<p>Quilt <strong>在将来</strong>可以自动下载模组的前置模组，这是个好东西，可惜现在没实现。:(</p>
+<p>（现在用 Quilt 的模组其实没多少，大多数支持 Quilt 的模组都是用 Quilt 自带的 Fabric 加载器加载）</p>
+<h2 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h2><h3 id="官网下载安装"><a href="#官网下载安装" class="headerlink" title="官网下载安装"></a>官网下载安装</h3><p>下载：<a target="_blank" rel="noopener" href="https://quiltmc.org/en/install/client/">QuiltMC | Install: Client</a> ，下载不麻烦，我就不说了<br><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093432062.png"><br>版本选好，文件夹选好点 Install 。</p>
+<h3 id="启动器安装"><a href="#启动器安装" class="headerlink" title="启动器安装"></a>启动器安装</h3><p>目前支持安装 Quilt 的<strong>国内的启动器</strong>只有 HMCL 和 BakaXL 。据说 PCL 也快推出了，这里以 HMCL 为例。<br><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093449987.png"><br>安装版本，选游戏版本，安装 Quilt 和 QSL/QFAPI （这个和 FAPI 是一样的，大多数模组都得要，装上也没啥事），安装（快进！！！)</p>
+<p>如果前面没装 QSL/QFAPI 的话，给个下载地址：<a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/qsl/files">Quilted Fabric API (QFAPI) / Quilt Standard Libraries (QSL) - Mods - Minecraft - CurseForge</a> 安装就很简单了，直接扔到 mods 文件夹就行。</p>
+<p>顺便解释一下 QSL/QFAPI : QSL，Quilt Standard Libraries ，可以简单理解为和 Fabric API 用处相同只不过换成了 Quilt 用的，QFAPI， Quilted Fabric API ，经 Quilt 修改过的 Fabric API ，让 Fabric API 和 Quilt 兼容（直接用 Fabric API 会有bug，兼容性也不好）。</p>
+<h2 id="和-Fabric-对比"><a href="#和-Fabric-对比" class="headerlink" title="和 Fabric 对比"></a>和 Fabric 对比</h2><h3 id="启动速度"><a href="#启动速度" class="headerlink" title="启动速度"></a>启动速度</h3><p>首先，说下环境</p>
+<p>Fabric Loader &amp; API 、 Quilt Loader &amp; Standard Libraries 均由 HMCL 安装，启动使用 PCL2 ，正版验证微软账户。</p>
+<p>配置：CPU Intel第八代i3 二核四线程 内存 8GiB 虚拟内存 10GiB+ 保证不占满物理内存 磁盘 SSD 显卡 Intel UHD Graphics 620  <font color="white">这都什么阴间配置</font></p>
+<p>Java: OpenJDK, Dragonwell 17.0.5.0.5+8-GA 。</p>
+<p>游戏分配内存: 1GiB</p>
+<p>版本：游戏版本1.18.2，版本隔离开启</p>
+<p>Fabric: Loader 0.14.11，API 0.67.0</p>
+<p>Quilt: Loader 0.17.8 ，QSL QFAPI 1.0.0-beta.28、QSL 1.1.0-beta.26、FAPI 0.67.0<br>模组: Fabric: Fabric API 、 Quilt: QSL 。</p>
+<p>全程打开软件: TrafficMonitor（用于监测CPU&amp;内存占用）、时钟（用于计时）、记事本（用于查看日志）、还有其他算在不开 MC 占用里的软件</p>
+<p>计时规则: 从进程创建开始，创建进程后任务管理器退出。</p>
+<p>准备测两轮低负载，一轮高负载，两轮低负载一回没缓存(.fabric/.quilt)，另一回在第一回测试完毕后测试，有缓存(.fabric/.quilt)，高负载没缓存测试（也就是删掉其他文件后再测试）。</p>
+<h3 id="低负载第一轮"><a href="#低负载第一轮" class="headerlink" title="低负载第一轮"></a>低负载第一轮</h3><p>不开 MC 占用: CPU 5% 内存 74%</p>
+<h4 id="Fabric-成绩"><a href="#Fabric-成绩" class="headerlink" title="Fabric 成绩"></a>Fabric 成绩</h4><p><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093515047.png"><br><strong>2分09.72秒</strong></p>
+<p>然后是分段计时： 出现日志 31秒，窗口创建 1分45秒</p>
+<p>最高占用：CPU 100% 内存 88%</p>
+<p>日志：</p>
+<pre><code class="bash">[17:46:12] [main/INFO]: Loading Minecraft 1.18.2 with Fabric Loader 0.14.11
+[17:46:12] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[17:46:13] [main/INFO]: Loading 49 mods:
+    - fabric-api 0.67.0+1.18.2
+    - fabric-api-base 0.4.4+d7c144a860 via fabric-api
+    - fabric-api-lookup-api-v1 1.6.2+2373a54560 via fabric-api
+    - fabric-biome-api-v1 8.0.6+651bcc5960 via fabric-api
+    - fabric-block-api-v1 1.0.0+ee3621fc60 via fabric-api
+    - fabric-blockrenderlayer-v1 1.1.12+3ac43d9560 via fabric-api
+    - fabric-command-api-v1 1.1.9+d7c144a860 via fabric-api
+    - fabric-commands-v0 0.2.8+b4f4f6cd60 via fabric-api
+    - fabric-containers-v0 0.1.23+d7c144a860 via fabric-api
+    - fabric-content-registries-v0 3.1.1+c85f2e3860 via fabric-api
+    - fabric-convention-tags-v1 1.0.1+474e4f7960 via fabric-api
+    - fabric-crash-report-info-v1 0.2.1+ee261a3e60 via fabric-api
+    - fabric-data-generation-api-v1 3.0.2+9fcb91d260 via fabric-api
+    - fabric-dimensions-v1 2.1.20+489d6f8260 via fabric-api
+    - fabric-entity-events-v1 1.4.8+d7c144a860 via fabric-api
+    - fabric-events-interaction-v0 0.4.19+d7c144a860 via fabric-api
+    - fabric-events-lifecycle-v0 0.2.20+d7c144a860 via fabric-api
+    - fabric-game-rule-api-v1 1.0.13+d7c144a860 via fabric-api
+    - fabric-item-api-v1 1.6.0+d8cf4e5a60 via fabric-api
+    - fabric-item-groups-v0 0.3.14+91896a4960 via fabric-api
+    - fabric-key-binding-api-v1 1.0.12+54e5b2ec60 via fabric-api
+    - fabric-keybindings-v0 0.2.10+b4f4f6cd60 via fabric-api
+    - fabric-lifecycle-events-v1 2.1.0+cc71601c60 via fabric-api
+    - fabric-loot-api-v2 1.1.0+1997ad1260 via fabric-api
+    - fabric-loot-tables-v1 1.1.2+e747827960 via fabric-api
+    - fabric-mining-level-api-v1 2.1.4+cc71601c60 via fabric-api
+    - fabric-models-v0 0.3.6+d7c144a860 via fabric-api
+    - fabric-networking-api-v1 1.0.23+2d30af4b60 via fabric-api
+    - fabric-networking-v0 0.3.10+b4f4f6cd60 via fabric-api
+    - fabric-object-builder-api-v1 2.1.3+032c981d60 via fabric-api
+    - fabric-particles-v1 0.2.12+526dc1ac60 via fabric-api
+    - fabric-registry-sync-v0 0.9.11+bb2e047760 via fabric-api
+    - fabric-renderer-api-v1 0.4.15+ee3621fc60 via fabric-api
+    - fabric-renderer-indigo 0.5.5+41a02c8a60 via fabric-api
+    - fabric-renderer-registries-v1 3.2.11+b4f4f6cd60 via fabric-api
+    - fabric-rendering-data-attachment-v1 0.3.8+ee3621fc60 via fabric-api
+    - fabric-rendering-fluids-v1 2.0.2+54e5b2ec60 via fabric-api
+    - fabric-rendering-v0 1.1.13+b4f4f6cd60 via fabric-api
+    - fabric-rendering-v1 1.10.7+54e5b2ec60 via fabric-api
+    - fabric-resource-conditions-api-v1 2.0.3+91b7aa6660 via fabric-api
+    - fabric-resource-loader-v0 0.5.2+446e059560 via fabric-api
+    - fabric-screen-api-v1 1.0.10+d882b91560 via fabric-api
+    - fabric-screen-handler-api-v1 1.2.2+1f6558e860 via fabric-api
+    - fabric-textures-v0 1.0.12+3ac43d9560 via fabric-api
+    - fabric-transfer-api-v1 1.6.3+f4563ac860 via fabric-api
+    - fabric-transitive-access-wideners-v1 1.1.0+e747827960 via fabric-api
+    - fabricloader 0.14.11
+    - java 17
+    - minecraft 1.18.2
+[17:46:13] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/*被我吃了*/.minecraft/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[17:46:14] [main/INFO]: Compatibility level set to JAVA_16
+[17:46:14] [main/INFO]: Compatibility level set to JAVA_17
+[17:46:20] [main/WARN]: Configuration conflict: there is more than one oshi.properties file on the classpath
+[17:46:24] [main/WARN]: Configuration conflict: there is more than one oshi.architecture.properties file on the classpath
+[17:46:59] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:47:04] [Render thread/INFO]: Setting user: 2345Explorer
+[17:47:22] [Render thread/INFO]: [Indigo] Registering Indigo renderer!
+[17:47:23] [Render thread/WARN]: Skipping bad option: 
+[17:47:23] [Render thread/WARN]: Skipping bad option: 
+[17:47:23] [Render thread/WARN]: Skipping bad option: 
+[17:47:23] [Render thread/WARN]: Skipping bad option: 
+[17:47:24] [Render thread/INFO]: Backend library: LWJGL version 3.2.2 build 10
+[17:47:30] [Render thread/INFO]: Narrator library for x64 successfully loaded
+[17:47:31] [Render thread/INFO]: Reloading ResourceManager: Default, Fabric Mods (Fabric API, Fabric API Base, Fabric API Lookup API (v1), Fabric Biome API (v1), Fabric BlockRenderLayer Registration (v1), Fabric Command API (v1), Fabric Commands (v0), Fabric Containers (v0), Fabric Content Registries (v0), Fabric Convention Tags, Fabric Crash Report Info (v1), Fabric Data Generation API (v1), Fabric Dimensions API (v1), Fabric Entity Events (v1), Fabric Events Interaction (v0), Fabric Events Lifecycle (v0), Fabric Game Rule API (v1), Fabric Item API (v1), Fabric Item Groups (v0), Fabric Key Binding API (v1), Fabric Key Bindings (v0), Fabric Lifecycle Events (v1), Fabric Loot API (v2), Fabric Loot Tables (v1), Fabric Mining Level API (v1), Fabric Models (v0), Fabric Networking API (v1), Fabric Networking (v0), Fabric Object Builder API (v1), Fabric Particles (v1), Fabric Registry Sync (v0), Fabric Renderer API (v1), Fabric Renderer - Indigo, Fabric Renderer Registries (v1), Fabric Rendering Data Attachment (v1), Fabric Rendering Fluids (v1), Fabric Rendering (v0), Fabric Rendering (v1), Fabric Resource Conditions API (v1), Fabric Resource Loader (v0), Fabric Screen API (v1), Fabric Screen Handler API (v1), Fabric Textures (v0), Fabric Transfer API (v1), Fabric Transitive Access Wideners (v1), Fabric Loader)
+[17:47:38] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on        (Realtek(R) Audio)
+[17:47:38] [Render thread/INFO]: Sound engine started
+[17:47:39] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[17:47:40] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[17:47:48] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[17:47:48] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[17:47:48] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[17:47:57] [Render thread/INFO]: Stopping!
+</code></pre>
+<h4 id="Quilt-成绩"><a href="#Quilt-成绩" class="headerlink" title="Quilt 成绩"></a>Quilt 成绩</h4><p><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093540902.png"></p>
+<p>**1分26.05秒</p>
+<p>然后是分段计时： 出现日志 8秒，窗口创建 1分01秒</p>
+<p>最高占用：CPU 100% 内存 88%</p>
+<p>日志：</p>
+<pre><code class="bash">[17:52:39] [main/INFO]: Loading Minecraft 1.18.2 with Quilt Loader 0.17.8
+[17:52:39] [main/INFO]: Loading mappings: jar:file:/*被我吃了*/.minecraft/libraries/net/fabricmc/intermediary/1.18.2/intermediary-1.18.2.jar!/mappings/mappings.tiny
+[17:52:39] [main/INFO]: Preparing JARs on first launch, this may take a few seconds...
+[17:53:05] [main/INFO]: Loading 67 mods:
+| Index | Mod                                               | ID                                            | Version                      |
+|------:|---------------------------------------------------|-----------------------------------------------|------------------------------|
+|    40 | Minecraft                                         | minecraft                                     | 1.18.2                       |
+|    11 | OpenJDK 64-Bit Server VM                          | java                                          | 17                           |
+|    47 | Quilt Base API                                    | quilt_base                                    | 1.1.0-beta.26+1.18.2         |
+|    64 | Quilt Biome API                                   | quilt_biome                                   | 1.1.0-beta.26+1.18.2         |
+|    41 | Quilt Block Entity API                            | quilt_block_entity                            | 1.1.0-beta.26+1.18.2         |
+|    22 | Quilt Block Extensions API                        | quilt_block_extensions                        | 1.1.0-beta.26+1.18.2         |
+|    63 | Quilt Client Command API                          | quilt_client_command                          | 1.1.0-beta.26+1.18.2         |
+|    20 | Quilt Command API                                 | quilt_command                                 | 1.1.0-beta.26+1.18.2         |
+|    61 | Quilt Crash Info                                  | quilt_crash_info                              | 1.1.0-beta.26+1.18.2         |
+|    52 | Quilt DataFixerUpper API                          | quilt_datafixerupper                          | 1.1.0-beta.26+1.18.2         |
+|    35 | Quilt Dimension API                               | quilt_dimension                               | 1.1.0-beta.26+1.18.2         |
+|     6 | Quilt Item Group API                              | quilt_item_group                              | 1.1.0-beta.26+1.18.2         |
+|     1 | Quilt Item Setting API                            | quilt_item_setting                            | 1.1.0-beta.26+1.18.2         |
+|    49 | Quilt Lifecycle Events                            | quilt_lifecycle_events                        | 1.1.0-beta.26+1.18.2         |
+|    65 | Quilt Loader                                      | quilt_loader                                  | 0.17.8                       |
+|    24 | Quilt Networking                                  | quilt_networking                              | 1.1.0-beta.26+1.18.2         |
+|    31 | Quilt Recipe API                                  | quilt_recipe                                  | 1.1.0-beta.26+1.18.2         |
+|     7 | Quilt Registry API                                | quilt_registry                                | 1.1.0-beta.26+1.18.2         |
+|    48 | Quilt Registry Entry Attachments                  | quilt_registry_entry_attachments              | 1.1.0-beta.26+1.18.2         |
+|    15 | Quilt Resource Loader                             | quilt_resource_loader                         | 1.1.0-beta.26+1.18.2         |
+|    12 | Quilt Screen API                                  | quilt_screen                                  | 1.1.0-beta.26+1.18.2         |
+|    14 | Quilt Tags API                                    | quilt_tags                                    | 1.1.0-beta.26+1.18.2         |
+|    37 | Quilt Tooltip API                                 | quilt_tooltip                                 | 1.1.0-beta.26+1.18.2         |
+|    26 | Quilted Fabric API                                | quilted_fabric_api                            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    57 | Quilted Fabric API Base                           | quilted_fabric_api_base                       | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     2 | Quilted Fabric API Lookup API (v1)                | quilted_fabric_api_lookup_api_v1              | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    54 | Quilted Fabric Biome API (v1)                     | quilted_fabric_biome_api_v1                   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    62 | Quilted Fabric BlockRenderLayer Registration (v1) | quilted_fabric_blockrenderlayer_v1            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    32 | Quilted Fabric Command API (v1)                   | quilted_fabric_command_api_v1                 | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    27 | Quilted Fabric Commands (v0)                      | quilted_fabric_commands_v0                    | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    46 | Quilted Fabric Containers (v0)                    | quilted_fabric_containers_v0                  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    58 | Quilted Fabric Content Registries (v0)            | quilted_fabric_content_registries_v0          | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    43 | Quilted Fabric Convention Tags API (v1)           | quilted_fabric_convention_tags_api_v1         | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    17 | Quilted Fabric Crash Report Info (v1)             | quilted_fabric_crash_report_info_v1           | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    29 | Quilted Fabric Dimensions API (v1)                | quilted_fabric_dimensions_v1                  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    44 | Quilted Fabric Entity Events (v1)                 | quilted_fabric_entity_events_v1               | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    36 | Quilted Fabric Events Interaction (v0)            | quilted_fabric_events_interaction_v0          | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    56 | Quilted Fabric Events Lifecycle (v0)              | quilted_fabric_events_lifecycle_v0            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    23 | Quilted Fabric Game Rule API (v1)                 | quilted_fabric_game_rule_api_v1               | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    51 | Quilted Fabric Item API (v1)                      | quilted_fabric_item_api_v1                    | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     9 | Quilted Fabric Item Groups (v0)                   | quilted_fabric_item_groups_v0                 | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    66 | Quilted Fabric Key Binding API (v1)               | quilted_fabric_key_binding_api_v1             | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    45 | Quilted Fabric Key Bindings (v0)                  | quilted_fabric_keybindings_v0                 | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     0 | Quilted Fabric Lifecycle Events (v1)              | quilted_fabric_lifecycle_events_v1            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    34 | Quilted Fabric Loot API (v2)                      | quilted_fabric_loot_api_v2                    | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     5 | Quilted Fabric Loot Tables (v1)                   | quilted_fabric_loot_tables_v1                 | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    60 | Quilted Fabric Mining Level API (v1)              | quilted_fabric_mining_level_api_v1            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    55 | Quilted Fabric Models (v0)                        | quilted_fabric_models_v0                      | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    21 | Quilted Fabric Networking (v0)                    | quilted_fabric_networking_v0                  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    13 | Quilted Fabric Networking API (v1)                | quilted_fabric_networking_api_v1              | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    42 | Quilted Fabric Object Builder API (v1)            | quilted_fabric_object_builder_api_v1          | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    59 | Quilted Fabric Particles (v1)                     | quilted_fabric_particles_v1                   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    39 | Quilted Fabric Registry Sync (v0)                 | quilted_fabric_registry_sync_v0               | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     4 | Quilted Fabric Renderer - Indigo                  | quilted_fabric_renderer_indigo                | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    10 | Quilted Fabric Renderer API (v1)                  | quilted_fabric_renderer_api_v1                | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    25 | Quilted Fabric Renderer Registries (v1)           | quilted_fabric_renderer_registries_v1         | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    16 | Quilted Fabric Rendering (v0)                     | quilted_fabric_rendering_v0                   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    18 | Quilted Fabric Rendering (v1)                     | quilted_fabric_rendering_v1                   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    38 | Quilted Fabric Rendering Data Attachment (v1)     | quilted_fabric_rendering_data_attachment_v1   | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     8 | Quilted Fabric Rendering Fluids (v1)              | quilted_fabric_rendering_fluids_v1            | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    28 | Quilted Fabric Resource Conditions API (v1)       | quilted_fabric_resource_conditions_api_v1     | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    50 | Quilted Fabric Resource Loader (v0)               | quilted_fabric_resource_loader_v0             | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    53 | Quilted Fabric Screen API (v1)                    | quilted_fabric_screen_api_v1                  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    30 | Quilted Fabric Screen Handler API (v1)            | quilted_fabric_screen_handler_api_v1          | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    33 | Quilted Fabric Textures (v0)                      | quilted_fabric_textures_v0                    | 1.0.0-beta.28+0.67.0-1.18.2  |
+|    19 | Quilted Fabric Transfer API (v1)                  | quilted_fabric_transfer_api_v1                | 1.0.0-beta.28+0.67.0-1.18.2  |
+|     3 | Quilted Fabric Transitive Access Wideners (v1)    | quilted_fabric_transitive_access_wideners_v1  | 1.0.0-beta.28+0.67.0-1.18.2  |
+|------:|---------------------------------------------------|-----------------------------------------------|------------------------------|
+[17:53:05] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/*被我吃了*/.minecraft/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Quilt Env=CLIENT
+[17:53:06] [main/INFO]: Compatibility level set to JAVA_17
+[17:53:32] [main/INFO]: [Quilt Command] Networking support is enabled
+[17:53:34] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:53:37] [Render thread/INFO]: Setting user: 2345Explorer
+[17:53:37] [Render thread/INFO]: [Indigo] Registering Indigo renderer!
+[17:53:38] [Render thread/INFO]: [Quilt Command|Client] Networking support is enabled
+[17:53:38] [Render thread/WARN]: Skipping bad option: 
+[17:53:38] [Render thread/WARN]: Skipping bad option: 
+[17:53:38] [Render thread/WARN]: Skipping bad option: 
+[17:53:38] [Render thread/WARN]: Skipping bad option: 
+[17:53:39] [Render thread/INFO]: Backend library: LWJGL version 3.2.2 build 10
+[17:53:44] [Render thread/INFO]: Narrator library for x64 successfully loaded
+[17:53:45] [Render thread/INFO]: Reloading ResourceManager: Default (Quilted Fabric Rendering (v0), Quilted Fabric Mining Level API (v1), Quilt Registry Entry Attachments, Quilt Loader, Quilt Networking, Quilted Fabric Convention Tags API (v1), Quilted Fabric Transitive Access Wideners (v1), Quilt Recipe API, Quilt Base API, Quilt Tags API, Quilt Command API, Quilted Fabric Screen Handler API (v1), Quilted Fabric Loot Tables (v1), Quilt Resource Loader, Quilt Registry API, Quilted Fabric Renderer API (v1), Quilted Fabric Registry Sync (v0), Quilt Item Setting API, Quilted Fabric Resource Loader (v0), Quilted Fabric Rendering Data Attachment (v1), Quilt Item Group API, Quilted Fabric Biome API (v1), Quilted Fabric Loot API (v2), Quilt Lifecycle Events, Quilted Fabric API Lookup API (v1), Quilted Fabric Key Binding API (v1), Quilted Fabric Screen API (v1), Quilted Fabric API, Quilt Biome API, Quilted Fabric Particles (v1), Quilted Fabric Networking (v0), Quilt Block Entity API, Quilted Fabric Renderer Registries (v1), Quilted Fabric Rendering (v1), Quilted Fabric Events Lifecycle (v0), Quilted Fabric Renderer - Indigo, Quilted Fabric BlockRenderLayer Registration (v1), Quilt DataFixerUpper API, Quilted Fabric Networking API (v1), Quilted Fabric Game Rule API (v1), Quilted Fabric Models (v0), Quilted Fabric Textures (v0), Quilted Fabric Item API (v1), Quilt Tooltip API, Quilt Dimension API, Quilted Fabric Events Interaction (v0), Quilted Fabric Entity Events (v1), Quilted Fabric Object Builder API (v1), Quilted Fabric Rendering Fluids (v1), Quilted Fabric Content Registries (v0), Quilted Fabric Containers (v0), Quilted Fabric Dimensions API (v1), Quilted Fabric Transfer API (v1), Quilted Fabric API Base, Quilted Fabric Resource Conditions API (v1), Quilt Crash Info, Quilted Fabric Commands (v0), Quilted Fabric Lifecycle Events (v1), Quilt Screen API, Quilted Fabric Command API (v1), Quilted Fabric Crash Report Info (v1), Quilt Client Command API, Quilted Fabric Key Bindings (v0), Quilted Fabric Item Groups (v0), Quilt Block Extensions API)
+[17:53:54] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[17:53:54] [Render thread/INFO]: Sound engine started
+[17:53:55] [Render thread/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[17:53:55] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[17:54:01] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[17:54:01] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[17:54:01] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[17:54:21] [Render thread/INFO]: Stopping!
+</code></pre>
+<h3 id="低负载第二轮"><a href="#低负载第二轮" class="headerlink" title="低负载第二轮"></a>低负载第二轮</h3><p>占用不变。</p>
+<h4 id="Fabric-成绩-1"><a href="#Fabric-成绩-1" class="headerlink" title="Fabric 成绩"></a>Fabric 成绩</h4><p><strong>1分29.13秒</strong><br>然后是分段计时： 出现日志 14秒，窗口创建 1分01秒<br>最高占用：CPU 100% 内存 85%<br>日志因为基本没有变化就没放。</p>
+<h4 id="Quilt-成绩-1"><a href="#Quilt-成绩-1" class="headerlink" title="Quilt 成绩"></a>Quilt 成绩</h4><p><strong>58秒</strong><br>然后是分段计时： 出现日志 3秒，窗口创建 33秒<br>最高占用：CPU 100% 内存 78%<br>日志因为基本没有变化就没放。</p>
+<h3 id="高负载测试"><a href="#高负载测试" class="headerlink" title="高负载测试"></a>高负载测试</h3><p>这个其实就图一乐，没啥用，还不准。<br>相比较开启程序: Edge、腾讯会议、微信<br>不开 MC 占用: CPU 30% 内存 77%</p>
+<h4 id="Fabric-成绩-2"><a href="#Fabric-成绩-2" class="headerlink" title="Fabric 成绩"></a>Fabric 成绩</h4><p> <strong>2分26.97秒</strong><br>然后是分段计时： 出现日志 46秒，窗口创建 1分40秒<br>最高占用：CPU 100% 内存 90%<br>日志因为基本没有变化就没放。</p>
+<h4 id="Quilt-成绩-2"><a href="#Quilt-成绩-2" class="headerlink" title="Quilt 成绩"></a>Quilt 成绩</h4><p><strong>2分01.96秒</strong><br>然后是分段计时： 出现日志 10秒，窗口创建 1分25秒<br>最高占用：CPU 100% 内存 89%<br>日志因为基本没有变化就没放。</p>
+<p><strong>此成绩仅供参考！这个速度不能完全说明 Quilt 启动速度就比 Fabric 快，而且 Quilt 现在还在 Beta 开发阶段</strong><br><del>Fabric : 年轻人不讲武德</del></p>
+<h3 id="错误报告界面对比"><a href="#错误报告界面对比" class="headerlink" title="错误报告界面对比"></a>错误报告界面对比</h3><p>最后，来点神奇的测试，看看没加 FAPI / QSL 报的错长啥样<br>使用模组：Fabric: MagicLib（<del>因为需要FAPI的实在懒得找就找了个要 malilib 的模组</del>），Quilt: Quilt Loading Screen<br>已删除 FAPI / QSL 。</p>
+<h4 id="Fabric"><a href="#Fabric" class="headerlink" title="Fabric"></a>Fabric</h4><p><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093605470.png"><br>日志:</p>
+<pre><code class="bash">[18:34:31] [main/INFO]: Loading Minecraft 1.18.2 with Fabric Loader 0.14.11
+[18:34:32] [main/INFO]: Loading 5 mods:
+    - fabricloader 0.14.11
+    - java 17
+    - magiclib 0.5.37
+    - magiclib-1_18_2 0.5.37 via magiclib
+    - minecraft 1.18.2
+[18:34:32] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/*被我吃了*/.minecraft/libraries/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[18:34:33] [main/ERROR]: A critical error occurred
+top.hendrixshen.magiclib.dependency.DepCheckException: Mod resolution encountered an incompatible mod set!
+ Mod magiclib-1_18_2 compat version check failed.
+Requirements:
+    Mod malilib not found. Requires [*]!
+    at top.hendrixshen.magiclib.util.FabricUtil.compatVersionCheck(FabricUtil.java:152) [magiclib-1_18_2-0.5.37-974c64a09b010bbb.jar:?]
+    ...(省略一堆)
+</code></pre>
+<h4 id="Quilt"><a href="#Quilt" class="headerlink" title="Quilt"></a>Quilt</h4><p>Quilt 这边很好啊，最近刚找到了个用 Quilt 加载的模组，还正好要 QSL 。<br><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093620092.png"><br>日志:</p>
+<pre><code class="bash">[18:37:22] [main/INFO]: Loading Minecraft 1.18.2 with Quilt Loader 0.17.8
+[18:37:22] [main/INFO]: Loading mappings: jar:file:/*被我吃了*/.minecraft/libraries/net/fabricmc/intermediary/1.18.2/intermediary-1.18.2.jar!/mappings/mappings.tiny
+[18:37:22] [main/ERROR]: Incompatible mod set!
+org.quiltmc.loader.impl.FormattedException: org.quiltmc.loader.impl.discovery.ModSolvingException: Found 2 errors while resolving mods!
+    at org.quiltmc.loader.impl.QuiltLoaderImpl.load(QuiltLoaderImpl.java:214) ~[quilt-loader-0.17.8.jar:?]
+    at org.quiltmc.loader.impl.launch.knot.Knot.init(Knot.java:141) ~[quilt-loader-0.17.8.jar:?]
+    at org.quiltmc.loader.impl.launch.knot.Knot.launch(Knot.java:70) [quilt-loader-0.17.8.jar:?]
+    at org.quiltmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:24) [quilt-loader-0.17.8.jar:?]
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+    ...(省略一堆)
+    ... 9 more
+    Suppressed: org.quiltmc.loader.impl.discovery.ModSolvingException: Unhandled error involving mod 'Quilt Loading Screen' (quilt_loading_screen) v3.0.0:
+Dependency for mod 'quilt_loading_screen' on quilt_resource_loader versions [*] (0 valid options, 0 invalid options)
+    ...(省略一堆)
+    Suppressed: org.quiltmc.loader.impl.discovery.ModSolvingException: Unhandled error involving mod 'Quilt Loading Screen' (quilt_loading_screen) v3.0.0:
+Dependency for mod 'quilt_loading_screen' on midnightlib versions [*] (1 valid options, 0 invalid options)
+    + mod 'midnightlib' version 0.4.0 loaded from mods\quilt_loading_screen-3.0.0+1.18.2.jar!/META-INF/jars/midnightlib-0.4.0.jar
+Dependency for mod 'midnightlib' on fabric-renderer-registries-v1 versions [*] (0 valid options, 0 invalid options)
+        at org.quiltmc.loader.impl.solver.ModSolver.fallbackErrorDescription(ModSolver.java:615) ~[quilt-loader-0.17.8.jar:?]
+        ...(省略一堆)
+</code></pre>
+<p>可以看到 Quilt 的错误信息相比较 Fabric 还是能友好一点的，当然 MagicLib 也能加。<br><img src="/img/%E3%80%90MC%E3%80%91%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%99%A8%20Quilt/image-20221223093632445.png"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Quilt 目前是一个还可以的加载器，在将来可能发挥更多作用，自动下载前置模组 要是实现了会是个很好的事， Quilt 目前对开发者也很友好，<del>虽然现在没多少模组</del>，最后希望 Quilt 越做越好。</p>
+<hr>
+<p>参考：</p>
+<p>Fabric 官网 <a target="_blank" rel="noopener" href="https://fabricmc.net/">Fabric | The home of the Fabric mod development toolchain. (fabricmc.net)</a></p>
+<p>Quilt 官网 <a target="_blank" rel="noopener" href="https://quiltmc.org/en">QuiltMC | The mod-loader that cares.</a> </p>
+<p>Quilt Loader MC百科页面 <a target="_blank" rel="noopener" href="https://www.mcmod.cn/class/3901.html">Quilt Loader - MC百科|最大的Minecraft中文MOD百科 (mcmod.cn)</a></p>
+<p>QSL MC百科页面 <a target="_blank" rel="noopener" href="https://www.mcmod.cn/class/6246.html">[QSL]Quilt Standard Libraries - MC百科|最大的Minecraft中文MOD百科 (mcmod.cn)</a></p>
+<p>QSL CurseForge页面 <a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/qsl">Quilted Fabric API (QFAPI) / Quilt Standard Libraries (QSL) - Mods - Minecraft - CurseForge</a></p>
+
+        </div>
+        <!-- .entry-content -->
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2022/11/17/Windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E7%BE%8E%E5%8C%96/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="/img/Windows右键菜单美化.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="/img/Windows右键菜单美化.png">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                Windows右键菜单美化(适用版本:Win7-Win11)</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+	
+
+
+
+
+
+
+
+	<script src="https://giscus.app/client.js"
+		data-repo="IcyLightDream/icylightdream.github.io"
+		data-repo-id="R_kgDOHTafbA"
+		data-category="Announcements"
+		data-category-id="DIC_kwDOHTafbM4CUBZL"
+		data-mapping="url"
+		data-strict="0"
+		data-reactions-enabled="1"
+		data-emit-metadata="0"
+		data-input-position="top"
+		data-theme="preferred_color_scheme"
+		data-lang="zh-CN"
+		data-loading="lazy"
+		crossorigin="anonymous"
+		async>
+	</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="/img/custom/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            // PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 冰光之梦<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;">&copy 2023</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Github Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="/img/custom/avatar.png">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">QwQIcyLightDream's Blog</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="http://github.com/IcyLightDream" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="https://wpa.qq.com/msgrd?v=3&uin=3553719228&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/categories">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-bookmark" aria-hidden="true"></i>
+            分类
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/tags">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-tags" aria-hidden="true"></i>
+            标签
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="2660651585"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+</body>
+</html>

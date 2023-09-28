@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">手工制作使用WinXShell的PE(不是直接生成) | IcyLightDream&#39;s Blog</title>
+  
+    <link rel="shortcut icon" href="/img/custom/favicon.png">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "QwQIcyLightDream's Blog";
+  mashiro_option.author_name = "IcyLightDream's Blog";
+  mashiro_option.site_url = "https://IcyLightDream.github.io";
+  mashiro_option.v_appId = "";
+  mashiro_option.v_appKey = "";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://macesuted.moe/wp-json/sakura/v1/image/feature,https://p.qpic.cn/qq_expression/41384847/41384847_0_0_0_9710B2BF57B43E59DC64A5C64407F5B2_0_0/0,https://s1.ax1x.com/2018/03/09/9RBOTs.gif,https://i.loli.net/2019/08/20/tQoa6s9G5mDINLv.png".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/piao.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop ">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://IcyLightDream.github.io">
+          <img src="/img/custom/avatar.png">
+        </a>
+      </div>
+      <div class="header-info">
+        <!-- <p>Live your life with passion! With some drive!</p> -->
+        <p id="jinrishici-sentence">正在加载今日诗词....</p>
+        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="http://github.com/IcyLightDream" target="_blank" class="social-github" title="Github">
+                    <img src="/img/social/github.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://gitee.com/IcyLightDream" target="_blank" class="social-github" title="Gitee">
+                    <img src="/img/social/gitee.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://music.163.com/#/user/home?id=1944909911" target="_blank" class="social-github" title="网易云">
+                    <img src="/img/social/wangyiyun.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="mailto:3553719228@qq.com" target="_blank" class="social-github" title="Email">
+                    <img src="/img/social/email.svg">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://www.luogu.com.cn/user/243534" target="_blank" class="social-github" title="洛谷">
+                    <img src="https://cdn.luogu.com.cn/fe/logo-single.png?0a231b572e3eb12887faedad7d00e829">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">QwQ</span>
+            <span class="shironeko">IcyLightDream&#39;s Blog</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/categories">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-bookmark" aria-hidden="true"></i>
+                    分类
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/tags">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-tags" aria-hidden="true"></i>
+                    标签
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <img class="pattern-attachment-img lazyload" style="background-image: url(/img/手工制作使用WinXShell的PE-1.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="/img/手工制作使用WinXShell的PE-1.png">
+    </img>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      手工制作使用WinXShell的PE(不是直接生成)</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="/img/custom/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href=""></a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2022-3-11
+        <!-- <span class="bull">·</span> -->
+        <!-- <span id="busuanzi_value_page_pv"></span>次阅读 -->
+      </p>
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>众所周知，PE有很多，比如：WePE、优启通、EdgelessPE、FirPE等。<br>当然，这些都是别人做好的。<br>能不能自己做一个？<br>所以就有了这个</p>
+<h4 id="提示：因为用的是WinXShell而不是Explorer，最终效果可能不太好看"><a href="#提示：因为用的是WinXShell而不是Explorer，最终效果可能不太好看" class="headerlink" title="提示：因为用的是WinXShell而不是Explorer，最终效果可能不太好看"></a>提示：因为用的是<code>WinXShell</code>而不是<code>Explorer</code>，最终效果可能不太好看</h4><h2 id="一-准备"><a href="#一-准备" class="headerlink" title="一. 准备"></a>一. 准备</h2><h3 id="1-系统镜像"><a href="#1-系统镜像" class="headerlink" title="1.系统镜像"></a>1.系统镜像</h3><p>可以从<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/software-download">微软</a>、<a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">msdn我告诉你</a>和<a target="_blank" rel="noopener" href="https://next.itellyou.cn/Original">msdn的新版</a>下载。<br>这里使用<code>Windows10 21H2</code>。</p>
+<h3 id="2-PECMD"><a href="#2-PECMD" class="headerlink" title="2.PECMD"></a>2.PECMD</h3><p>原作者提供的官网好像没法用了</p>
+<blockquote>
+<p>官方网址：<a target="_blank" rel="noopener" href="http://mdyblog.blog.163.com/blog/static/106150119201202591855298/">http://mdyblog.blog.163.com/blog/static/106150119201202591855298/</a><br>NonCopyRight，任何个人和组织(含商业组织)可随意免费使用，随意修改，…。技术支持可咨询作者<br>—— PECMD帮助第一页</p>
+</blockquote>
+<p>可以在PE里提取出来。</p>
+<p>如果找到官网可以在评论里说一下</p>
+<h3 id="3-WinXShell"><a href="#3-WinXShell" class="headerlink" title="3.WinXShell"></a>3.WinXShell</h3><p>也是没找到，只能提取了<br>文件应该是这样<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16.png"></p>
+<h3 id="4-WimTool"><a href="#4-WimTool" class="headerlink" title="4.WimTool"></a>4.WimTool</h3><p>用<a target="_blank" rel="noopener" href="https://github.com/Chuyu-Team/Dism-Multi-language/releases/latest">Dism++</a>也可以，生成<code>wim</code>文件用的</p>
+<blockquote>
+<p>Lxl1638 BBS.WUYOU.COM 茂名二中 老九，2010.07.16<br>——WimTool帮助界面</p>
+</blockquote>
+<p>也找不到官网</p>
+<h3 id="5-UltraISO"><a href="#5-UltraISO" class="headerlink" title="5.UltraISO"></a>5.<a target="_blank" rel="noopener" href="https://www.ultraiso.com/">UltraISO</a></h3><p>不是免费的。可以从各种各样的地方提取出绿色版/单文件版。</p>
+<h2 id="二、解开镜像"><a href="#二、解开镜像" class="headerlink" title="二、解开镜像"></a>二、解开镜像</h2><h3 id="1-双击打开系统镜像"><a href="#1-双击打开系统镜像" class="headerlink" title="1.双击打开系统镜像"></a>1.双击打开系统镜像</h3><p>这里镜像在F盘，<strong>后面F盘都是这个位置</strong><br><img src="/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985801.png" alt="114514"></p>
+<h3 id="2-解开"><a href="#2-解开" class="headerlink" title="2.解开"></a>2.解开</h3><p><strong>用管理员身份</strong>打开WimTool</p>
+<p>“选择要挂载或解开的WIM文件”填<code>F:\sources\boot.wim</code><br>“选择挂载或解开的目标文件夹”填解开的文件夹，需要是空的，<strong>后面将这个文件夹称之为&lt;PE文件目录&gt;</strong><br>其他不用管<br><img src="/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985822.png" alt="在这里插入图片描述"><br>点击解开镜像<img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985823.png"><br>等待解开</p>
+<h3 id="3-提权"><a href="#3-提权" class="headerlink" title="3.提权"></a>3.提权</h3><p>解开后，只有<code>TrustedInstaller</code>有权限<br>使用工具在右键菜单增加<code>取得所有权</code>，这里用<a target="_blank" rel="noopener" href="https://www.sordum.org/7615/easy-context-menu-v1-6/">EcMenu</a>。<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_12,color_FFFFFF,t_70,g_se,x_16.png"></p>
+<h3 id="4-删除不必要文件"><a href="#4-删除不必要文件" class="headerlink" title="4.删除不必要文件"></a>4.删除不必要文件</h3><p>删除<code>&lt;PE文件目录&gt;\sources</code>文件夹</p>
+<h2 id="三、添加文件"><a href="#三、添加文件" class="headerlink" title="三、添加文件"></a>三、添加文件</h2><h3 id="1-复制F-sources-install-wim-1-Windows-Web到-Windows-Web-壁纸"><a href="#1-复制F-sources-install-wim-1-Windows-Web到-Windows-Web-壁纸" class="headerlink" title="1.复制F:\sources\install.wim\1\Windows\Web到<PE文件目录>\Windows\Web(壁纸)"></a>1.复制<code>F:\sources\install.wim\1\Windows\Web</code>到<code>&lt;PE文件目录&gt;\Windows\Web</code>(壁纸)</h3><p><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/dcf9c963f0ca4ae4b09c8673831ce3f9.png"></p>
+<h3 id="2-复制WinXShell-WinXShell文件夹-到-Program-Files"><a href="#2-复制WinXShell-WinXShell文件夹-到-Program-Files" class="headerlink" title="2.复制WinXShell(WinXShell文件夹)到<PE文件目录>\Program Files"></a>2.复制<code>WinXShell</code>(WinXShell文件夹)到<code>&lt;PE文件目录&gt;\Program Files</code></h3><p>记得顺便把<code>&lt;PE文件目录&gt;\Windows\Web\Wallpaper\Windows\img0.jpg</code>到<code>&lt;PE文件目录&gt;\Program Files\WinXShell\wallpaper.jpg</code></p>
+<h3 id="3-PECMD和PECMD-INI"><a href="#3-PECMD和PECMD-INI" class="headerlink" title="3.PECMD和PECMD.INI"></a>3.PECMD和PECMD.INI</h3><p>复制<code>PECMD.EXE</code>到<code>&lt;PE文件目录&gt;\Windows\System32\</code><br>在<code>&lt;PE文件目录&gt;\Windows</code>新建文件<code>PECMD.INI</code>并打开，输入</p>
+<pre><code class="c">//初始化WinPE, 会生成desktop.ini, 需要放在前面
+INIT U
+//显示隐藏分区
+SHOW -check -1:-1
+//回收站大小设为0
+RECY *:\,0
+//关闭小键盘（防止不带数字键的笔记本键盘输入错误）
+NUMK 0
+//删除 Desktop.ini
+FILE X:\Windows\System32\config\systemprofile\Desktop\desktop.ini
+FILE X:\Users\Default\Desktop\desktop.ini
+FILE X:\Users\Public\Desktop\desktop.ini
+FILE X:\Users\Administrator\Desktop\desktop.ini
+//加载壁纸
+WALL X:\Windows\Web\Wallpaper\Windows\img0.jpg
+//将Shell设置为WinXShell
+SHEL X:\Program Files\WinXShell\WinXShell.exe
+</code></pre>
+<p>可以不带参数打开<code>PECMD.EXE</code>来查看其他命令和用法。</p>
+<h2 id="四、更改注册表"><a href="#四、更改注册表" class="headerlink" title="四、更改注册表"></a>四、更改注册表</h2><p>打开<code>regedit</code></p>
+<h3 id="1-在HKLM加载-Windows-System32-config-SYSTEM为SYS"><a href="#1-在HKLM加载-Windows-System32-config-SYSTEM为SYS" class="headerlink" title="1.在HKLM加载<PE文件目录>\Windows\System32\config\SYSTEM为SYS"></a>1.在<code>HKLM</code>加载<code>&lt;PE文件目录&gt;\Windows\System32\config\SYSTEM</code>为SYS</h3><p><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985834.png"><br>在<code>HKLM\SYS\Setup</code>下面找到<code>CmdLine</code>更改为<code>PECMD.EXE MAIN X:\Windows\PECMD.INI</code><br>解释一下：<code>CmdLine</code>是开机自动启动的任务，把原来的 安装Windows 改成打开<code>PECMD</code>执行<code>PECMD.INI</code>里的内容<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985845.png"><br>可以上载了<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985846.png"></p>
+<h3 id="2-在HKLM加载-Windows-System32-config-SOFTWARE为SOFT"><a href="#2-在HKLM加载-Windows-System32-config-SOFTWARE为SOFT" class="headerlink" title="2.在HKLM加载<PE文件目录>\Windows\System32\config\SOFTWARE为SOFT"></a>2.在<code>HKLM</code>加载<code>&lt;PE文件目录&gt;\Windows\System32\config\SOFTWARE</code>为<code>SOFT</code></h3><p>找到<code>HKLM\SOFT\Microsoft\Windows\CurrentVersion\Policies\System</code><br>将<code>EnableCursorSuppression</code>更改为0<br>然后上载。</p>
+<h3 id="3-在HKLM加载-Windows-System32-config-DEFAULT为DEF"><a href="#3-在HKLM加载-Windows-System32-config-DEFAULT为DEF" class="headerlink" title="3.在HKLM加载<PE文件目录>\Windows\System32\config\DEFAULT为DEF"></a>3.在<code>HKLM</code>加载<code>&lt;PE文件目录&gt;\Windows\System32\config\DEFAULT</code>为<code>DEF</code></h3><p>找到<code>HKLM\DEF\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</code><br>新建32位DWORD值:</p>
+<pre><code class="c">//显示隐藏文件
+Hidden 设置为1
+//显示文件扩展名
+HideFileExt 设置为0
+</code></pre>
+<p>然后上载。</p>
+<h2 id="五、打包"><a href="#五、打包" class="headerlink" title="五、打包"></a>五、打包</h2><p>到这里PE就做好了。可以打包了。<br>用管理员身份打开WimTool-&gt;新制和追加<br>源目录填&lt;PE文件目录&gt;<br>保存到<code>boot.wim</code><br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985857.png"><br>点击新建映像<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985858.png"></p>
+<p>制作好<code>wim</code>后用 UltraISO 打开<strong>原来的</strong>系统镜像<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-16670082985859.png"><br>删除<code>support</code>、<code>sources\*.*</code>、<code>autorun.inf</code>和<code>setup.exe</code><br>在<code>sources</code>下面把生成的<code>boot.wim</code>添加进去<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-166700829858610.png"><br><strong>点击另存为</strong>，不要点保存</p>
+<h2 id="六、测试"><a href="#六、测试" class="headerlink" title="六、测试"></a>六、测试</h2><p>这里使用<a target="_blank" rel="noopener" href="https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html">VMware Workstation Pro</a>测试。<br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-166700829858711.png"><br><img src="/img/%E6%89%8B%E5%B7%A5%E5%88%B6%E4%BD%9C%E4%BD%BF%E7%94%A8WinXShell%E7%9A%84PE-1/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAMjM0NUV4cGxvcmVy,size_20,color_FFFFFF,t_70,g_se,x_16-166700829858712.png"><br><del>咕咕咕</del></p>
+
+        </div>
+        <!-- .entry-content -->
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2022/05/10/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B2/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="/img/MC基础教程2.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="/img/MC基础教程2.png">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                MC基础教程#2 加载器、模组、光影、材质包、数据包下载及安装(国际Java版)</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2020/04/15/MC%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B1/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="/img/MC基础教程1.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="/img/MC基础教程1.png">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                MC基础教程#1-关于启动器</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+	
+
+
+
+
+
+
+
+	<script src="https://giscus.app/client.js"
+		data-repo="IcyLightDream/icylightdream.github.io"
+		data-repo-id="R_kgDOHTafbA"
+		data-category="Announcements"
+		data-category-id="DIC_kwDOHTafbM4CUBZL"
+		data-mapping="url"
+		data-strict="0"
+		data-reactions-enabled="1"
+		data-emit-metadata="0"
+		data-input-position="top"
+		data-theme="preferred_color_scheme"
+		data-lang="zh-CN"
+		data-loading="lazy"
+		crossorigin="anonymous"
+		async>
+	</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="/img/custom/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            // PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 冰光之梦<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;">&copy 2023</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Github Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="/img/custom/avatar.png">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">QwQIcyLightDream's Blog</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="http://github.com/IcyLightDream" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="https://wpa.qq.com/msgrd?v=3&uin=3553719228&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/categories">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-bookmark" aria-hidden="true"></i>
+            分类
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/tags">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-tags" aria-hidden="true"></i>
+            标签
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="2660651585"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+</body>
+</html>
