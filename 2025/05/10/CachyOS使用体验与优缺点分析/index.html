@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>【挖坟】如何安装Shizuku和LSPatch并安装模块（不需要Root，非Magisk） | IcyLightDream&#39;s Blog</title>
+    <title>为什么我放弃了Arch？ | CachyOS 使用体验与优缺点分析 | IcyLightDream&#39;s Blog</title>
     <meta name="author" content="IcyLightDream" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -176,14 +176,14 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>【挖坟】如何安装Shizuku和LSPatch并安装模块（不需要Root，非Magisk）</h1>
+        <h1>为什么我放弃了Arch？ | CachyOS 使用体验与优缺点分析</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2024/4/6
+            2025/5/10
         </span>
         
         <span class="category">
@@ -204,8 +204,15 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ffa2c4">
+                <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #03a9f4">
                     科技
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Linux/" style="color: #ffa2c4">
+                    Linux
                 </a>
             </span>
             
@@ -214,40 +221,88 @@
     </div>
     
     <div class="content" v-pre>
-        <blockquote>
-<p>2023年12月13日，LSPatch 停止维护</p>
-</blockquote>
+        <p><img src="https://cachyos.org/_astro/hero.BvceRk57_mS4pY.webp" alt="（官网图片）"></p>
 <blockquote>
-<p>2024年1月8日，LSPosed 停止维护<br>2024年1月8日，ZygiskNext 停止维护<br>2024年1月9日，KernelSU 停止维护</p>
+<p>CachyOS is designed to deliver lightning-fast speeds and stability, ensuring a smooth and enjoyable computing experience every time you use it. Whether you’re a seasoned Linux user or just starting out, CachyOS is the ideal choice for those looking for a powerful, customizable and blazingly fast operating system.</p>
+<p>CachyOS 的设计旨在提供快如闪电的速度和稳定性，确保每次使用时都能获得流畅、愉快的计算体验。无论您是经验丰富的 Linux 用户，还是刚刚开始使用，CachyOS 都是那些正在寻找功能强大、可定制且速度极快的操作系统的用户的理想选择。</p>
+<p>（来源: <a target="_blank" rel="noopener" href="https://cachyos.org/">CachyOS 官网</a>）</p>
 </blockquote>
-<p>这里使用 ColorOS 14 演示，其他品牌手机类似</p>
-<h1 id="安装-Shizuku"><a href="#安装-Shizuku" class="headerlink" title="安装 Shizuku"></a>安装 Shizuku</h1><p>官网: <a target="_blank" rel="noopener" href="https://shizuku.rikka.app/zh-hans">https://shizuku.rikka.app/zh-hans</a></p>
-<p>下载: <a target="_blank" rel="noopener" href="https://github.com/RikkaApps/Shizuku/releases/latest">https://github.com/RikkaApps/Shizuku/releases/latest</a></p>
-<p><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/15735d82350d453f9f4307cb0464a9d1.png" alt="img"><br>官方手册: <a target="_blank" rel="noopener" href="https://shizuku.rikka.app/zh-hans/guide/setup/#%E9%80%9A%E8%BF%87%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95%E5%90%AF%E5%8A%A8">https://shizuku.rikka.app/zh-hans/guide/setup/#%E9%80%9A%E8%BF%87%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95%E5%90%AF%E5%8A%A8</a></p>
-<h2 id="打开开发者模式"><a href="#打开开发者模式" class="headerlink" title="打开开发者模式"></a>打开开发者模式</h2><p><strong>(ColorOS)</strong> 设置 -&gt; 关于本机 -&gt; 版本信息<br>其他品牌手机应该差不多，方法可以自行百度<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/ef243ea14cdd4015b97ef8e8228c6702.png" alt="img"><br>多点几下版本号，输入锁屏密码<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/40ed7ad61d8449edab6c2ede6331c809.png"><br>返回设置 -&gt; 其他设置 -&gt; 开发者选项</p>
-<p>打开无线调试，ColorOS还需要打开禁止权限监控</p>
-<p><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/d039289d92f64861a741f33d980f93ac.png"><br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/46317dbddaed498ab88bd01086c44825.png"></p>
-<h2 id="启动-Shizuku"><a href="#启动-Shizuku" class="headerlink" title="启动 Shizuku"></a>启动 Shizuku</h2><p>点击配对<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/6cc908040e0d431e819c337a47002a51.png"><br>回到开发者选项，点击无线调试<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/7295adbb523f42b9b226d9e93b0ec7ef.png"><br>点击 使用配对码配对设备<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/a36170874cc045f0b1ef728c5f2411e4.png"><br>不要关闭这个窗口，在通知栏输入配对码<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/8d6ee56dbc904da79b957512d51c7fc0.png"><br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/b35871d7b0534b60859985d846a0d5bd.png"><br>回到 Shizuku ，点击启动（或者安装完 LSPosed 再启动也行）</p>
-<h1 id="安装-LSPatch"><a href="#安装-LSPatch" class="headerlink" title="安装 LSPatch"></a>安装 LSPatch</h1><p>下载: <a target="_blank" rel="noopener" href="https://github.com/LSPosed/LSPatch/releases/download/v0.6/manager-v0.6-398-release.apk">https://github.com/LSPosed/LSPatch/releases/download/v0.6/manager-v0.6-398-release.apk</a></p>
-<p>ghproxy: <a target="_blank" rel="noopener" href="https://ghproxy.net/https://github.com/LSPosed/LSPatch/releases/download/v0.6/manager-v0.6-398-release.apk">https://ghproxy.net/https://github.com/LSPosed/LSPatch/releases/download/v0.6/manager-v0.6-398-release.apk</a></p>
-<p>在 Shizuku 授权应用管理中把 LSPatch 打开，打开 LSPatch<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/48ed2e1c7522485abda2689695632377.png"><br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/f0147f434ef64fc78016a7a62e067029.png"></p>
-<p>如果出现 Shizuku 服务未连接就看看 Shizuku 在不在运行<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/584e000c7fa74c45832bf045cd4d38fd.png"></p>
-<h1 id="安装模块"><a href="#安装模块" class="headerlink" title="安装模块"></a>安装模块</h1><p><strong>注：安装模块会卸载原来的应用，如果需要自行备份应用数据</strong></p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a target="_blank" rel="noopener" href="https://github.com/orgs/Xposed-Modules-Repo/repositories">https://github.com/orgs/Xposed-Modules-Repo/repositories</a></p>
-<p>这里收录了很多的模块，可以去找找，或者去 <a target="_blank" rel="noopener" href="https://modules.lsposed.org/">https://modules.lsposed.org</a></p>
-<p>（注：有些需要 Root 的用不了）</p>
-<blockquote>
-<p>免责声明 <del>（迫真）</del> ：只是为了测试效果，模块仅供学习参考</p>
-</blockquote>
-<p>这里用 <a target="_blank" rel="noopener" href="https://github.com/Xposed-Modules-Repo/com.blanke.diaomao163">https://github.com/Xposed-Modules-Repo/com.blanke.diaomao163</a> 举例</p>
-<p><del>其实还得要老版本的网易云</del></p>
-<p>在 Releases 中下载最新版</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>回到 LSPatch ，点击下方 管理<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/6feb3793b677405bbdea983f7f8c3414.png"><br>点击加号 -&gt; 选择已安装的应用程序</p>
-<p>找到需要添加模块的软件，点击集成模式<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/6e80ed44bddb4fdd98338c539ed73fad.png"><br>点击嵌入模块 -&gt; 从存储目录中选择（多个）apk<br>可以选择多个模块，选择完之后点击开始修补<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/f4bc804f876a49d7b0dba92264421d28.png"><br>稍微等待一会<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/fc3ea0473f71415c997ec1146a1e896b.png"><br>点击安装 -&gt; 确定</p>
-<p>安装应用<br><img src="/img/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/00ba67dd82014123b99265c133e5afaf.png"><br>（别问为啥这么干净问就是P掉了）</p>
-<p>再次打开应用，应该就已经装上了</p>
+<h1 id="CachyOS-有什么优点？"><a href="#CachyOS-有什么优点？" class="headerlink" title="CachyOS 有什么优点？"></a>CachyOS 有什么优点？</h1><h2 id="基于-Arch-Linux"><a href="#基于-Arch-Linux" class="headerlink" title="基于 Arch Linux"></a>基于 Arch Linux</h2><p>隔壁 Manjaro 强行加 Arch 源可能会炸，但是 CachyOS 自带了 Arch 源，可以轻松从 Arch 转过来（甚至不用重装）</p>
+<p>CachyOS 的 <code>/etc/pacman.conf</code></p>
+<pre><code class="bash">...
+[cachyos-v3]
+Include = /etc/pacman.d/cachyos-v3-mirrorlist
+[cachyos-core-v3]
+Include = /etc/pacman.d/cachyos-v3-mirrorlist
+[cachyos-extra-v3]
+Include = /etc/pacman.d/cachyos-v3-mirrorlist
+[cachyos]
+Include = /etc/pacman.d/cachyos-mirrorlist
+...
+[core]
+Include = /etc/pacman.d/mirrorlist
+[extra]
+Include = /etc/pacman.d/mirrorlist
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+...
+</code></pre>
+<p>同时，CachyOS 源中有大量优化的软件包和编译过的 AUR 包，可以用 <code>pacman -Sl &lt;repo&gt;</code> 查看</p>
+<h2 id="可自定义的安装过程"><a href="#可自定义的安装过程" class="headerlink" title="可自定义的安装过程"></a>可自定义的安装过程</h2><p>不同于 Arch 的 CLI 安装， CachyOS 采用和其他 Linux 发行版差不多的 GUI 安装界面，并且用户可以自行选择系统引导管理器、桌面环境、内核、文件系统等</p>
+<p><strong>支持的 Boot Manager（系统引导管理器）：</strong></p>
+<pre><code>GRUB （推荐，常用）
+systemd-boot （默认）
+rEFInd
+Limine
+</code></pre>
+<p><strong>支持的 Filesystem （文件系统）</strong></p>
+<pre><code>Btrfs （推荐，默认，后面会详细说）
+EXT4 （较推荐，经典）
+XFS
+ZFS
+F2FS
+BcacheFS （比较新，据说还可以，可能 bug 有点多，不太建议）
+</code></pre>
+<p><strong>支持的 DE （桌面环境）</strong></p>
+<p>（图片来自 CachyOS Wiki）<br><img src="https://wiki.cachyos.org/_astro/plasma-default.fDj8tVGg.png" alt="KDE Plasma"><br><img src="https://wiki.cachyos.org/_astro/gnome.DqrBVJBW.png" alt="Gnome"><br><img src="https://wiki.cachyos.org/_astro/i3.Cn1bChFg.png" alt="i3"><br><img src="https://wiki.cachyos.org/_astro/xfce.CbQFbJ40.png" alt="XFCE"><br><img src="https://wiki.cachyos.org/_astro/hyprland1.yBvnx6dS.png" alt="Hyprland"><br>这里只放了一些常见的， CachyOS 支持的 DE 还有很多，可以去 <a target="_blank" rel="noopener" href="https://wiki.cachyos.org/installation/screenshots">Screenshots | CachyOS</a> 查看</p>
+<p>另外， CachyOS 还在性能、安全性等方面进行了优化 <del>（虽然我不太懂）</del></p>
+<p>不过可以使用 <code>sudo pacman -S steam-native-runtime proton-cachyos</code> 安装 CachyOS 定制版 Proton 和 Steam 来运行 Windows 应用程序</p>
+<h1 id="CachyOS-有什么缺点？"><a href="#CachyOS-有什么缺点？" class="headerlink" title="CachyOS 有什么缺点？"></a>CachyOS 有什么缺点？</h1><h2 id="对比-Arch"><a href="#对比-Arch" class="headerlink" title="对比 Arch"></a>对比 Arch</h2><p>由于使用了更激进的优化，一些硬件可能会不兼容</p>
+<p>安装的定制化程度会比 Arch 低点，毕竟是 GUI （不过也可以用 CLI 安装）</p>
+<p><strong>注：国内安装之前一定要手动改一下 <code>/etc/pacman.d/mirrorlist</code> ，不然下载会非常慢，建议在安装过程中把 live 环境中的 <code>mirrorlist</code> 复制到系统中</strong></p>
+<pre><code class="toml">sudo nano /etc/pacman.d/mirrorlist
+# 下面这几行随便加上一个就行
+Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.aliyun.com/archlinux/$repo/os/$arch
+
+sudo nano /etc/pacman.d/cachyos-mirrorlist
+# 下面这几行随便加上一个就行
+Server = https://mirrors.ustc.edu.cn/cachyos/repo/$arch/$repo
+Server = https://mirror.nju.edu.cn/cachyos/repo/$arch/$repo
+
+sudo nano /etc/pacman.d/cachyos-v3-mirrorlist
+# 下面这几行随便加上一个就行
+Server = https://mirrors.ustc.edu.cn/cachyos/repo/$arch_v3/$repo
+Server = https://mirror.nju.edu.cn/cachyos/repo/$arch_v3/$repo
+
+sudo nano /etc/pacman.d/cachyos-v4-mirrorlist
+# 下面这几行随便加上一个就行
+Server = https://mirrors.ustc.edu.cn/cachyos/repo/$arch_v4/$repo
+Server = https://mirror.nju.edu.cn/cachyos/repo/$arch_v4/$repo
+</code></pre>
+<h2 id="对比其他发行版"><a href="#对比其他发行版" class="headerlink" title="对比其他发行版"></a>对比其他发行版</h2><p>Arch 系发行版不太稳定，建议多备份</p>
+<h1 id="我为什么从-Arch-换到-CachyOS-？"><a href="#我为什么从-Arch-换到-CachyOS-？" class="headerlink" title="我为什么从 Arch 换到 CachyOS ？"></a>我为什么从 Arch 换到 CachyOS ？</h1><h2 id="更轻松的安装"><a href="#更轻松的安装" class="headerlink" title="更轻松的安装"></a>更轻松的安装</h2><p><del>其实一点也不轻松，安装卡了好几回才发现自动选择的Arch软件源下载太慢了</del></p>
+<p>不需要自己分区，不需要自己安装桌面环境，还送桌面环境配置和一些软件的配置，<del>感觉 Arch 装半天白装了，不如直接装 CachyOS</del></p>
+<h2 id="Btrfs"><a href="#Btrfs" class="headerlink" title="Btrfs"></a>Btrfs</h2><p>传统的 ext4 格式如果分 <code>/</code> 和 <code>/home</code> 两个分区的话总是怕一个分区满了而另一个还剩很多，但是 Btrfs 支持子卷 (Subvolume) ， <code>/</code> 和 <code>/home</code> （甚至更多）可以共用一个分区</p>
+<p><img src="/img/CachyOS%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%E4%B8%8E%E4%BC%98%E7%BC%BA%E7%82%B9%E5%88%86%E6%9E%90/image.png" alt="CachyOS 自带 Btrfs Assistant"><br>(可以通过 <code>sudo pacman -S btrfs-assistant</code> 安装)</p>
+<p>这些子卷可以单独备份（增量备份）、还原，并且创建备份不需要等待</p>
+<p>除此之外，对于不常用的文件可以使用 zstd 算法压缩（手动），和 Windows 中 文件&#x2F;文件夹右键属性 -&gt; 压缩 一样不影响使用，而且效果更好</p>
+<p>不过， Btrfs 文件读写性能会低于 ext4 ，对旧硬件支持也不太好，机械硬盘不太适合用</p>
+<h2 id="软件源"><a href="#软件源" class="headerlink" title="软件源"></a>软件源</h2><p>CachyOS 的软件源可以节省编译 AUR 包的时间，<del>而且不用担心 Github 10kbps 下载速度的问题</del></p>
+<p>下篇 Arch+Plasma 的美化会用到 CachyOS 的软件源</p>
 <hr>
-<p>差不多就这样（）<br>诈尸（<br>一年没更了没啥事就是懒（）</p>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://wiki.cachyos.org/">CachyOS Wiki</a></p>
 
     </div>
     

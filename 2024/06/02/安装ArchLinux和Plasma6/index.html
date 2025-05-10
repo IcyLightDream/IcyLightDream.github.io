@@ -1,309 +1,227 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  
-  <title itemprop="name">安装 Arch Linux 和 KDE Plasma 6 &amp; 配置 fcitx5-rime 输入法 | IcyLightDream&#39;s Blog</title>
-  
-    <link rel="shortcut icon" href="/img/custom/favicon.png">
-  
-  <meta http-equiv="x-dns-prefetch-control" content="on">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
-  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="/css/lib.min.css" media="all">
-  <link rel="stylesheet" href="/css/font.css" media="all">
-  <link rel="stylesheet" href="/css/insight.css" media="all">
-  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
-  <link rel="stylesheet" href="/css/zoom.css" media="all">
-  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
-" type="text/css" media="all"> -->
-  <script>
-  /*Initial Variables*/
-  var mashiro_option = new Object();
-  var mashiro_global = new Object();
-  mashiro_option.NProgressON = true;
-  /* 
-   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
-   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
-   */
-  mashiro_option.email_domain = "";
-  mashiro_option.email_name = "";
-  mashiro_option.cookie_version_control = "";
-  mashiro_option.qzone_autocomplete = false;
-  mashiro_option.site_name = "IcyLightDream's Blog";
-  mashiro_option.author_name = "IcyLightDream's Blog";
-  mashiro_option.site_url = "https://IcyLightDream.github.io";
-  mashiro_option.v_appId = "";
-  mashiro_option.v_appKey = "";
-  mashiro_option.mathjax = "0";
-  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
-  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
-  // mashiro_option.jsdelivr_css_src = "https://jsd.onmicrosoft.cn/gh/moezx/cdn@3.4.5/css/lib.min.css";
-  // mashiro_option.float_player_on = true;
-  /*End of Initial Variables*/
-  </script>
-  <script type="text/javascript">
-  var bg = "https://macesuted.moe/wp-json/sakura/v1/image/feature,https://s1.ax1x.com/2018/03/09/9RBOTs.gif,https://i.loli.net/2019/08/20/tQoa6s9G5mDINLv.png,/img/custom/63833118_p0.png,/img/custom/97031744_p0.png,/img/custom/95518122_p0.jpg,/img/custom/58825498_p0.jpg,/img/custom/99118291_p0.png,https://www.cbjq.com/uploadfile/2023/0609/20230609024128915.jpg,https://www.cbjq.com/uploadfile/2023/0531/20230531023043542.jpg,https://www.cbjq.com/uploadfile/2023/1106/20231106083123603.jpg,https://www.cbjq.com/uploadfile/2024/0125/20240125074100335.jpg".split(",");
-  var bgindex = Math.floor(Math.random()*bg.length);
-  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
-    alert('朋友，IE浏览器未适配哦~');
-  }
-  </script>
-  <style type="text/css">
-  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
-  </style>
-  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
-  </style>
+    <meta charset="utf-8" />
+    <title>安装 Arch Linux 和 KDE Plasma 6 &amp; 配置 fcitx5-rime 输入法 | IcyLightDream&#39;s Blog</title>
+    <meta name="author" content="IcyLightDream" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/img/custom/avatar.png" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/a11y-light.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
 <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="IcyLightDream's Blog" type="application/atom+xml">
 </head>
-
-<script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
-<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
-  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/piao.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>
-  <div class="scrollbar" id="bar">
-  </div>
-  <a href="#" class="cd-top faa-float animated"></a>
-  <section id="main-container">
-    <div class="headertop ">
-	<div id="banner_wave_1"></div>
-	<div id="banner_wave_2"></div>
-	<figure id="centerbg" class="centerbg">
-	  <div class="focusinfo no-select">
-		<div class="header-tou">
-		  <a href="https://IcyLightDream.github.io">
-			<img src="/img/custom/avatar.png">
-		  </a>
-		</div>
-		<div class="header-info">
-		  <p>Live your life with passion! With some drive!</p>
-		  <div class="top-social_v2">
-			<li id="bg-pre">
-			  <img class="flipx" src="https://jsd.onmicrosoft.cn/gh/honjun/cdn@1.6/img/other/next-b.svg">
-			</li>
-			
-			  
-				
-				  <li>
-					<a href="http://github.com/IcyLightDream" target="_blank" class="social-github" title="Github">
-					  <img src="/img/social/github.png">
-					</a>
-				  </li>
-				
-			  
-				
-				  <li>
-					<a href="https://gitee.com/IcyLightDream" target="_blank" class="social-github" title="Gitee">
-					  <img src="/img/social/gitee.png">
-					</a>
-				  </li>
-				
-			  
-				
-				  <li>
-					<a href="https://music.163.com/#/user/home?id=1944909911" target="_blank" class="social-github" title="网易云">
-					  <img src="/img/social/wangyiyun.png">
-					</a>
-				  </li>
-				
-			  
-				
-				  <li>
-					<a href="mailto:3553719228@qq.com" target="_blank" class="social-github" title="Email">
-					  <img src="/img/social/email.svg">
-					</a>
-				  </li>
-				
-			  
-				
-				  <li>
-					<a href="https://www.luogu.com.cn/user/243534" target="_blank" class="social-github" title="洛谷">
-					  <img src="https://cdn.luogu.com.cn/fe/logo-single.png?0a231b572e3eb12887faedad7d00e829">
-					</a>
-				  </li>
-				
-			  
-			
-			<li id="bg-next">
-			  <img src="https://jsd.onmicrosoft.cn/gh/honjun/cdn@1.6/img/other/next-b.svg">
-			</li>
-		  </div>
-		</div>
-	  </div>
-	</figure>
-	<div id="video-container" style="">
-	  <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
-	  </video>
-	  <div id="video-btn" class="loadvideo videolive">
-	  </div>
-	  <div id="video-add">
-	  </div>
-	  <div class="video-stu">
-	  </div>
-	</div>
-	<div class="headertop-down faa-float animated" onclick="headertop_down()">
-	  <span>
-		<i class="fa fa-chevron-down" aria-hidden="true">
-		</i>
-	  </span>
-	</div>
-  </div>
-    <div id="page" class="site wrapper">
-      <header class="site-header no-select gizle sabit" role="banner">
-  <div class="site-top">
-    <div class="site-branding">
-      <span class="site-title">
-        <span class="logolink moe-mashiro">
-          <a href="/">
-            <span class="sakurasono"></span>
-            <span class="shironeko">IcyLightDream&#39;s Blog</span>
-          </a>
-        </span>
-      </span>
-    </div>
-    <div class="searchbox search-form-submit">
-      <i class="iconfont js-toggle-search iconsearch icon-search">
-      </i>
-    </div>
-    <div id="show-nav" class="showNav mobile-fit">
-      <div class="line line1">
-      </div>
-      <div class="line line2">
-      </div>
-      <div class="line line3">
-      </div>
-    </div>
-    <div class="lower-cantiner">
-      <div class="lower">
-        <nav class="mobile-fit-control hide">
-          <ul id="menu-new" class="menu">
-            
-              <li>
-                <a href="/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
-                    首页
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/archives">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
-                    归档
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/categories">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-bookmark" aria-hidden="true"></i>
-                    分类
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/tags">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-tags" aria-hidden="true"></i>
-                    标签
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/comment/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
-                    留言板
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
-                    关于
-                  </span>
-                </a>
-                
-                  <ul class="sub-menu">
-                    
-                      <li>
-                        <a href="/about/">
-                          <i class="fa fa-meetup" aria-hidden="true"></i>
-                          我
-                        </a>
-                      </li>
-                    
-                      <li>
-                        <a href="/theme-sakura/">
-                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
-                          主题
-                        </a>
-                      </li>
-                    
-                  </ul>
-                
-              </li>
-            
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
-<div class="pattern-center-blank"></div>
-
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <img class="pattern-attachment-img lazyload" style="background-image: url(/img/安装ArchLinux和Plasma6/cover.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="/img/安装ArchLinux和Plasma6/cover.png">
-    </img>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      安装 Arch Linux 和 KDE Plasma 6 & 配置 fcitx5-rime 输入法</h1>
-      <p class="entry-census">
-        <span>
-          <a href="">
-            <img src="/img/custom/avatar.png">
-          </a>
-        </span>
-        <span>
-          <a href=""></a>
-        </span>
-        <span class="bull">
-        ·</span>
-        2024-6-2
-        <!-- <span class="bull">·</span> -->
-        <!-- <span id="busuanzi_value_page_pv"></span>次阅读 -->
-      </p>
-    </header>
-  </div>
-
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>ICYLIGHTDREAM&#39;S BLOG</span>
+        </a>
         
-        <div class="entry-content">
-          <p>注：本文写于 2024&#x2F;06&#x2F;02 ，Arch Linux 最新版为 <code>2024.06.01</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/1db676e7745f4404ab0a8a2c05bfda9e-17210630432732.png"><br>实体机效果图，虚拟机效果图在最下面</p>
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;主页</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;归档</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;分类</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;标签</span>
+        </a>
+        
+        <a href="/comment">
+            <i class="fa-solid fa-comments fa-fw"></i>
+            <span>&ensp;留言板</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;ICYLIGHTDREAM&#39;S BLOG</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">主页</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">归档</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">分类</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
+                    </div>
+                </a>
+                
+                <a href="/comment">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-comments fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">留言板</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>安装 Arch Linux 和 KDE Plasma 6 &amp; 配置 fcitx5-rime 输入法</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/6/2
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E7%A7%91%E6%8A%80/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                科技
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ffa2c4">
+                    科技
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Linux/" style="color: #00bcd4">
+                    Linux
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <p>注：本文写于 2024&#x2F;06&#x2F;02 ，Arch Linux 最新版为 <code>2024.06.01</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/1db676e7745f4404ab0a8a2c05bfda9e-17210630432732.png"><br>实体机效果图，虚拟机效果图在最下面</p>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="（双系统）用分区工具调整硬盘大小，留出空闲空间"><a href="#（双系统）用分区工具调整硬盘大小，留出空闲空间" class="headerlink" title="（双系统）用分区工具调整硬盘大小，留出空闲空间"></a>（双系统）用分区工具调整硬盘大小，留出空闲空间</h2><p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/1a5961cd2f09426ea5661a39598b8dea.png"><br>（我的实体机留了 64GiB）</p>
 <h2 id="下载镜像"><a href="#下载镜像" class="headerlink" title="下载镜像"></a>下载镜像</h2><p><a target="_blank" rel="noopener" href="https://archlinux.org/download/">Arch Linux 官网下载</a></p>
 <p>国内可以用<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源镜像站</a>和<a target="_blank" rel="noopener" href="https://mirrors.ustc.edu.cn/">USTC Open Source Software Mirror</a><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/ee012ecfc65d4dd39518917f1bc60847.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/aa3182d907504b75ac0571c11a7bbd7e.png"></p>
@@ -312,67 +230,117 @@
 <h1 id="安装-Arch-Linux"><a href="#安装-Arch-Linux" class="headerlink" title="安装 Arch Linux"></a>安装 Arch Linux</h1><h2 id="进入-live-环境"><a href="#进入-live-环境" class="headerlink" title="进入 live 环境"></a>进入 live 环境</h2><p>（实体机）插入U盘，设置 -&gt; 系统 -&gt; 恢复 -&gt; 高级启动 -&gt; 立即重新启动，重启后在 选择一个选项 屏幕上选择 使用设备-&gt;USB 存储</p>
 <p>(此处参考: <a target="_blank" rel="noopener" href="https://support.microsoft.com/zh-cn/surface/%E4%BB%8E-usb-%E8%AE%BE%E5%A4%87%E5%90%AF%E5%8A%A8-surface-fe7a7323-8d1d-823d-be17-9aec89c4f9f5">https://support.microsoft.com/zh-cn/surface/%E4%BB%8E-usb-%E8%AE%BE%E5%A4%87%E5%90%AF%E5%8A%A8-surface-fe7a7323-8d1d-823d-be17-9aec89c4f9f5</a><br>)</p>
 <p>（虚拟机）开机<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/3027d849c765429fa30db86a4aa45702.png"><br>（此处为 VMware 使用U盘作为安装介质）<br>等待一段时间<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/3ec014fbb5f64642800255956b0edd4b.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/408340cc9842426b8b8fc3f6b96c32ed.png"></p>
-<h2 id="联网"><a href="#联网" class="headerlink" title="联网"></a>联网</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip <span class="built_in">link</span></span><br></pre></td></tr></table></figure>
+<h2 id="联网"><a href="#联网" class="headerlink" title="联网"></a>联网</h2><pre><code class="bash">ip link
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/d3cf23c9bf83493d80068c48ee4b102c.png"><br>找到使用的网卡（青色），实体机连 WiFi 一般是<code>wlan0</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/458c3e2dbb3048e7b98c2c83d548554b.png"><br>虚拟机不需要更多操作，可以通过<code>ping www.baidu.com</code>测试（<code>Ctrl</code>+<code>C</code> 终止）</p>
 <h3 id="连接WiFi"><a href="#连接WiFi" class="headerlink" title="连接WiFi"></a>连接WiFi</h3><p>输入<code>iwctl</code>。<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/4b92ef59d2eb46e8b39d496621c8b83c.png"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">station &lt;使用的网卡&gt; scan					<span class="comment"># 扫描</span></span><br><span class="line">station &lt;使用的网卡&gt; get-networks			<span class="comment"># 列出所有可用的网络</span></span><br><span class="line">station &lt;使用的网卡&gt; connect &lt;网络SSID&gt;	<span class="comment"># 连接</span></span><br><span class="line">(输入密码)</span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">station &lt;使用的网卡&gt; scan					# 扫描
+station &lt;使用的网卡&gt; get-networks			# 列出所有可用的网络
+station &lt;使用的网卡&gt; connect &lt;网络SSID&gt;	# 连接
+(输入密码)
+</code></pre>
 <p>如果出错可以重启再试试，输入<code>exit</code>退出 iwctl ，然后用<code>ping www.baidu.com</code>测试（<code>Ctrl</code>+<code>C</code> 终止）</p>
-<h2 id="设置时区"><a href="#设置时区" class="headerlink" title="设置时区"></a>设置时区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">timedatectl set-timezone Asia/Shanghai</span><br></pre></td></tr></table></figure>
+<h2 id="设置时区"><a href="#设置时区" class="headerlink" title="设置时区"></a>设置时区</h2><pre><code class="bash">timedatectl set-timezone Asia/Shanghai
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/7e8428ce46db40918a4db27698dae437.png"></p>
 <h2 id="分区"><a href="#分区" class="headerlink" title="分区"></a>分区</h2><h3 id="创建分区"><a href="#创建分区" class="headerlink" title="创建分区"></a>创建分区</h3><p><strong>数据无价，请谨慎操作</strong></p>
 <p>输入<code>fdisk -l</code>查看所有硬盘和分区<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/bf14f1e8b83f4a2dbb96b2d81f136344.png"><br>虚拟机找到和设置一样大小的硬盘，实体机一般是最大的盘，此处为<code>/dev/nvme0n1</code><br>输入<code>cfdisk &lt;硬盘&gt;</code>，此处为<code>cfdisk /dev/nvme0n1</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/c317bf9df0914e4ea13b25ee5ebe2865.png"><br>虚拟机因为是空盘所以需要选择分区表类型，一般选择<code>GPT</code>就行<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/6a3f03a1be534f3487219bda4c59bc33.png"><br>点击 <code>New</code> 新建两个分区分别是根分区（Linux filesystem）和交换分区（Linux swap）<br>非双系统需要先创建 EFI系统分区（如果是传统 BIOS 与 MBR 分区表不需要），双系统用原来的 EFi系统分区 就行</p>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/4b7da7b0ee2d4e368c40d02f3b3c7c18.png"><br>选中创建的分区需要用左右方向键移动到 Type 来更改类型<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/a9d22c8656624672acb80916609d46cd.png"><br>确定无误之后 <code>Write</code> 写入，<code>Quit</code> 退出 <code>cfdisk</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/82d060e5d73d473685ca55ffb26a6298.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/4f93e5a3115f4c19bb28945e677ebf29.png"><br>再输入<code>fdisk -l</code>就可以看到创建的分区</p>
-<h3 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkfs.ext4 &lt;根分区&gt;</span><br><span class="line">mkswap &lt;交换空间分区&gt;</span><br><span class="line">（非双系统）mkfs.fat -F 32 &lt;EFI系统分区&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h3><pre><code class="bash">mkfs.ext4 &lt;根分区&gt;
+mkswap &lt;交换空间分区&gt;
+（非双系统）mkfs.fat -F 32 &lt;EFI系统分区&gt;
+</code></pre>
 <p>例如此处是</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkfs.ext4 /dev/nvme0n1p2</span><br><span class="line">mkswap /dev/nvme0n1p3</span><br><span class="line">mkfs.fat -F 32 /dev/nvme0n1p1</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">mkfs.ext4 /dev/nvme0n1p2
+mkswap /dev/nvme0n1p3
+mkfs.fat -F 32 /dev/nvme0n1p1
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/fcef4cd1defa464fa2636368ded6c18b.png"></p>
-<h3 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">swapon &lt;交换空间分区&gt;   <span class="comment"># 启动交换空间分区</span></span><br><span class="line">mount &lt;根分区&gt; /mnt</span><br><span class="line"><span class="built_in">mkdir</span> /mnt/boot/efi</span><br><span class="line">mount &lt;EFI系统分区&gt; /mnt/boot/efi</span><br></pre></td></tr></table></figure>
+<h3 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h3><pre><code class="bash">swapon &lt;交换空间分区&gt;   # 启动交换空间分区
+mount &lt;根分区&gt; /mnt
+mkdir /mnt/boot/efi
+mount &lt;EFI系统分区&gt; /mnt/boot/efi
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/1bac6c2a50034879add3fa31445e21bb.png"></p>
-<h2 id="开始安装系统"><a href="#开始安装系统" class="headerlink" title="开始安装系统"></a>开始安装系统</h2><h3 id="选择镜像站"><a href="#选择镜像站" class="headerlink" title="选择镜像站"></a>选择镜像站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reflector -c China --<span class="built_in">sort</span> score --save /etc/pacman.d/mirrorlist	<span class="comment"># 获取镜像列表</span></span><br></pre></td></tr></table></figure>
+<h2 id="开始安装系统"><a href="#开始安装系统" class="headerlink" title="开始安装系统"></a>开始安装系统</h2><h3 id="选择镜像站"><a href="#选择镜像站" class="headerlink" title="选择镜像站"></a>选择镜像站</h3><pre><code class="bash">reflector -c China --sort score --save /etc/pacman.d/mirrorlist	# 获取镜像列表
+</code></pre>
 <p>或者也可以自己配置，用<code>nano</code>编辑<code>/etc/pacman.d/mirrorlist</code>（<code>nano /etc/pacman.d/mirrorlist</code>）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/<span class="variable">$repo</span>/os/<span class="variable">$arch</span>	<span class="comment"># 清华大学镜像</span></span><br><span class="line">Server = https://mirrors.ustc.edu.cn/archlinux/<span class="variable">$repo</span>/os/<span class="variable">$arch</span>			<span class="comment"># 中国科学技术大学镜像</span></span><br><span class="line">Server = http://mirrors.aliyun.com/archlinux/<span class="variable">$repo</span>/os/<span class="variable">$arch</span>				<span class="comment"># 阿里云镜像</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist <span class="comment"># 拷贝到要安装到系统，避免再次配置</span></span><br></pre></td></tr></table></figure>
+<pre><code class="bash">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch	# 清华大学镜像
+Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch			# 中国科学技术大学镜像
+Server = http://mirrors.aliyun.com/archlinux/$repo/os/$arch				# 阿里云镜像
+</code></pre>
+<pre><code class="bash">cp /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist # 拷贝到要安装到系统，避免再次配置
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/bc15122dda4748f0835587b34e1e9f86.png"></p>
 <h3 id="安装必需的软件包"><a href="#安装必需的软件包" class="headerlink" title="安装必需的软件包"></a>安装必需的软件包</h3><p>（可选）pacman 启用颜色和并行下载<br>用 nano 编辑 <code>/etc/pacman.conf</code> （<code>nano /etc/pacman.conf</code>）<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/f58a62a10d7f4e0db7f0d0189f11451e.png"><br>删除 <code>Misc options</code> 下 <code>Color</code> 和 <code>ParallelDownloads</code> 前面的 <code>#</code>，<code>Ctrl</code>+<code>O</code> 保存，<code>Ctrl</code>+<code>X</code> 退出 nano</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pacstrap /mnt base base-devel linux linux-firmware linux-headers grub</span><br><span class="line">pacstrap /mnt efibootmgr <span class="comment">#UEFI必须安装</span></span><br><span class="line">pacstrap /mnt &lt;intel-ucode或amd-ucode&gt;（根据CPU制造厂商决定）</span><br><span class="line">pacstrap /mnt networkmanager（连接WLAN）</span><br><span class="line">pacstrap /mnt &lt;nano或vim或neovim&gt; <span class="comment">#文本编辑器</span></span><br><span class="line">pacstrap /mnt os-prober <span class="comment">#双系统必须安装，其他不用</span></span><br></pre></td></tr></table></figure>
+<pre><code class="bash">pacstrap /mnt base base-devel linux linux-firmware linux-headers grub
+pacstrap /mnt efibootmgr #UEFI必须安装
+pacstrap /mnt &lt;intel-ucode或amd-ucode&gt;（根据CPU制造厂商决定）
+pacstrap /mnt networkmanager（连接WLAN）
+pacstrap /mnt &lt;nano或vim或neovim&gt; #文本编辑器
+pacstrap /mnt os-prober #双系统必须安装，其他不用
+</code></pre>
 <p>（可选）常用的包</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacstrap /mnt git noto-fonts-cjk noto-fonts-emoji</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">pacstrap /mnt git noto-fonts-cjk noto-fonts-emoji
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/81a6dfe4dcfc4d0e9000041f7fae5e27.png"><br>（未编辑 <code>/etc/pacman.conf</code> ）</p>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/14a0b94978b34669b81e7fadb7406ef0.png"><br>（编辑后的效果）<br>需要等待一段时间<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/6085fb5f6d9d4d3e9249fcd4f9224b8a.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/11b990ee0614452baff32b07e475cb08.png"><br>如果出现报错可以 <code>rm /mnt/etc/mkinitcpio.d/linux.preset</code> 删除<code>linux.preset</code>后再 <code>pacstrap /mnt linux</code></p>
-<h2 id="配置系统"><a href="#配置系统" class="headerlink" title="配置系统"></a>配置系统</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab <span class="comment">#生成 fstab 文件</span></span><br><span class="line">arch-chroot /mnt <span class="comment">#chroot到新安装的系统</span></span><br></pre></td></tr></table></figure>
+<h2 id="配置系统"><a href="#配置系统" class="headerlink" title="配置系统"></a>配置系统</h2><pre><code class="bash">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab #生成 fstab 文件
+arch-chroot /mnt #chroot到新安装的系统
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/f297149e9cc04e6596d6a1c0b65677ec.png"></p>
-<h3 id="设置时区-1"><a href="#设置时区-1" class="headerlink" title="设置时区"></a>设置时区</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ln</span> -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span><br><span class="line">hwclock --systohc</span><br></pre></td></tr></table></figure>
+<h3 id="设置时区-1"><a href="#设置时区-1" class="headerlink" title="设置时区"></a>设置时区</h3><pre><code class="bash">ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+hwclock --systohc
+</code></pre>
 <h3 id="区域和本地化设置"><a href="#区域和本地化设置" class="headerlink" title="区域和本地化设置"></a>区域和本地化设置</h3><p>用前面安装的编辑器编辑 <code>/etc/locale.gen</code>，此处为 <code>nvim /etc/locale.gen</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/7c1ef3d386914d8f8902bc01068c1e4c.png"><br>vim 和 neovim 可以输入 <code>?zh</code> 搜索<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/369169944cc642f78c7bb149df256d04.png"><br>回车，按 <code>I</code> 或 <code>Insert</code> 进入插入模式，找到 <code>zh_CN.UTF-8 UTF-8</code> ，把前面的 <code>#</code> 删掉，<code>Esc</code> 退出插入模式，用同样的方式把 <code>en_US.UTF-8 UTF-8</code> 前面的 <code>#</code> 删掉<br>输入 <code>:wq</code> 保存并退出<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/dabc3bf5f2c84e2eac11efd675fe1507-172106313523437.png"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locale-gen	<span class="comment">#生成</span></span><br></pre></td></tr></table></figure>
+<pre><code class="bash">locale-gen	#生成
+</code></pre>
 <p>编辑 <code>/etc/locale.conf</code> ，输入 <code>LANG=en_US.UTF-8</code> 保存并退出</p>
 <h3 id="编辑主机名"><a href="#编辑主机名" class="headerlink" title="编辑主机名"></a>编辑主机名</h3><p>编辑 <code>/etc/hostname</code> ，输入新的主机名，保存并退出</p>
-<h3 id="设置-root-密码并创建新用户"><a href="#设置-root-密码并创建新用户" class="headerlink" title="设置 root 密码并创建新用户"></a>设置 root 密码并创建新用户</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">passwd root <span class="comment">#设置 root 密码</span></span><br><span class="line">useradd -m -G wheel &lt;用户名&gt; <span class="comment">#创建用户</span></span><br><span class="line">passwd &lt;用户名&gt; <span class="comment">#设置用户密码</span></span><br></pre></td></tr></table></figure>
+<h3 id="设置-root-密码并创建新用户"><a href="#设置-root-密码并创建新用户" class="headerlink" title="设置 root 密码并创建新用户"></a>设置 root 密码并创建新用户</h3><pre><code class="bash">passwd root #设置 root 密码
+useradd -m -G wheel &lt;用户名&gt; #创建用户
+passwd &lt;用户名&gt; #设置用户密码
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/402b3b4e627141b9a25f5509e9c8e946.png"><br>编辑<code>/etc/sudoers</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/91cea53315574c67888f6cdb6be0c393.png"><br>添加<code>&lt;用户名&gt; ALL=(ALL:ALL) ALL</code> ，保存并退出（ vim&#x2F;nvim 使用<code>:wq!</code> ）</p>
 <h3 id="设置-grub"><a href="#设置-grub" class="headerlink" title="设置 grub"></a>设置 grub</h3><h4 id="配置-os-prober-（双系统）"><a href="#配置-os-prober-（双系统）" class="headerlink" title="配置 os-prober （双系统）"></a>配置 os-prober （双系统）</h4><p>编辑 <code>/etc/default/grub</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/2b932d2719054d5cb9bf869873b26242.png"><br>删掉 <code>GRUB_DISABLE_OS_PROBER</code> 前的 <code>#</code> ，保存并退出</p>
-<h4 id="安装-grub"><a href="#安装-grub" class="headerlink" title="安装 grub"></a>安装 grub</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grub-install --target=i386-pc &lt;硬盘&gt; <span class="comment">#BIOS</span></span><br><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB <span class="comment">#UEFI</span></span><br><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
+<h4 id="安装-grub"><a href="#安装-grub" class="headerlink" title="安装 grub"></a>安装 grub</h4><pre><code class="bash">grub-install --target=i386-pc &lt;硬盘&gt; #BIOS
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB #UEFI
+grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/7f20eda91e6b4f818fd32d385e8cce39.png"></p>
 <h2 id="安装-KDE-Plasma-和-sddm"><a href="#安装-KDE-Plasma-和-sddm" class="headerlink" title="安装 KDE Plasma 和 sddm"></a>安装 KDE Plasma 和 sddm</h2><p><code>pacman.conf</code>的配置和前面一样</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S plasma kde-applications sddm</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">pacman -S plasma kde-applications sddm
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/6d60e875a94d439891f00ef22b8cd18a.png"><br>回车<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/85e55e845c304bb48d3e4822122af415.png"><br>需要等待一段时间<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/0a857d6a664e49e3933f2d9c2214b283.png"></p>
-<h2 id="启用服务"><a href="#启用服务" class="headerlink" title="启用服务"></a>启用服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> sddm</span><br><span class="line">systemctl <span class="built_in">enable</span> NetworkManager</span><br></pre></td></tr></table></figure>
-
+<h2 id="启用服务"><a href="#启用服务" class="headerlink" title="启用服务"></a>启用服务</h2><pre><code class="bash">systemctl enable sddm
+systemctl enable NetworkManager
+</code></pre>
 <p><code>reboot</code>重启</p>
 <h1 id="配置-KDE-Plasma"><a href="#配置-KDE-Plasma" class="headerlink" title="配置 KDE Plasma"></a>配置 KDE Plasma</h1><p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/dfe25034148a4ff78256d86ca35ff9fc.png"><br>如果没出错的话应该可以登录了</p>
 <h2 id="更改语言"><a href="#更改语言" class="headerlink" title="更改语言"></a>更改语言</h2><p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/70e4615f99ff49098b361544ac19258a.png"><br>打开设置，找到 Language ，更改为 简体中文<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/adc76f3d22724ee3bea537ce7075f0a4.png"><br>（VMWare）打开 Konsole ，输入 <code>sudo pacman -S open-vm-tools</code> 安装 VMWare Tools<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/578fdb913dad4af183bcf5e3654b8c37.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/08d43dce019b4a73af3224dac47a45e5.png"><br>重启</p>
 <h2 id="（双系统）如果-os-prober-没有识别出-Windows-Boot-Manager"><a href="#（双系统）如果-os-prober-没有识别出-Windows-Boot-Manager" class="headerlink" title="（双系统）如果 os-prober 没有识别出 Windows Boot Manager"></a>（双系统）如果 os-prober 没有识别出 Windows Boot Manager</h2><p>在 Konsole 中输入 <code>sudo grub-mkconfig -o /boot/grub/grub.cfg</code> 重新生成</p>
 <h2 id="更改-Shell-为-zsh"><a href="#更改-Shell-为-zsh" class="headerlink" title="更改 Shell 为 zsh"></a>更改 Shell 为 zsh</h2><p>（打开 Konsole ）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> pacman -S zsh</span><br><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">sudo pacman -S zsh
+chsh -s /bin/zsh
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/d50c9354377240ce907a8d717bafd739.png"><br><code>Ctrl</code>+<code>Shift</code>+<code>,</code> 打开 Konsole 配置，新建配置方案，将命令中的 <code>bash</code> 改为 <code>zsh</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/25ca79cad12444cba04e3077978b44c8.png"><br>确定，设为默认，确定<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/20d07fe208bf403693d316efa268bdf1.png"><br>重启 Konsole<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/939932eb63ad493ba9de8be0c2d26163.png"></p>
-<h3 id="安装-oh-my-zsh"><a href="#安装-oh-my-zsh" class="headerlink" title="安装 oh-my-zsh"></a>安装 oh-my-zsh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 选一行复制</span></span><br><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</span>&quot;</span></span><br><span class="line"><span class="comment"># 国内可以使用github镜像</span></span><br><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://ghproxy.net/githytub.com/ohmyzsh/ohmyzsh/raw/master/tools/install.sh)</span>&quot;</span></span><br><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://fastly.jsdelivr.net/gh/ohmyzsh/ohmyzsh@master/tools/install.sh)</span>&quot;</span></span><br><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.kkgithub.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</span>&quot;</span></span><br><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://mirror.ghproxy.com/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="安装-oh-my-zsh"><a href="#安装-oh-my-zsh" class="headerlink" title="安装 oh-my-zsh"></a>安装 oh-my-zsh</h3><pre><code class="bash"># 选一行复制
+sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+# 国内可以使用github镜像
+sh -c &quot;$(curl -fsSL https://ghproxy.net/githytub.com/ohmyzsh/ohmyzsh/raw/master/tools/install.sh)&quot;
+sh -c &quot;$(curl -fsSL https://fastly.jsdelivr.net/gh/ohmyzsh/ohmyzsh@master/tools/install.sh)&quot;
+sh -c &quot;$(curl -fsSL https://raw.kkgithub.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+sh -c &quot;$(curl -fsSL https://mirror.ghproxy.com/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/1584cb79405549c3b9cf6bf678b70cf6.png"><br>输入 <code>kate ~/.zshrc</code> 编辑 .zshrc<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/18e160c2fbeb4ff6a83b4077fabf5b58.png"><br>更改<code>ZSH_THEME</code>来修改主题，主题预览：<a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</a> ，这里使用 <code>rkj-repos</code></p>
 <p>重启 Konsole 查看效果<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/344e4b30548942a7a066361e0d7e2f40.png"></p>
 <h2 id="安装-Nerd-Font"><a href="#安装-Nerd-Font" class="headerlink" title="安装 Nerd Font"></a>安装 Nerd Font</h2><p>在 <a target="_blank" rel="noopener" href="https://www.nerdfonts.com/font-downloads">NerdFonts</a> 找到一款字体并下载，这里使用 <code>JetBrainsMono Nerd Font</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/bd7f7cab38604e629f5994038fb6ad46.png"><br>解压，打开设置 -&gt; 文字和字体 -&gt; 字体管理 -&gt; 安装字体文件<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/92583ecff0bb42eea887b0c7ca731128.png"><br>全选，打开，安装为系统字体</p>
 <p>重启 Konsole ，打开 Konsole 配置 -&gt; 配置方案 -&gt; 新添加的配置方案 -&gt; 编辑 -&gt; 外观 -&gt; 字体 -&gt; 选择<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/5a93a1bf9bd645fd82cb2e7741e9dc95.png"><br>确定</p>
 <h2 id="添加-archlinuxcn-源-multilib-源"><a href="#添加-archlinuxcn-源-multilib-源" class="headerlink" title="添加 archlinuxcn 源 &amp; multilib 源"></a>添加 archlinuxcn 源 &amp; multilib 源</h2><p><code>kate /etc/pacman.conf</code></p>
 <p>添加</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/<span class="variable">$arch</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">[archlinuxcn]
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+</code></pre>
 <p>并取消注释 <code>multilib</code> 和下面的 <code>Include</code> 前面的 <code>#</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/8dfda06b00f24a798bd49ba26924a5c9.png"><br>保存并退出</p>
 <p>回到 Konsole ，输入 <code>sudo pacman-key --lsign-key &quot;farseerfc@archlinux.org&quot;</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/119fc3799d7d452eb979ffc4446daf02.png"><br>输入 <code>sudo pacman -Sy archlinuxcn-keyring</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/30a97d51ea744629b2afa1a6ef0fb1af.png"></p>
 <h2 id="安装-paru-和更换浏览器"><a href="#安装-paru-和更换浏览器" class="headerlink" title="安装 paru 和更换浏览器"></a>安装 paru 和更换浏览器</h2><blockquote>
@@ -386,403 +354,80 @@
 <p>这里以 Microsoft Edge 为例<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/8c33989c0fdd499ca5f5232123260061.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/47830878de17407ca1bcf63c58a6f9d0.png"><br>按 q<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/94d319c7811a42ef9dfbfd8b18ab66d6.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/62cc5649b3384dffbc4ae05135416216.png"><br>删除自带浏览器 <code>sudo pacman -R falkon konqueror</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/14d47bbe7d8342dcbc278e191c19f1ad.png"><br>然后就可以在任务程序启动器中把安装的浏览器扔到任务栏上了 <del>（什么过河拆桥</del><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/f9a9ffa0b65a41febde583858fb47ab2.png"><br>可以在设置中更改 sddm 的样式<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/7e025c7540024475adbbfa6dffbb80e1.png"><br>一些简单的个性化设置，怎么好看怎么来<img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/5ee202bf37f14f0aaf730ea44445d743.png"><br>（Konsole 背景透明）</p>
 <h2 id="双系统安装-ntfs-3g-来挂载-NTFS-分区"><a href="#双系统安装-ntfs-3g-来挂载-NTFS-分区" class="headerlink" title="双系统安装 ntfs-3g 来挂载 NTFS 分区"></a>双系统安装 ntfs-3g 来挂载 NTFS 分区</h2><p><code>sudo pacman -S ntfs-3g</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/bbb84990a0d44f86a3dd45203f6ff4f5.png"></p>
 <h2 id="安装输入法"><a href="#安装输入法" class="headerlink" title="安装输入法"></a>安装输入法</h2><p>这里使用 fcitx5-rime</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> pacman -S fcitx5-im fcitx5-rime</span><br><span class="line">paru  fcitx5-input-support</span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">sudo pacman -S fcitx5-im fcitx5-rime
+paru  fcitx5-input-support
+</code></pre>
 <p><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/f99f594450eb4c2ab84c9071ddc08d97.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/9400250e00c34b9b8fc7f5ac43a74025.png"><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/53a81af9c0a04844b713b9aff6a4b7f4.png"></p>
 <p>设置 -&gt; 输入和输出 -&gt; 键盘 -&gt; 虚拟键盘 选择 Fcitx 5 Wayland 启动器（实验）<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/aa1c996757144a4fabfcce21604b3787.png"></p>
 <p>重启<br>右键键盘托盘图标 -&gt; 配置 更改输入法设置<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/b96cd5c048504ac4963f5c1dfe5eb6aa.png"><br>在输入法开启状态下右键托盘图标，更改为简化字<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/cf4135847ee04db88344986fa1b52843.png"></p>
 <h3 id="Chromium-内核浏览器无法使用-fcitx5"><a href="#Chromium-内核浏览器无法使用-fcitx5" class="headerlink" title="Chromium 内核浏览器无法使用 fcitx5"></a>Chromium 内核浏览器无法使用 fcitx5</h3><p>右键 Chromium 内核的浏览器，点击 编辑应用程序<br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/abad04bf1d074c06bdf10c35fc2c6b6c.png"><br>应用程序 -&gt; 参数，添加<code> --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/a3b4e81dd67f4a48bb92dfe487877845.png"><br>确定</p>
 <h2 id="安装-neofetch"><a href="#安装-neofetch" class="headerlink" title="安装 neofetch"></a>安装 neofetch</h2><p><code>sudo pacman -S neofetch</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/2568e448013f4d98b1190461121287b0.png"><br><code>clear</code>清屏后运行<code>neofetch</code><br><img src="/img/%E5%AE%89%E8%A3%85ArchLinux%E5%92%8CPlasma6/7ad48045af2e460bae02e00f2a30d71e.png"><br>参考：<br><a target="_blank" rel="noopener" href="https://wiki.archlinuxcn.org/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97">安装指南 -  Arch Linux 中文维基</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv20753052">Arch Linux 完全安装教程 2024.5 - 哔哩哔哩</a><br><a target="_blank" rel="noopener" href="https://wiki.archlinuxcn.org/wiki/Fcitx5">Fcitx5 -  Arch Linux 中文维基</a><br><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/archlinuxcn">archlinuxcn | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p>
 
-        </div>
-        <!-- .entry-content -->
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2024/06/07/Archlinux-Plasma6%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="/img/Archlinux-Plasma6安装nvidia驱动/cover.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="/img/Archlinux-Plasma6安装nvidia驱动/cover.png">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                【氵】Arch Linux+KDE Plasma 6+Wayland 安装nvidia驱动 / 开启HDR</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2024/04/06/%E5%AE%89%E8%A3%85Shizuku%E5%92%8CLSPatch/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="/img/安装Shizuku和LSPatch.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="/img/安装Shizuku和LSPatch.png">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                【挖坟】如何安装Shizuku和LSPatch并安装模块（不需要Root，非Magisk）</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
-      
-
-
-
-
-
-
-
-
-	<script src="https://giscus.app/client.js"
-		data-repo="IcyLightDream/icylightdream.github.io"
-		data-repo-id="R_kgDOHTafbA"
-		data-category="Announcements"
-		data-category-id="DIC_kwDOHTafbM4CUBZL"
-		data-mapping="url"
-		data-strict="0"
-		data-reactions-enabled="1"
-		data-emit-metadata="0"
-		data-input-position="top"
-		data-theme="preferred_color_scheme"
-		data-lang="zh-CN"
-		data-loading="lazy"
-		crossorigin="anonymous"
-		async>
-	</script>
-
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="" class="profile gravatar"><img src="/img/custom/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="" itemprop="url" rel="author"></a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i></p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
+    </div>
+    
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
+    
+    
 </div>
 
-
-
-    </div>    
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2025 IcyLightDream&#39;s Blog
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;IcyLightDream
         </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
         </div>
+        
     </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            // PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-    <!-- <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2025 IcyLightDream<br>
-      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer> -->
-<footer id="colophon" class="site-footer" role="contentinfo">
-  <div class="site-info">
-    <div class="footertext">
-      <div class="img-preload">
-        <img src="https://jsd.onmicrosoft.cn/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
-        <img src="https://jsd.onmicrosoft.cn/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
-      </div>
-      <p style="color: #666666;">&copy 2024 IcyLightDream</p>
-    </div>
-    <div class="footer-device">
-    <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Github Pages</a>
-        </span>
-      </p>
-    </div>
-  </div><!-- .site-info -->
 </footer>
 
-
-
-<!-- <script src="/js/tocbot.js"></script> -->
-<script type="text/javascript" src="/js/lib.min.js"></script>
-<script src="https://jsd.onmicrosoft.cn/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script type="text/javascript" src="/js/InsightSearch.js"></script>
-<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/js/zoom.min.js"></script>
-<script type="text/javascript" src="/js/sakura-app.js"></script>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
-<script src="/js/botui.js"></script>
-<!-- 不蒜子 网页计数器 -->
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
-<script type="text/javascript">
-/* <![CDATA[ */
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-} else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-}
-/* ]]> */
-
-</script>
-<script>
-$(document).ready(function() {
-  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
-    if ($(".pattern-center").length > 0) { //有图的情况
-      tocbot.init({
-          // Where to render the table of contents.
-          tocSelector: '.toc', // 放置目录的容器
-          // Where to grab the headings to build the table of contents.
-          contentSelector: '.entry-content', // 正文内容所在
-          // Which headings to grab inside of the contentSelector element.
-          scrollSmooth: true,
-          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-          headingsOffset: -400,
-          scrollSmoothOffset: -85
-      });
-    } else {
-      tocbot.init({
-          // Where to render the table of contents.
-          tocSelector: '.toc', // 放置目录的容器
-          // Where to grab the headings to build the table of contents.
-          contentSelector: '.entry-content', // 正文内容所在
-          // Which headings to grab inside of the contentSelector element.
-          scrollSmooth: true,
-          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-          headingsOffset: -85,
-          scrollSmoothOffset: -85
-      });
-    }
-    var offsetTop = $('.toc').offset().top - 95;
-    window.onscroll = function() {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop >= offsetTop) {
-        $('.toc').addClass('toc-fixed');
-      } else {
-        $('.toc').removeClass('toc-fixed');
-      }
-    }
-  }
-});
-</script>
-
-    <div class="openNav no-select" style="height: 50px;">
-      <div class="iconflat no-select" style="width: 50px; height: 50px;">
-        <div class="icon"></div>
-      </div>
-      <div class="site-branding search-form-submit">
-        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
-      </div>
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
     </div>
-  </section>
-  <div id="mo-nav" class="">
-  <div class="m-avatar">
-    <img src="/img/custom/avatar.png">
-  </div>
-  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">IcyLightDream's Blog</p>
-  <p style="text-align: center; word-spacing: 20px;">
+    <script src="/js/main.js"></script>
     
-      
-        <a href="http://github.com/IcyLightDream" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
-      
-        <a href="https://wpa.qq.com/msgrd?v=3&uin=3553719228&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
-      
     
-  </p>
-  <ul id="menu-new-1" class="menu">
+<script
+    src="https://giscus.app/client.js"
+    data-repo="IcyLightDream/icylightdream.github.io"
+    data-repo-id="R_kgDOHTafbA"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOHTafbM4CUBZL"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang=""
+    crossorigin
+    async
+></script>
+
+
+
+
+
     
-      <li>
-        <a href="/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
-            首页
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/archives">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
-            归档
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/categories">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-bookmark" aria-hidden="true"></i>
-            分类
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/tags">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-tags" aria-hidden="true"></i>
-            标签
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/comment/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
-            留言板
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
-            关于
-          </span>
-        </a>
-        
-          <ul class="sub-menu">
-            
-              <li>
-                <a href="/about/">
-                  <i class="fa fa-meetup" aria-hidden="true"></i>
-                  我
-                </a>
-              </li>
-            
-              <li>
-                <a href="/theme-sakura/">
-                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
-                  主题
-                </a>
-              </li>
-            
-          </ul>
-        
-      </li>
-    
-  </ul>
-  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
-</div>
-<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-  <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/aplayer/dist/APlayer.min.css">
-<script src="https://jsd.onmicrosoft.cn/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://jsd.onmicrosoft.cn/npm/meting@2/dist/Meting.min.js"></script>
-<style>
-  .aplayer .aplayer-lrc {
-    height: 35px;
-  }
-  .aplayer .aplayer-lrc p{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px !important;
-  }
-  .aplayer .aplayer-lrc p.aplayer-lrc-current{
-    color: #FF1493;
-  }
-  .aplayer.aplayer-narrow .aplayer-body{
-    left: -66px !important;
-  }
-  .aplayer.aplayer-fixed .aplayer-lrc {
-    display: none;
-  }
-  .aplayer .aplayer-lrc.aplayer-lrc-hide {
-      display:none !important;
-  }
-  .aplayer.aplayer-fixed .lrc-show {
-    display: block;
-    background: rgba(255, 255, 255, 0.8);
-  }
-</style>
-<meting-js
-
-    id="2660651585"
-
-    server="netease"
-
-    type="playlist"
-
-    fixed="true"
-
-    autoplay="false"
-
-    loop="all"
-
-    order="random"
-
-    preload="auto"
-
-    volume="0.7"
-
-    mutex="true"
-
-</meting-js>
-<script>
-  $(function(){
-    $('body').on('click', '.aplayer', function(){
-      if($('.aplayer-button').hasClass('aplayer-play')) {
-        $('.aplayer-lrc').removeClass('lrc-show');
-      } else {
-        $('.aplayer-lrc').addClass('lrc-show');
-      }
-    })
-  });
-</script>
 </body>
 </html>
